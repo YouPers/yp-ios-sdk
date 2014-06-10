@@ -1,0 +1,3 @@
+platform :ios, '6.0'
+xcodeproj 'YPLoginSample.xcodeproj'
+pod 'AFNetworking', '~> 1.0'
