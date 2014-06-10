@@ -1,0 +1,17 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - YouPers (0.0.1):
+    - AFNetworking (~> 1.0)
+
+DEPENDENCIES:
+  - YouPers (from `../../YouPers.podspec`)
+
+EXTERNAL SOURCES:
+  YouPers:
+    :path: ../../YouPers.podspec
+
+SPEC CHECKSUMS:
+  AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
+  YouPers: f1ba5e43d70308a83f3d310572b9d719b798674b
+
+COCOAPODS: 0.33.1

@@ -1,0 +1,1 @@
+PODS_YOUPERS_OTHER_LDFLAGS = -framework MobileCoreServices -framework SystemConfiguration
