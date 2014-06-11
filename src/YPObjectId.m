@@ -18,10 +18,9 @@
 
 -(id) initWithObjectId:(NSString*)objectId
 {
-    _isLoaded = FALSE;
-
     self = [super init];
     if(self) {
+        _isLoaded = FALSE;
         __idObj = objectId;
     }
 

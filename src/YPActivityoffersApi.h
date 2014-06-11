@@ -52,15 +52,19 @@ Use with caution, it may impact performance!
 
  post an activityOffer, AccessLevel: al_individual
  allows to post an activityOffer to promote an Activity to a targetAudience.
+ @param body new ActivityOffer object
  */
--(NSNumber*) postActivityOfferWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) postActivityOfferWithCompletionBlock:(YPActivityOffer*) body 
+        completionHandler: (void (^)(NSError* error))completionBlock;
 
 /**
 
  put an activityOffer, AccessLevel: al_individual
  allows to update an activityOffer
+ @param body new ActivityOffer object
  */
--(NSNumber*) putActivityOfferWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) putActivityOfferWithCompletionBlock:(YPActivityOffer*) body 
+        completionHandler: (void (^)(NSError* error))completionBlock;
 
 /**
 
@@ -73,7 +77,9 @@ Use with caution, it may impact performance!
 
  deletes a specific ActivityOffers, AccessLevel: al_individual
  deletes a specific ActivityOffers
+ @param _id the id of the activityOffer to fetch 
  */
--(NSNumber*) deleteActivityOfferWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) deleteActivityOfferWithCompletionBlock:(NSString*) _id 
+        completionHandler: (void (^)(NSError* error))completionBlock;
 
 @end

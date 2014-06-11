@@ -195,7 +195,8 @@ static NSString * basePath = @"http://localhost:8000";
 
 }
 
--(NSNumber*) postActivityOfferWithCompletionBlock: (void (^)(NSError* error))completionBlock{
+-(NSNumber*) postActivityOfferWithCompletionBlock:(YPActivityOffer*) body
+        completionHandler: (void (^)(NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/activityoffers", basePath];
 
@@ -211,7 +212,43 @@ static NSString * basePath = @"http://localhost:8000";
 
 
     id bodyDictionary = nil;
-        YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
+        if(body != nil && [body isKindOfClass:[NSArray class]]){
+        NSMutableArray * objs = [[NSMutableArray alloc] init];
+        for (id dict in (NSArray*)body) {
+            if([dict respondsToSelector:@selector(asDictionary)]) {
+                [objs addObject:[(YPObject*)dict asDictionary]];
+            }
+            else{
+                [objs addObject:dict];
+            }
+        }
+        bodyDictionary = objs;
+    }
+    else if([body respondsToSelector:@selector(asDictionary)]) {
+        bodyDictionary = [(YPObject*)body asDictionary];
+    }
+    else if([body isKindOfClass:[NSString class]]) {
+        // convert it to a dictionary
+        NSError * error;
+        NSString * str = (NSString*)body;
+        NSDictionary *JSON =
+            [NSJSONSerialization JSONObjectWithData:[str dataUsingEncoding:NSUTF8StringEncoding]
+                                            options:NSJSONReadingMutableContainers
+                                              error:&error];
+        bodyDictionary = JSON;
+    }
+    else if([body isKindOfClass: [YPFile class]]) {
+        requestContentType = @"form-data";
+        bodyDictionary = body;
+    }
+    else{
+        NSLog(@"don't know what to do with %@", body);
+    }
+
+    if(body == nil) {
+        // error
+    }
+    YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
 
     return [client stringWithCompletionBlock:requestUrl 
                                              method:@"POST" 
@@ -231,7 +268,8 @@ static NSString * basePath = @"http://localhost:8000";
 
 }
 
--(NSNumber*) putActivityOfferWithCompletionBlock: (void (^)(NSError* error))completionBlock{
+-(NSNumber*) putActivityOfferWithCompletionBlock:(YPActivityOffer*) body
+        completionHandler: (void (^)(NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/activityoffers/{id}", basePath];
 
@@ -247,7 +285,43 @@ static NSString * basePath = @"http://localhost:8000";
 
 
     id bodyDictionary = nil;
-        YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
+        if(body != nil && [body isKindOfClass:[NSArray class]]){
+        NSMutableArray * objs = [[NSMutableArray alloc] init];
+        for (id dict in (NSArray*)body) {
+            if([dict respondsToSelector:@selector(asDictionary)]) {
+                [objs addObject:[(YPObject*)dict asDictionary]];
+            }
+            else{
+                [objs addObject:dict];
+            }
+        }
+        bodyDictionary = objs;
+    }
+    else if([body respondsToSelector:@selector(asDictionary)]) {
+        bodyDictionary = [(YPObject*)body asDictionary];
+    }
+    else if([body isKindOfClass:[NSString class]]) {
+        // convert it to a dictionary
+        NSError * error;
+        NSString * str = (NSString*)body;
+        NSDictionary *JSON =
+            [NSJSONSerialization JSONObjectWithData:[str dataUsingEncoding:NSUTF8StringEncoding]
+                                            options:NSJSONReadingMutableContainers
+                                              error:&error];
+        bodyDictionary = JSON;
+    }
+    else if([body isKindOfClass: [YPFile class]]) {
+        requestContentType = @"form-data";
+        bodyDictionary = body;
+    }
+    else{
+        NSLog(@"don't know what to do with %@", body);
+    }
+
+    if(body == nil) {
+        // error
+    }
+    YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
 
     return [client stringWithCompletionBlock:requestUrl 
                                              method:@"PUT" 
@@ -303,7 +377,8 @@ static NSString * basePath = @"http://localhost:8000";
 
 }
 
--(NSNumber*) deleteActivityOfferWithCompletionBlock: (void (^)(NSError* error))completionBlock{
+-(NSNumber*) deleteActivityOfferWithCompletionBlock:(NSString*) _id
+        completionHandler: (void (^)(NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/activityoffers/{id}", basePath];
 
@@ -311,6 +386,7 @@ static NSString * basePath = @"http://localhost:8000";
     if ([requestUrl rangeOfString:@".{format}"].location != NSNotFound)
         [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:@".{format}"] withString:@".json"];
 
+    [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:[NSString stringWithFormat:@"%@%@%@", @"{", @"id", @"}"]] withString: [YPApiClient escape:_id]];
     NSString* requestContentType = @"application/json";
     NSString* responseContentType = @"application/json";
 
@@ -319,7 +395,10 @@ static NSString * basePath = @"http://localhost:8000";
 
 
     id bodyDictionary = nil;
-        YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
+        if(_id == nil) {
+        // error
+    }
+    YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
 
     return [client stringWithCompletionBlock:requestUrl 
                                              method:@"DELETE" 
