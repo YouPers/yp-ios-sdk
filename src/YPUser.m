@@ -11,6 +11,7 @@
     avatar: (NSString*) avatar
     emailValidatedFlag: (NSNumber*) emailValidatedFlag
     username: (NSString*) username
+    password:(NSString *)password
     roles: (NSArray*) roles
     hashed_password: (NSString*) hashed_password
     tempPasswordFlag: (NSNumber*) tempPasswordFlag
@@ -28,6 +29,7 @@
     _avatar = avatar;
     _emailValidatedFlag = emailValidatedFlag;
     _username = username;
+    _password = password;
     _roles = roles;
     _hashed_password = hashed_password;
     _tempPasswordFlag = tempPasswordFlag;
@@ -50,6 +52,7 @@
     _avatar = dict[@"avatar"];
     _emailValidatedFlag = dict[@"emailValidatedFlag"];
     _username = dict[@"username"];
+    _password = dict[@"password"];
     _roles = dict[@"roles"];
     _hashed_password = dict[@"hashed_password"];
     _tempPasswordFlag = dict[@"tempPasswordFlag"];
@@ -119,6 +122,7 @@
         if(_avatar != nil) dict[@"avatar"] = _avatar ;
         if(_emailValidatedFlag != nil) dict[@"emailValidatedFlag"] = _emailValidatedFlag ;
         if(_username != nil) dict[@"username"] = _username ;
+        if(_password != nil) dict[@"password"] = _password ;
         if(_roles != nil) dict[@"roles"] = _roles ;
         if(_hashed_password != nil) dict[@"hashed_password"] = _hashed_password ;
         if(_tempPasswordFlag != nil) dict[@"tempPasswordFlag"] = _tempPasswordFlag ;
@@ -275,6 +279,11 @@
 - (NSString*)getusernameValue
 {
     return _username;
+}
+
+- (NSString*)getpasswordValue
+{
+    return _password;
 }
 
 

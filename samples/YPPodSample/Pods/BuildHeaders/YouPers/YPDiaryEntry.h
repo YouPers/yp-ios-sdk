@@ -1,1 +1,1 @@
-../../../../../src/YPDiaryEntry.h
+../../YouPers/src/YPDiaryEntry.h

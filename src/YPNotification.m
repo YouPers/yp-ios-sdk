@@ -60,9 +60,19 @@
 
             if([(NSArray*)refDocs_dict count] > 0)
             {
+            	YPRefDoc* d;
+            	
                 for (NSDictionary* dict in (NSArray*)refDocs_dict)
                 {
-                    YPRefDoc* d = [[YPRefDoc alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPRefDoc alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPRefDoc alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 

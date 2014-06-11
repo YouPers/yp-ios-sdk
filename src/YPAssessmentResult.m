@@ -75,9 +75,19 @@
 
             if([(NSArray*)answers_dict count] > 0)
             {
+            	YPAnswer* d;
+            	
                 for (NSDictionary* dict in (NSArray*)answers_dict)
                 {
-                    YPAnswer* d = [[YPAnswer alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPAnswer alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPAnswer alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 

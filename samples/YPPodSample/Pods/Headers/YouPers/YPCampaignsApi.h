@@ -1,1 +1,1 @@
-../../../../../src/YPCampaignsApi.h
+../../YouPers/src/YPCampaignsApi.h

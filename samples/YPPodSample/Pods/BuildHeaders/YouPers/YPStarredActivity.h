@@ -1,1 +1,1 @@
-../../../../../src/YPStarredActivity.h
+../../YouPers/src/YPStarredActivity.h

@@ -96,9 +96,19 @@
 
             if([(NSArray*)campaignLeads_dict count] > 0)
             {
+            	YPUser* d;
+            	
                 for (NSDictionary* dict in (NSArray*)campaignLeads_dict)
                 {
-                    YPUser* d = [[YPUser alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPUser alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPUser alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 

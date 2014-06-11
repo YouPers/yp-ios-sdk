@@ -1,1 +1,1 @@
-../../../../../src/YPRejectedActivity.h
+../../YouPers/src/YPRejectedActivity.h

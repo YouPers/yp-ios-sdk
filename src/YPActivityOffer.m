@@ -54,9 +54,19 @@
 
             if([(NSArray*)activityPlan_dict count] > 0)
             {
+            	YPActivityPlan* d;
+            	
                 for (NSDictionary* dict in (NSArray*)activityPlan_dict)
                 {
-                    YPActivityPlan* d = [[YPActivityPlan alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPActivityPlan alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPActivityPlan alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 
@@ -91,9 +101,19 @@
 
             if([(NSArray*)recommendedBy_dict count] > 0)
             {
+            	YPUser* d;
+            	
                 for (NSDictionary* dict in (NSArray*)recommendedBy_dict)
                 {
-                    YPUser* d = [[YPUser alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPUser alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPUser alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 

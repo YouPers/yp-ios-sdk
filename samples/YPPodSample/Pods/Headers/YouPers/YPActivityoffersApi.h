@@ -1,1 +1,1 @@
-../../../../../src/YPActivityoffersApi.h
+../../YouPers/src/YPActivityoffersApi.h

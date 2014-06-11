@@ -9,7 +9,7 @@
 }
 
 - (NSDictionary*) asDictionary{
-    return [NSDictionary init];
+    return [[NSDictionary alloc] init];
 }
 
 - (NSString*)description {

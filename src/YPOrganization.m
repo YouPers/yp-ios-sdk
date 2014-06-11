@@ -67,9 +67,19 @@
 
             if([(NSArray*)administrators_dict count] > 0)
             {
+            	YPUser* d;
+            	
                 for (NSDictionary* dict in (NSArray*)administrators_dict)
                 {
-                    YPUser* d = [[YPUser alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPUser alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPUser alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 

@@ -148,8 +148,7 @@ static NSString * basePath = @"http://localhost:8000";
 
 }
 
--(NSNumber*) getActivityOfferByIdWithCompletionBlock:(NSNumber*) limit
-        populate:(NSString*) populate
+-(NSNumber*) getActivityOfferByIdWithCompletionBlock:(NSString*) _id
         populatedeep:(NSString*) populatedeep
         completionHandler: (void (^)(YPActivityOffer* output, NSError* error))completionBlock{
 
@@ -159,21 +158,21 @@ static NSString * basePath = @"http://localhost:8000";
     if ([requestUrl rangeOfString:@".{format}"].location != NSNotFound)
         [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:@".{format}"] withString:@".json"];
 
+    [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:[NSString stringWithFormat:@"%@%@%@", @"{", @"id", @"}"]] withString: [YPApiClient escape:_id]];
     NSString* requestContentType = @"application/json";
     NSString* responseContentType = @"application/json";
 
         NSMutableDictionary* queryParams = [[NSMutableDictionary alloc] init];
-    if(limit != nil)
-        queryParams[@"limit"] = limit;
-    if(populate != nil)
-        queryParams[@"populate"] = populate;
     if(populatedeep != nil)
         queryParams[@"populatedeep"] = populatedeep;
     NSMutableDictionary* headerParams = [[NSMutableDictionary alloc] init];
 
 
     id bodyDictionary = nil;
-        YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
+        if(_id == nil) {
+        // error
+    }
+    YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
 
     return [client dictionary:requestUrl 
                               method:@"GET" 
@@ -268,8 +267,9 @@ static NSString * basePath = @"http://localhost:8000";
 
 }
 
--(NSNumber*) putActivityOfferWithCompletionBlock:(YPActivityOffer*) body
-        completionHandler: (void (^)(NSError* error))completionBlock{
+-(NSNumber*) putActivityOfferWithCompletionBlock:(NSString*) _id
+        body:(YPActivityOffer*) body
+        completionHandler: (void (^)(YPActivityOffer* output, NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/activityoffers/{id}", basePath];
 
@@ -277,6 +277,7 @@ static NSString * basePath = @"http://localhost:8000";
     if ([requestUrl rangeOfString:@".{format}"].location != NSNotFound)
         [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:@".{format}"] withString:@".json"];
 
+    [requestUrl replaceCharactersInRange: [requestUrl rangeOfString:[NSString stringWithFormat:@"%@%@%@", @"{", @"id", @"}"]] withString: [YPApiClient escape:_id]];
     NSString* requestContentType = @"application/json";
     NSString* responseContentType = @"application/json";
 
@@ -318,25 +319,30 @@ static NSString * basePath = @"http://localhost:8000";
         NSLog(@"don't know what to do with %@", body);
     }
 
+    if(_id == nil) {
+        // error
+    }
     if(body == nil) {
         // error
     }
     YPApiClient* client = [YPApiClient sharedClientFromPool:basePath];
 
-    return [client stringWithCompletionBlock:requestUrl 
-                                             method:@"PUT" 
-                                        queryParams:queryParams 
-                                               body:bodyDictionary 
-                                       headerParams:headerParams
-                                 requestContentType: requestContentType
-                                responseContentType: responseContentType
-                                    completionBlock:^(NSString *data, NSError *error) {
+    return [client dictionary:requestUrl 
+                              method:@"PUT" 
+                         queryParams:queryParams 
+                                body:bodyDictionary 
+                        headerParams:headerParams
+                  requestContentType:requestContentType
+                 responseContentType:responseContentType
+                     completionBlock:^(NSDictionary *data, NSError *error) {
                         if (error) {
-                            completionBlock(error);
-                            return;
+                            completionBlock(nil, error);return;
                         }
-                        completionBlock(nil);
-                    }];
+                        YPActivityOffer *result = nil;
+                        if (data) {
+                            result = [[YPActivityOffer alloc]initWithValues: data];
+                        }
+                        completionBlock(result , nil);}];
     
 
 }

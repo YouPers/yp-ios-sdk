@@ -25,7 +25,9 @@
 
 @property(nonatomic) NSNumber* emailValidatedFlag;  
 
-@property(nonatomic) NSString* username;  
+@property(nonatomic) NSString* username;
+
+@property(nonatomic) NSString* password;
 
 @property(nonatomic) NSArray* roles;  
 
@@ -49,6 +51,7 @@
      avatar: (NSString*) avatar
      emailValidatedFlag: (NSNumber*) emailValidatedFlag
      username: (NSString*) username
+     password: (NSString*) password
      roles: (NSArray*) roles
      hashed_password: (NSString*) hashed_password
      tempPasswordFlag: (NSNumber*) tempPasswordFlag
@@ -77,6 +80,8 @@
 - (NSNumber*)getemailValidatedFlagValue;
 
 - (NSString*)getusernameValue;
+
+- (NSString*)getpasswordValue;
 
 - (NSArray*)getrolesValue;
 

@@ -341,6 +341,8 @@ static NSString * basePath = @"http://localhost:8000";
 }
 
 -(NSNumber*) getAssessmentResultsWithCompletionBlock:(NSString*) assessmentId
+        populate:(NSString*) populate
+        populatedeep:(NSString*) populatedeep
         completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/assessments/{assessmentId}/results", basePath];
@@ -354,6 +356,10 @@ static NSString * basePath = @"http://localhost:8000";
     NSString* responseContentType = @"application/json";
 
         NSMutableDictionary* queryParams = [[NSMutableDictionary alloc] init];
+    if(populate != nil)
+        queryParams[@"populate"] = populate;
+    if(populatedeep != nil)
+        queryParams[@"populatedeep"] = populatedeep;
     NSMutableDictionary* headerParams = [[NSMutableDictionary alloc] init];
 
 
@@ -475,7 +481,12 @@ static NSString * basePath = @"http://localhost:8000";
 
 }
 
--(NSNumber*) getAssessmentsWithCompletionBlock: (void (^)(NSArray* output, NSError* error))completionBlock{
+-(NSNumber*) getAssessmentsWithCompletionBlock:(NSString*) sort
+        limit:(NSNumber*) limit
+        filter:(NSString*) filter
+        populate:(NSString*) populate
+        populatedeep:(NSString*) populatedeep
+        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/assessments", basePath];
 
@@ -487,6 +498,16 @@ static NSString * basePath = @"http://localhost:8000";
     NSString* responseContentType = @"application/json";
 
         NSMutableDictionary* queryParams = [[NSMutableDictionary alloc] init];
+    if(sort != nil)
+        queryParams[@"sort"] = sort;
+    if(limit != nil)
+        queryParams[@"limit"] = limit;
+    if(filter != nil)
+        queryParams[@"filter"] = filter;
+    if(populate != nil)
+        queryParams[@"populate"] = populate;
+    if(populatedeep != nil)
+        queryParams[@"populatedeep"] = populatedeep;
     NSMutableDictionary* headerParams = [[NSMutableDictionary alloc] init];
 
 
@@ -519,6 +540,8 @@ static NSString * basePath = @"http://localhost:8000";
 }
 
 -(NSNumber*) getAssessmentWithCompletionBlock:(NSString*) _id
+        populate:(NSString*) populate
+        populatedeep:(NSString*) populatedeep
         completionHandler: (void (^)(YPAssessment* output, NSError* error))completionBlock{
 
     NSMutableString* requestUrl = [NSMutableString stringWithFormat:@"%@/assessments/{id}", basePath];
@@ -532,6 +555,10 @@ static NSString * basePath = @"http://localhost:8000";
     NSString* responseContentType = @"application/json";
 
         NSMutableDictionary* queryParams = [[NSMutableDictionary alloc] init];
+    if(populate != nil)
+        queryParams[@"populate"] = populate;
+    if(populatedeep != nil)
+        queryParams[@"populatedeep"] = populatedeep;
     NSMutableDictionary* headerParams = [[NSMutableDictionary alloc] init];
 
 

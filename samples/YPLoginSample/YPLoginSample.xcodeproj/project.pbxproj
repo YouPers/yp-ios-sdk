@@ -1,3352 +1,910 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1BB210CB97C6448882332D33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5159A749A730432CA2E880E2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5159A749A730432CA2E880E2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>635C5DF8FF134389B70997B1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6420A2474554423584C882BC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>CBD58A5C395D4C1B8ACB6310</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47601946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47721946F92800492B20</string>
-				<string>EABD47941946F92800492B20</string>
-				<string>EABD476B1946F92800492B20</string>
-				<string>EABD476A1946F92800492B20</string>
-				<string>CBD58A5C395D4C1B8ACB6310</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47611946F92800492B20</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>YP</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>YouPers</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>EABD478C1946F92800492B20</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>EABD47681946F92800492B20</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>EABD47641946F92800492B20</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>EABD47601946F92800492B20</string>
-			<key>productRefGroup</key>
-			<string>EABD476A1946F92800492B20</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>EABD47681946F92800492B20</string>
-				<string>EABD478C1946F92800492B20</string>
-			</array>
-		</dict>
-		<key>EABD47641946F92800492B20</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EABD479C1946F92800492B20</string>
-				<string>EABD479D1946F92800492B20</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EABD47651946F92800492B20</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EABD48571946F95A00492B20</string>
-				<string>EABD482A1946F95A00492B20</string>
-				<string>EABD48211946F95A00492B20</string>
-				<string>EABD483E1946F95A00492B20</string>
-				<string>EABD48341946F95A00492B20</string>
-				<string>EABD484A1946F95A00492B20</string>
-				<string>EABD48261946F95A00492B20</string>
-				<string>EABD483B1946F95A00492B20</string>
-				<string>EABD48431946F95A00492B20</string>
-				<string>EABD482C1946F95A00492B20</string>
-				<string>EABD48371946F95A00492B20</string>
-				<string>EABD484C1946F95A00492B20</string>
-				<string>EABD48441946F95A00492B20</string>
-				<string>EABD482F1946F95A00492B20</string>
-				<string>EABD48451946F95A00492B20</string>
-				<string>EABD48521946F95A00492B20</string>
-				<string>EABD48591946F95A00492B20</string>
-				<string>EABD48481946F95A00492B20</string>
-				<string>EABD48231946F95A00492B20</string>
-				<string>EABD48251946F95A00492B20</string>
-				<string>EABD48581946F95A00492B20</string>
-				<string>EABD48201946F95A00492B20</string>
-				<string>EABD48411946F95A00492B20</string>
-				<string>EABD485B1946F95A00492B20</string>
-				<string>EABD48331946F95A00492B20</string>
-				<string>EABD48561946F95A00492B20</string>
-				<string>EABD48221946F95A00492B20</string>
-				<string>EABD485A1946F95A00492B20</string>
-				<string>EABD48511946F95A00492B20</string>
-				<string>EABD484D1946F95A00492B20</string>
-				<string>EABD48421946F95A00492B20</string>
-				<string>EABD48401946F95A00492B20</string>
-				<string>EABD48501946F95A00492B20</string>
-				<string>EABD48541946F95A00492B20</string>
-				<string>EABD48321946F95A00492B20</string>
-				<string>EABD484F1946F95A00492B20</string>
-				<string>EABD48311946F95A00492B20</string>
-				<string>EABD48241946F95A00492B20</string>
-				<string>EABD484E1946F95A00492B20</string>
-				<string>EABD483F1946F95A00492B20</string>
-				<string>EABD48391946F95A00492B20</string>
-				<string>EABD47861946F92800492B20</string>
-				<string>EABD482D1946F95A00492B20</string>
-				<string>EABD48381946F95A00492B20</string>
-				<string>EABD483D1946F95A00492B20</string>
-				<string>EABD483C1946F95A00492B20</string>
-				<string>EABD48301946F95A00492B20</string>
-				<string>EABD48471946F95A00492B20</string>
-				<string>EABD484B1946F95A00492B20</string>
-				<string>EABD48291946F95A00492B20</string>
-				<string>EABD482E1946F95A00492B20</string>
-				<string>EABD48271946F95A00492B20</string>
-				<string>EABD48491946F95A00492B20</string>
-				<string>EABD48531946F95A00492B20</string>
-				<string>EABD48551946F95A00492B20</string>
-				<string>EABD483A1946F95A00492B20</string>
-				<string>EABD47791946F92800492B20</string>
-				<string>EABD48461946F95A00492B20</string>
-				<string>EABD482B1946F95A00492B20</string>
-				<string>EABD48361946F95A00492B20</string>
-				<string>EABD485C1946F95A00492B20</string>
-				<string>EABD48281946F95A00492B20</string>
-				<string>EABD48351946F95A00492B20</string>
-				<string>EABD477D1946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EABD47661946F92800492B20</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EABD485E1946F97000492B20</string>
-				<string>EABD476F1946F92800492B20</string>
-				<string>EABD47711946F92800492B20</string>
-				<string>EABD476D1946F92800492B20</string>
-				<string>1BB210CB97C6448882332D33</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EABD47671946F92800492B20</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EABD47831946F92800492B20</string>
-				<string>EABD47881946F92800492B20</string>
-				<string>EABD47801946F92800492B20</string>
-				<string>EABD47771946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EABD47681946F92800492B20</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EABD479E1946F92800492B20</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6420A2474554423584C882BC</string>
-				<string>EABD47651946F92800492B20</string>
-				<string>EABD47661946F92800492B20</string>
-				<string>EABD47671946F92800492B20</string>
-				<string>635C5DF8FF134389B70997B1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>YPLoginSample</string>
-			<key>productName</key>
-			<string>YPLoginSample</string>
-			<key>productReference</key>
-			<string>EABD47691946F92800492B20</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>EABD47691946F92800492B20</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>YPLoginSample.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EABD476A1946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47691946F92800492B20</string>
-				<string>EABD478D1946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD476B1946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD485D1946F97000492B20</string>
-				<string>EABD476C1946F92800492B20</string>
-				<string>EABD476E1946F92800492B20</string>
-				<string>EABD47701946F92800492B20</string>
-				<string>EABD478E1946F92800492B20</string>
-				<string>5159A749A730432CA2E880E2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD476C1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EABD476D1946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD476C1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD476E1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EABD476F1946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD476E1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47701946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EABD47711946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47701946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47721946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47A51946F95A00492B20</string>
-				<string>EABD477B1946F92800492B20</string>
-				<string>EABD477C1946F92800492B20</string>
-				<string>EABD477E1946F92800492B20</string>
-				<string>EABD47811946F92800492B20</string>
-				<string>EABD47841946F92800492B20</string>
-				<string>EABD47851946F92800492B20</string>
-				<string>EABD47871946F92800492B20</string>
-				<string>EABD47731946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>YPLoginSample</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47731946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47741946F92800492B20</string>
-				<string>EABD47751946F92800492B20</string>
-				<string>EABD47781946F92800492B20</string>
-				<string>EABD477A1946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47741946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>YPLoginSample-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47751946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47761946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47761946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47771946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47751946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47781946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47791946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47781946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD477A1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPLoginSample-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD477B1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD477C1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD477D1946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD477C1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD477E1946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD477F1946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD477F1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47801946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD477E1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47811946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47821946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47821946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47831946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47811946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47841946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47851946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47861946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47851946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47871946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47881946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47871946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47891946F92800492B20</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EABD479B1946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EABD478A1946F92800492B20</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EABD478F1946F92800492B20</string>
-				<string>EABD47911946F92800492B20</string>
-				<string>EABD47901946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EABD478B1946F92800492B20</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EABD47991946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EABD478C1946F92800492B20</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EABD47A11946F92800492B20</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EABD47891946F92800492B20</string>
-				<string>EABD478A1946F92800492B20</string>
-				<string>EABD478B1946F92800492B20</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>EABD47931946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>YPLoginSampleTests</string>
-			<key>productName</key>
-			<string>YPLoginSampleTests</string>
-			<key>productReference</key>
-			<string>EABD478D1946F92800492B20</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>EABD478D1946F92800492B20</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>YPLoginSampleTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EABD478E1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>EABD478F1946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD478E1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47901946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD476C1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47911946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47701946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD47921946F92800492B20</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>EABD47611946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EABD47681946F92800492B20</string>
-			<key>remoteInfo</key>
-			<string>YPLoginSample</string>
-		</dict>
-		<key>EABD47931946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>EABD47681946F92800492B20</string>
-			<key>targetProxy</key>
-			<string>EABD47921946F92800492B20</string>
-		</dict>
-		<key>EABD47941946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD479A1946F92800492B20</string>
-				<string>EABD47951946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>YPLoginSampleTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47951946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47961946F92800492B20</string>
-				<string>EABD47971946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47961946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>YPLoginSampleTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47971946F92800492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47981946F92800492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47981946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47991946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47971946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD479A1946F92800492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPLoginSampleTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD479B1946F92800492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD479A1946F92800492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD479C1946F92800492B20</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EABD479D1946F92800492B20</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EABD479E1946F92800492B20</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EABD479F1946F92800492B20</string>
-				<string>EABD47A01946F92800492B20</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EABD479F1946F92800492B20</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CBD58A5C395D4C1B8ACB6310</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YPLoginSample/YPLoginSample-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YPLoginSample/YPLoginSample-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EABD47A01946F92800492B20</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CBD58A5C395D4C1B8ACB6310</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YPLoginSample/YPLoginSample-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YPLoginSample/YPLoginSample-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EABD47A11946F92800492B20</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EABD47A21946F92800492B20</string>
-				<string>EABD47A31946F92800492B20</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EABD47A21946F92800492B20</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/YPLoginSample.app/YPLoginSample</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YPLoginSample/YPLoginSample-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>YPLoginSampleTests/YPLoginSampleTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EABD47A31946F92800492B20</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/YPLoginSample.app/YPLoginSample</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>YPLoginSample/YPLoginSample-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>YPLoginSampleTests/YPLoginSampleTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EABD47A51946F95A00492B20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EABD47A61946F95A00492B20</string>
-				<string>EABD47A71946F95A00492B20</string>
-				<string>EABD47A81946F95A00492B20</string>
-				<string>EABD47A91946F95A00492B20</string>
-				<string>EABD47AA1946F95A00492B20</string>
-				<string>EABD47AB1946F95A00492B20</string>
-				<string>EABD47AC1946F95A00492B20</string>
-				<string>EABD47AD1946F95A00492B20</string>
-				<string>EABD47AE1946F95A00492B20</string>
-				<string>EABD47AF1946F95A00492B20</string>
-				<string>EABD47B01946F95A00492B20</string>
-				<string>EABD47B11946F95A00492B20</string>
-				<string>EABD47B21946F95A00492B20</string>
-				<string>EABD47B31946F95A00492B20</string>
-				<string>EABD47B41946F95A00492B20</string>
-				<string>EABD47B51946F95A00492B20</string>
-				<string>EABD47B61946F95A00492B20</string>
-				<string>EABD47B71946F95A00492B20</string>
-				<string>EABD47B81946F95A00492B20</string>
-				<string>EABD47B91946F95A00492B20</string>
-				<string>EABD47BA1946F95A00492B20</string>
-				<string>EABD47BB1946F95A00492B20</string>
-				<string>EABD47BC1946F95A00492B20</string>
-				<string>EABD47BD1946F95A00492B20</string>
-				<string>EABD47BE1946F95A00492B20</string>
-				<string>EABD47BF1946F95A00492B20</string>
-				<string>EABD47C01946F95A00492B20</string>
-				<string>EABD47C11946F95A00492B20</string>
-				<string>EABD47C21946F95A00492B20</string>
-				<string>EABD47C31946F95A00492B20</string>
-				<string>EABD47C41946F95A00492B20</string>
-				<string>EABD47C51946F95A00492B20</string>
-				<string>EABD47C61946F95A00492B20</string>
-				<string>EABD47C71946F95A00492B20</string>
-				<string>EABD47C81946F95A00492B20</string>
-				<string>EABD47C91946F95A00492B20</string>
-				<string>EABD47CA1946F95A00492B20</string>
-				<string>EABD47CB1946F95A00492B20</string>
-				<string>EABD47CC1946F95A00492B20</string>
-				<string>EABD47CD1946F95A00492B20</string>
-				<string>EABD47CE1946F95A00492B20</string>
-				<string>EABD47CF1946F95A00492B20</string>
-				<string>EABD47D01946F95A00492B20</string>
-				<string>EABD47D11946F95A00492B20</string>
-				<string>EABD47D21946F95A00492B20</string>
-				<string>EABD47D31946F95A00492B20</string>
-				<string>EABD47D41946F95A00492B20</string>
-				<string>EABD47D51946F95A00492B20</string>
-				<string>EABD47D61946F95A00492B20</string>
-				<string>EABD47D71946F95A00492B20</string>
-				<string>EABD47D81946F95A00492B20</string>
-				<string>EABD47D91946F95A00492B20</string>
-				<string>EABD47DA1946F95A00492B20</string>
-				<string>EABD47DB1946F95A00492B20</string>
-				<string>EABD47DC1946F95A00492B20</string>
-				<string>EABD47DD1946F95A00492B20</string>
-				<string>EABD47DE1946F95A00492B20</string>
-				<string>EABD47DF1946F95A00492B20</string>
-				<string>EABD47E01946F95A00492B20</string>
-				<string>EABD47E11946F95A00492B20</string>
-				<string>EABD47E21946F95A00492B20</string>
-				<string>EABD47E31946F95A00492B20</string>
-				<string>EABD47E41946F95A00492B20</string>
-				<string>EABD47E51946F95A00492B20</string>
-				<string>EABD47E61946F95A00492B20</string>
-				<string>EABD47E71946F95A00492B20</string>
-				<string>EABD47E81946F95A00492B20</string>
-				<string>EABD47E91946F95A00492B20</string>
-				<string>EABD47EA1946F95A00492B20</string>
-				<string>EABD47EB1946F95A00492B20</string>
-				<string>EABD47EC1946F95A00492B20</string>
-				<string>EABD47ED1946F95A00492B20</string>
-				<string>EABD47EE1946F95A00492B20</string>
-				<string>EABD47EF1946F95A00492B20</string>
-				<string>EABD47F01946F95A00492B20</string>
-				<string>EABD47F11946F95A00492B20</string>
-				<string>EABD47F21946F95A00492B20</string>
-				<string>EABD47F31946F95A00492B20</string>
-				<string>EABD47F41946F95A00492B20</string>
-				<string>EABD47F51946F95A00492B20</string>
-				<string>EABD47F61946F95A00492B20</string>
-				<string>EABD47F71946F95A00492B20</string>
-				<string>EABD47F81946F95A00492B20</string>
-				<string>EABD47F91946F95A00492B20</string>
-				<string>EABD47FA1946F95A00492B20</string>
-				<string>EABD47FB1946F95A00492B20</string>
-				<string>EABD47FC1946F95A00492B20</string>
-				<string>EABD47FD1946F95A00492B20</string>
-				<string>EABD47FE1946F95A00492B20</string>
-				<string>EABD47FF1946F95A00492B20</string>
-				<string>EABD48001946F95A00492B20</string>
-				<string>EABD48011946F95A00492B20</string>
-				<string>EABD48021946F95A00492B20</string>
-				<string>EABD48031946F95A00492B20</string>
-				<string>EABD48041946F95A00492B20</string>
-				<string>EABD48051946F95A00492B20</string>
-				<string>EABD48061946F95A00492B20</string>
-				<string>EABD48071946F95A00492B20</string>
-				<string>EABD48081946F95A00492B20</string>
-				<string>EABD48091946F95A00492B20</string>
-				<string>EABD480A1946F95A00492B20</string>
-				<string>EABD480B1946F95A00492B20</string>
-				<string>EABD480C1946F95A00492B20</string>
-				<string>EABD480D1946F95A00492B20</string>
-				<string>EABD480E1946F95A00492B20</string>
-				<string>EABD480F1946F95A00492B20</string>
-				<string>EABD48101946F95A00492B20</string>
-				<string>EABD48111946F95A00492B20</string>
-				<string>EABD48121946F95A00492B20</string>
-				<string>EABD48131946F95A00492B20</string>
-				<string>EABD48141946F95A00492B20</string>
-				<string>EABD48151946F95A00492B20</string>
-				<string>EABD48161946F95A00492B20</string>
-				<string>EABD48171946F95A00492B20</string>
-				<string>EABD48181946F95A00492B20</string>
-				<string>EABD48191946F95A00492B20</string>
-				<string>EABD481A1946F95A00492B20</string>
-				<string>EABD481B1946F95A00492B20</string>
-				<string>EABD481C1946F95A00492B20</string>
-				<string>EABD481D1946F95A00492B20</string>
-				<string>EABD481E1946F95A00492B20</string>
-				<string>EABD481F1946F95A00492B20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>src</string>
-			<key>path</key>
-			<string>../../../src</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47A61946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPActivitiesApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47A71946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPActivitiesApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47A81946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPActivity.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47A91946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPActivity.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47AA1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPActivityOffer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47AB1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPActivityOffer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47AC1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPActivityoffersApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47AD1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPActivityoffersApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47AE1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPActivityPlan.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47AF1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPActivityPlan.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B01946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPActivityplansApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B11946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPActivityplansApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B21946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAddress.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B31946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAddress.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B41946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAnswer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B51946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAnswer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B61946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPApiClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B71946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPApiClient.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B81946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAssessment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47B91946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAssessment.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47BA1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAssessmentQuestion.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47BB1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAssessmentQuestion.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47BC1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAssessmentResult.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47BD1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAssessmentResult.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47BE1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAssessmentResultAnswer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47BF1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAssessmentResultAnswer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C01946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPAssessmentsApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C11946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPAssessmentsApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C21946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPCampaign.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C31946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPCampaign.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C41946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPCampaignsApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C51946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPCampaignsApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C61946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPCoachmessagesApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C71946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPCoachmessagesApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C81946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPComment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47C91946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPComment.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47CA1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPCommentsApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47CB1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPCommentsApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47CC1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPContact.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47CD1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPContact.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47CE1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPDate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47CF1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPDate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D01946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPDefaultUserWeekForScheduling.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D11946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPDefaultUserWeekForScheduling.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D21946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPDiaryentriesApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D31946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPDiaryentriesApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D41946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPDiaryEntry.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D51946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPDiaryEntry.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D61946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPEmail.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D71946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPEmail.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D81946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPEmailObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47D91946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPEmailObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47DA1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPEndby.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47DB1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPEndby.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47DC1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPErrorApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47DD1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPErrorApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47DE1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPErrorObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47DF1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPErrorObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E01946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPEvent.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E11946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPEvent.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E21946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPException.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E31946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPException.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E41946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPFeedback.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E51946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPFeedback.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E61946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPFeedbackApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E71946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPFeedbackApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E81946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPFile.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47E91946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPFile.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47EA1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPFocus.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47EB1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPFocus.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47EC1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPHomeAddress.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47ED1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPHomeAddress.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47EE1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPI18nString.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47EF1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPI18nString.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F01946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPLoginApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F11946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPLoginApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F21946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPMainEvent.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F31946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPMainEvent.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F41946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPNotification.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F51946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPNotification.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F61946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPNotificationsApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F71946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPNotificationsApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F81946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47F91946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47FA1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPObjectId.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47FB1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPObjectId.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47FC1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPOrganization.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47FD1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPOrganization.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47FE1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPOrganizationsApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD47FF1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPOrganizationsApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48001946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPPaymentCode.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48011946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPPaymentCode.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48021946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPPaymentcodesApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48031946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPPaymentcodesApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48041946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPPingApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48051946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPPingApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48061946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPProfile.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48071946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPProfile.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48081946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPProfilesApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48091946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPProfilesApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD480A1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPRecurrence.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD480B1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPRecurrence.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD480C1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPRefDoc.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD480D1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPRefDoc.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD480E1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPRejectedActivity.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD480F1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPRejectedActivity.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48101946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPRejectedActivityPlan.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48111946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPRejectedActivityPlan.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48121946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPStarredActivity.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48131946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPStarredActivity.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48141946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPStatsApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48151946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPStatsApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48161946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPUser.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48171946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPUser.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48181946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPUsernameEmail.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48191946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPUsernameEmail.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD481A1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPUserPreferences.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD481B1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPUserPreferences.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD481C1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPUsersApi.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD481D1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPUsersApi.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD481E1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>YPWorkAddress.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD481F1946F95A00492B20</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>YPWorkAddress.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EABD48201946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47A71946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48211946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47A91946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48221946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47AB1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48231946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47AD1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48241946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47AF1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48251946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47B11946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48261946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47B31946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48271946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47B51946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48281946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47B71946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48291946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47B91946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD482A1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47BB1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD482B1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47BD1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD482C1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47BF1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD482D1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47C11946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD482E1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47C31946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD482F1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47C51946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48301946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47C71946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48311946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47C91946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48321946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47CB1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48331946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47CD1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48341946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47CF1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48351946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47D11946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48361946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47D31946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48371946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47D51946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48381946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47D71946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48391946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47D91946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD483A1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47DB1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD483B1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47DD1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD483C1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47DF1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD483D1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47E11946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD483E1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47E31946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD483F1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47E51946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48401946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47E71946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48411946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47E91946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48421946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47EB1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48431946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47ED1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48441946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47EF1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48451946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47F11946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48461946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47F31946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48471946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47F51946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48481946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47F71946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48491946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47F91946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD484A1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47FB1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD484B1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47FD1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD484C1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD47FF1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD484D1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48011946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD484E1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48031946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD484F1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48051946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48501946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48071946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48511946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48091946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48521946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD480B1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48531946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD480D1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48541946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD480F1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48551946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48111946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48561946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48131946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48571946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48151946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48581946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48171946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD48591946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD48191946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD485A1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD481B1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD485B1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD481D1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD485C1946F95A00492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD481F1946F95A00492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EABD485D1946F97000492B20</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>EABD485E1946F97000492B20</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EABD485D1946F97000492B20</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>EABD47611946F92800492B20</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BB210CB97C6448882332D33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159A749A730432CA2E880E2 /* libPods.a */; };
+		EABD476D1946F92800492B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD476C1946F92800492B20 /* Foundation.framework */; };
+		EABD476F1946F92800492B20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD476E1946F92800492B20 /* CoreGraphics.framework */; };
+		EABD47711946F92800492B20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD47701946F92800492B20 /* UIKit.framework */; };
+		EABD47771946F92800492B20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EABD47751946F92800492B20 /* InfoPlist.strings */; };
+		EABD47791946F92800492B20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47781946F92800492B20 /* main.m */; };
+		EABD477D1946F92800492B20 /* YPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD477C1946F92800492B20 /* YPAppDelegate.m */; };
+		EABD47801946F92800492B20 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABD477E1946F92800492B20 /* Main_iPhone.storyboard */; };
+		EABD47831946F92800492B20 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABD47811946F92800492B20 /* Main_iPad.storyboard */; };
+		EABD47861946F92800492B20 /* YPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47851946F92800492B20 /* YPViewController.m */; };
+		EABD47881946F92800492B20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABD47871946F92800492B20 /* Images.xcassets */; };
+		EABD478F1946F92800492B20 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD478E1946F92800492B20 /* XCTest.framework */; };
+		EABD47901946F92800492B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD476C1946F92800492B20 /* Foundation.framework */; };
+		EABD47911946F92800492B20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD47701946F92800492B20 /* UIKit.framework */; };
+		EABD47991946F92800492B20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EABD47971946F92800492B20 /* InfoPlist.strings */; };
+		EABD479B1946F92800492B20 /* YPLoginSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD479A1946F92800492B20 /* YPLoginSampleTests.m */; };
+		EABD48201946F95A00492B20 /* YPActivitiesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47A71946F95A00492B20 /* YPActivitiesApi.m */; };
+		EABD48211946F95A00492B20 /* YPActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47A91946F95A00492B20 /* YPActivity.m */; };
+		EABD48221946F95A00492B20 /* YPActivityOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47AB1946F95A00492B20 /* YPActivityOffer.m */; };
+		EABD48231946F95A00492B20 /* YPActivityoffersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47AD1946F95A00492B20 /* YPActivityoffersApi.m */; };
+		EABD48241946F95A00492B20 /* YPActivityPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47AF1946F95A00492B20 /* YPActivityPlan.m */; };
+		EABD48251946F95A00492B20 /* YPActivityplansApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B11946F95A00492B20 /* YPActivityplansApi.m */; };
+		EABD48261946F95A00492B20 /* YPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B31946F95A00492B20 /* YPAddress.m */; };
+		EABD48271946F95A00492B20 /* YPAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B51946F95A00492B20 /* YPAnswer.m */; };
+		EABD48281946F95A00492B20 /* YPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B71946F95A00492B20 /* YPApiClient.m */; };
+		EABD48291946F95A00492B20 /* YPAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B91946F95A00492B20 /* YPAssessment.m */; };
+		EABD482A1946F95A00492B20 /* YPAssessmentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47BB1946F95A00492B20 /* YPAssessmentQuestion.m */; };
+		EABD482B1946F95A00492B20 /* YPAssessmentResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47BD1946F95A00492B20 /* YPAssessmentResult.m */; };
+		EABD482C1946F95A00492B20 /* YPAssessmentResultAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47BF1946F95A00492B20 /* YPAssessmentResultAnswer.m */; };
+		EABD482D1946F95A00492B20 /* YPAssessmentsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C11946F95A00492B20 /* YPAssessmentsApi.m */; };
+		EABD482E1946F95A00492B20 /* YPCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C31946F95A00492B20 /* YPCampaign.m */; };
+		EABD482F1946F95A00492B20 /* YPCampaignsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C51946F95A00492B20 /* YPCampaignsApi.m */; };
+		EABD48301946F95A00492B20 /* YPCoachmessagesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C71946F95A00492B20 /* YPCoachmessagesApi.m */; };
+		EABD48311946F95A00492B20 /* YPComment.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C91946F95A00492B20 /* YPComment.m */; };
+		EABD48321946F95A00492B20 /* YPCommentsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47CB1946F95A00492B20 /* YPCommentsApi.m */; };
+		EABD48331946F95A00492B20 /* YPContact.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47CD1946F95A00492B20 /* YPContact.m */; };
+		EABD48341946F95A00492B20 /* YPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47CF1946F95A00492B20 /* YPDate.m */; };
+		EABD48351946F95A00492B20 /* YPDefaultUserWeekForScheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D11946F95A00492B20 /* YPDefaultUserWeekForScheduling.m */; };
+		EABD48361946F95A00492B20 /* YPDiaryentriesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D31946F95A00492B20 /* YPDiaryentriesApi.m */; };
+		EABD48371946F95A00492B20 /* YPDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D51946F95A00492B20 /* YPDiaryEntry.m */; };
+		EABD48381946F95A00492B20 /* YPEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D71946F95A00492B20 /* YPEmail.m */; };
+		EABD48391946F95A00492B20 /* YPEmailObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D91946F95A00492B20 /* YPEmailObject.m */; };
+		EABD483A1946F95A00492B20 /* YPEndby.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47DB1946F95A00492B20 /* YPEndby.m */; };
+		EABD483B1946F95A00492B20 /* YPErrorApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47DD1946F95A00492B20 /* YPErrorApi.m */; };
+		EABD483C1946F95A00492B20 /* YPErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47DF1946F95A00492B20 /* YPErrorObject.m */; };
+		EABD483D1946F95A00492B20 /* YPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E11946F95A00492B20 /* YPEvent.m */; };
+		EABD483E1946F95A00492B20 /* YPException.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E31946F95A00492B20 /* YPException.m */; };
+		EABD483F1946F95A00492B20 /* YPFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E51946F95A00492B20 /* YPFeedback.m */; };
+		EABD48401946F95A00492B20 /* YPFeedbackApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E71946F95A00492B20 /* YPFeedbackApi.m */; };
+		EABD48411946F95A00492B20 /* YPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E91946F95A00492B20 /* YPFile.m */; };
+		EABD48421946F95A00492B20 /* YPFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47EB1946F95A00492B20 /* YPFocus.m */; };
+		EABD48431946F95A00492B20 /* YPHomeAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47ED1946F95A00492B20 /* YPHomeAddress.m */; };
+		EABD48441946F95A00492B20 /* YPI18nString.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47EF1946F95A00492B20 /* YPI18nString.m */; };
+		EABD48451946F95A00492B20 /* YPLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F11946F95A00492B20 /* YPLoginApi.m */; };
+		EABD48461946F95A00492B20 /* YPMainEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F31946F95A00492B20 /* YPMainEvent.m */; };
+		EABD48471946F95A00492B20 /* YPNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F51946F95A00492B20 /* YPNotification.m */; };
+		EABD48481946F95A00492B20 /* YPNotificationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F71946F95A00492B20 /* YPNotificationsApi.m */; };
+		EABD48491946F95A00492B20 /* YPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F91946F95A00492B20 /* YPObject.m */; };
+		EABD484A1946F95A00492B20 /* YPObjectId.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47FB1946F95A00492B20 /* YPObjectId.m */; };
+		EABD484B1946F95A00492B20 /* YPOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47FD1946F95A00492B20 /* YPOrganization.m */; };
+		EABD484C1946F95A00492B20 /* YPOrganizationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47FF1946F95A00492B20 /* YPOrganizationsApi.m */; };
+		EABD484D1946F95A00492B20 /* YPPaymentCode.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48011946F95A00492B20 /* YPPaymentCode.m */; };
+		EABD484E1946F95A00492B20 /* YPPaymentcodesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48031946F95A00492B20 /* YPPaymentcodesApi.m */; };
+		EABD484F1946F95A00492B20 /* YPPingApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48051946F95A00492B20 /* YPPingApi.m */; };
+		EABD48501946F95A00492B20 /* YPProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48071946F95A00492B20 /* YPProfile.m */; };
+		EABD48511946F95A00492B20 /* YPProfilesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48091946F95A00492B20 /* YPProfilesApi.m */; };
+		EABD48521946F95A00492B20 /* YPRecurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD480B1946F95A00492B20 /* YPRecurrence.m */; };
+		EABD48531946F95A00492B20 /* YPRefDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD480D1946F95A00492B20 /* YPRefDoc.m */; };
+		EABD48541946F95A00492B20 /* YPRejectedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD480F1946F95A00492B20 /* YPRejectedActivity.m */; };
+		EABD48551946F95A00492B20 /* YPRejectedActivityPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48111946F95A00492B20 /* YPRejectedActivityPlan.m */; };
+		EABD48561946F95A00492B20 /* YPStarredActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48131946F95A00492B20 /* YPStarredActivity.m */; };
+		EABD48571946F95A00492B20 /* YPStatsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48151946F95A00492B20 /* YPStatsApi.m */; };
+		EABD48581946F95A00492B20 /* YPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48171946F95A00492B20 /* YPUser.m */; };
+		EABD48591946F95A00492B20 /* YPUsernameEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48191946F95A00492B20 /* YPUsernameEmail.m */; };
+		EABD485A1946F95A00492B20 /* YPUserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD481B1946F95A00492B20 /* YPUserPreferences.m */; };
+		EABD485B1946F95A00492B20 /* YPUsersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD481D1946F95A00492B20 /* YPUsersApi.m */; };
+		EABD485C1946F95A00492B20 /* YPWorkAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD481F1946F95A00492B20 /* YPWorkAddress.m */; };
+		EABD485E1946F97000492B20 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD485D1946F97000492B20 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EABD47921946F92800492B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EABD47611946F92800492B20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EABD47681946F92800492B20;
+			remoteInfo = YPLoginSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5159A749A730432CA2E880E2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD58A5C395D4C1B8ACB6310 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EABD47691946F92800492B20 /* YPLoginSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPLoginSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABD476C1946F92800492B20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EABD476E1946F92800492B20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EABD47701946F92800492B20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EABD47741946F92800492B20 /* YPLoginSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YPLoginSample-Info.plist"; sourceTree = "<group>"; };
+		EABD47761946F92800492B20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EABD47781946F92800492B20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EABD477A1946F92800492B20 /* YPLoginSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YPLoginSample-Prefix.pch"; sourceTree = "<group>"; };
+		EABD477B1946F92800492B20 /* YPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPAppDelegate.h; sourceTree = "<group>"; };
+		EABD477C1946F92800492B20 /* YPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPAppDelegate.m; sourceTree = "<group>"; };
+		EABD477F1946F92800492B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EABD47821946F92800492B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EABD47841946F92800492B20 /* YPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPViewController.h; sourceTree = "<group>"; };
+		EABD47851946F92800492B20 /* YPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPViewController.m; sourceTree = "<group>"; };
+		EABD47871946F92800492B20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EABD478D1946F92800492B20 /* YPLoginSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPLoginSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABD478E1946F92800492B20 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EABD47961946F92800492B20 /* YPLoginSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YPLoginSampleTests-Info.plist"; sourceTree = "<group>"; };
+		EABD47981946F92800492B20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EABD479A1946F92800492B20 /* YPLoginSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPLoginSampleTests.m; sourceTree = "<group>"; };
+		EABD47A61946F95A00492B20 /* YPActivitiesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivitiesApi.h; sourceTree = "<group>"; };
+		EABD47A71946F95A00492B20 /* YPActivitiesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivitiesApi.m; sourceTree = "<group>"; };
+		EABD47A81946F95A00492B20 /* YPActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivity.h; sourceTree = "<group>"; };
+		EABD47A91946F95A00492B20 /* YPActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivity.m; sourceTree = "<group>"; };
+		EABD47AA1946F95A00492B20 /* YPActivityOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityOffer.h; sourceTree = "<group>"; };
+		EABD47AB1946F95A00492B20 /* YPActivityOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityOffer.m; sourceTree = "<group>"; };
+		EABD47AC1946F95A00492B20 /* YPActivityoffersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityoffersApi.h; sourceTree = "<group>"; };
+		EABD47AD1946F95A00492B20 /* YPActivityoffersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityoffersApi.m; sourceTree = "<group>"; };
+		EABD47AE1946F95A00492B20 /* YPActivityPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityPlan.h; sourceTree = "<group>"; };
+		EABD47AF1946F95A00492B20 /* YPActivityPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityPlan.m; sourceTree = "<group>"; };
+		EABD47B01946F95A00492B20 /* YPActivityplansApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityplansApi.h; sourceTree = "<group>"; };
+		EABD47B11946F95A00492B20 /* YPActivityplansApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityplansApi.m; sourceTree = "<group>"; };
+		EABD47B21946F95A00492B20 /* YPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAddress.h; sourceTree = "<group>"; };
+		EABD47B31946F95A00492B20 /* YPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAddress.m; sourceTree = "<group>"; };
+		EABD47B41946F95A00492B20 /* YPAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAnswer.h; sourceTree = "<group>"; };
+		EABD47B51946F95A00492B20 /* YPAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAnswer.m; sourceTree = "<group>"; };
+		EABD47B61946F95A00492B20 /* YPApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPApiClient.h; sourceTree = "<group>"; };
+		EABD47B71946F95A00492B20 /* YPApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPApiClient.m; sourceTree = "<group>"; };
+		EABD47B81946F95A00492B20 /* YPAssessment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessment.h; sourceTree = "<group>"; };
+		EABD47B91946F95A00492B20 /* YPAssessment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessment.m; sourceTree = "<group>"; };
+		EABD47BA1946F95A00492B20 /* YPAssessmentQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentQuestion.h; sourceTree = "<group>"; };
+		EABD47BB1946F95A00492B20 /* YPAssessmentQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentQuestion.m; sourceTree = "<group>"; };
+		EABD47BC1946F95A00492B20 /* YPAssessmentResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentResult.h; sourceTree = "<group>"; };
+		EABD47BD1946F95A00492B20 /* YPAssessmentResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentResult.m; sourceTree = "<group>"; };
+		EABD47BE1946F95A00492B20 /* YPAssessmentResultAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentResultAnswer.h; sourceTree = "<group>"; };
+		EABD47BF1946F95A00492B20 /* YPAssessmentResultAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentResultAnswer.m; sourceTree = "<group>"; };
+		EABD47C01946F95A00492B20 /* YPAssessmentsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentsApi.h; sourceTree = "<group>"; };
+		EABD47C11946F95A00492B20 /* YPAssessmentsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentsApi.m; sourceTree = "<group>"; };
+		EABD47C21946F95A00492B20 /* YPCampaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCampaign.h; sourceTree = "<group>"; };
+		EABD47C31946F95A00492B20 /* YPCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCampaign.m; sourceTree = "<group>"; };
+		EABD47C41946F95A00492B20 /* YPCampaignsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCampaignsApi.h; sourceTree = "<group>"; };
+		EABD47C51946F95A00492B20 /* YPCampaignsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCampaignsApi.m; sourceTree = "<group>"; };
+		EABD47C61946F95A00492B20 /* YPCoachmessagesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCoachmessagesApi.h; sourceTree = "<group>"; };
+		EABD47C71946F95A00492B20 /* YPCoachmessagesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCoachmessagesApi.m; sourceTree = "<group>"; };
+		EABD47C81946F95A00492B20 /* YPComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPComment.h; sourceTree = "<group>"; };
+		EABD47C91946F95A00492B20 /* YPComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPComment.m; sourceTree = "<group>"; };
+		EABD47CA1946F95A00492B20 /* YPCommentsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCommentsApi.h; sourceTree = "<group>"; };
+		EABD47CB1946F95A00492B20 /* YPCommentsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCommentsApi.m; sourceTree = "<group>"; };
+		EABD47CC1946F95A00492B20 /* YPContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPContact.h; sourceTree = "<group>"; };
+		EABD47CD1946F95A00492B20 /* YPContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPContact.m; sourceTree = "<group>"; };
+		EABD47CE1946F95A00492B20 /* YPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDate.h; sourceTree = "<group>"; };
+		EABD47CF1946F95A00492B20 /* YPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDate.m; sourceTree = "<group>"; };
+		EABD47D01946F95A00492B20 /* YPDefaultUserWeekForScheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDefaultUserWeekForScheduling.h; sourceTree = "<group>"; };
+		EABD47D11946F95A00492B20 /* YPDefaultUserWeekForScheduling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDefaultUserWeekForScheduling.m; sourceTree = "<group>"; };
+		EABD47D21946F95A00492B20 /* YPDiaryentriesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDiaryentriesApi.h; sourceTree = "<group>"; };
+		EABD47D31946F95A00492B20 /* YPDiaryentriesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDiaryentriesApi.m; sourceTree = "<group>"; };
+		EABD47D41946F95A00492B20 /* YPDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDiaryEntry.h; sourceTree = "<group>"; };
+		EABD47D51946F95A00492B20 /* YPDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDiaryEntry.m; sourceTree = "<group>"; };
+		EABD47D61946F95A00492B20 /* YPEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEmail.h; sourceTree = "<group>"; };
+		EABD47D71946F95A00492B20 /* YPEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEmail.m; sourceTree = "<group>"; };
+		EABD47D81946F95A00492B20 /* YPEmailObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEmailObject.h; sourceTree = "<group>"; };
+		EABD47D91946F95A00492B20 /* YPEmailObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEmailObject.m; sourceTree = "<group>"; };
+		EABD47DA1946F95A00492B20 /* YPEndby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEndby.h; sourceTree = "<group>"; };
+		EABD47DB1946F95A00492B20 /* YPEndby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEndby.m; sourceTree = "<group>"; };
+		EABD47DC1946F95A00492B20 /* YPErrorApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPErrorApi.h; sourceTree = "<group>"; };
+		EABD47DD1946F95A00492B20 /* YPErrorApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPErrorApi.m; sourceTree = "<group>"; };
+		EABD47DE1946F95A00492B20 /* YPErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPErrorObject.h; sourceTree = "<group>"; };
+		EABD47DF1946F95A00492B20 /* YPErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPErrorObject.m; sourceTree = "<group>"; };
+		EABD47E01946F95A00492B20 /* YPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEvent.h; sourceTree = "<group>"; };
+		EABD47E11946F95A00492B20 /* YPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEvent.m; sourceTree = "<group>"; };
+		EABD47E21946F95A00492B20 /* YPException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPException.h; sourceTree = "<group>"; };
+		EABD47E31946F95A00492B20 /* YPException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPException.m; sourceTree = "<group>"; };
+		EABD47E41946F95A00492B20 /* YPFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFeedback.h; sourceTree = "<group>"; };
+		EABD47E51946F95A00492B20 /* YPFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFeedback.m; sourceTree = "<group>"; };
+		EABD47E61946F95A00492B20 /* YPFeedbackApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFeedbackApi.h; sourceTree = "<group>"; };
+		EABD47E71946F95A00492B20 /* YPFeedbackApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFeedbackApi.m; sourceTree = "<group>"; };
+		EABD47E81946F95A00492B20 /* YPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFile.h; sourceTree = "<group>"; };
+		EABD47E91946F95A00492B20 /* YPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFile.m; sourceTree = "<group>"; };
+		EABD47EA1946F95A00492B20 /* YPFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFocus.h; sourceTree = "<group>"; };
+		EABD47EB1946F95A00492B20 /* YPFocus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFocus.m; sourceTree = "<group>"; };
+		EABD47EC1946F95A00492B20 /* YPHomeAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeAddress.h; sourceTree = "<group>"; };
+		EABD47ED1946F95A00492B20 /* YPHomeAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeAddress.m; sourceTree = "<group>"; };
+		EABD47EE1946F95A00492B20 /* YPI18nString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPI18nString.h; sourceTree = "<group>"; };
+		EABD47EF1946F95A00492B20 /* YPI18nString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPI18nString.m; sourceTree = "<group>"; };
+		EABD47F01946F95A00492B20 /* YPLoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPLoginApi.h; sourceTree = "<group>"; };
+		EABD47F11946F95A00492B20 /* YPLoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPLoginApi.m; sourceTree = "<group>"; };
+		EABD47F21946F95A00492B20 /* YPMainEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPMainEvent.h; sourceTree = "<group>"; };
+		EABD47F31946F95A00492B20 /* YPMainEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMainEvent.m; sourceTree = "<group>"; };
+		EABD47F41946F95A00492B20 /* YPNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNotification.h; sourceTree = "<group>"; };
+		EABD47F51946F95A00492B20 /* YPNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNotification.m; sourceTree = "<group>"; };
+		EABD47F61946F95A00492B20 /* YPNotificationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNotificationsApi.h; sourceTree = "<group>"; };
+		EABD47F71946F95A00492B20 /* YPNotificationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNotificationsApi.m; sourceTree = "<group>"; };
+		EABD47F81946F95A00492B20 /* YPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPObject.h; sourceTree = "<group>"; };
+		EABD47F91946F95A00492B20 /* YPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPObject.m; sourceTree = "<group>"; };
+		EABD47FA1946F95A00492B20 /* YPObjectId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPObjectId.h; sourceTree = "<group>"; };
+		EABD47FB1946F95A00492B20 /* YPObjectId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPObjectId.m; sourceTree = "<group>"; };
+		EABD47FC1946F95A00492B20 /* YPOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPOrganization.h; sourceTree = "<group>"; };
+		EABD47FD1946F95A00492B20 /* YPOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPOrganization.m; sourceTree = "<group>"; };
+		EABD47FE1946F95A00492B20 /* YPOrganizationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPOrganizationsApi.h; sourceTree = "<group>"; };
+		EABD47FF1946F95A00492B20 /* YPOrganizationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPOrganizationsApi.m; sourceTree = "<group>"; };
+		EABD48001946F95A00492B20 /* YPPaymentCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPaymentCode.h; sourceTree = "<group>"; };
+		EABD48011946F95A00492B20 /* YPPaymentCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPaymentCode.m; sourceTree = "<group>"; };
+		EABD48021946F95A00492B20 /* YPPaymentcodesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPaymentcodesApi.h; sourceTree = "<group>"; };
+		EABD48031946F95A00492B20 /* YPPaymentcodesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPaymentcodesApi.m; sourceTree = "<group>"; };
+		EABD48041946F95A00492B20 /* YPPingApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPingApi.h; sourceTree = "<group>"; };
+		EABD48051946F95A00492B20 /* YPPingApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPingApi.m; sourceTree = "<group>"; };
+		EABD48061946F95A00492B20 /* YPProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPProfile.h; sourceTree = "<group>"; };
+		EABD48071946F95A00492B20 /* YPProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPProfile.m; sourceTree = "<group>"; };
+		EABD48081946F95A00492B20 /* YPProfilesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPProfilesApi.h; sourceTree = "<group>"; };
+		EABD48091946F95A00492B20 /* YPProfilesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPProfilesApi.m; sourceTree = "<group>"; };
+		EABD480A1946F95A00492B20 /* YPRecurrence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRecurrence.h; sourceTree = "<group>"; };
+		EABD480B1946F95A00492B20 /* YPRecurrence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRecurrence.m; sourceTree = "<group>"; };
+		EABD480C1946F95A00492B20 /* YPRefDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRefDoc.h; sourceTree = "<group>"; };
+		EABD480D1946F95A00492B20 /* YPRefDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRefDoc.m; sourceTree = "<group>"; };
+		EABD480E1946F95A00492B20 /* YPRejectedActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRejectedActivity.h; sourceTree = "<group>"; };
+		EABD480F1946F95A00492B20 /* YPRejectedActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRejectedActivity.m; sourceTree = "<group>"; };
+		EABD48101946F95A00492B20 /* YPRejectedActivityPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRejectedActivityPlan.h; sourceTree = "<group>"; };
+		EABD48111946F95A00492B20 /* YPRejectedActivityPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRejectedActivityPlan.m; sourceTree = "<group>"; };
+		EABD48121946F95A00492B20 /* YPStarredActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStarredActivity.h; sourceTree = "<group>"; };
+		EABD48131946F95A00492B20 /* YPStarredActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStarredActivity.m; sourceTree = "<group>"; };
+		EABD48141946F95A00492B20 /* YPStatsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStatsApi.h; sourceTree = "<group>"; };
+		EABD48151946F95A00492B20 /* YPStatsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStatsApi.m; sourceTree = "<group>"; };
+		EABD48161946F95A00492B20 /* YPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUser.h; sourceTree = "<group>"; };
+		EABD48171946F95A00492B20 /* YPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUser.m; sourceTree = "<group>"; };
+		EABD48181946F95A00492B20 /* YPUsernameEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUsernameEmail.h; sourceTree = "<group>"; };
+		EABD48191946F95A00492B20 /* YPUsernameEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUsernameEmail.m; sourceTree = "<group>"; };
+		EABD481A1946F95A00492B20 /* YPUserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUserPreferences.h; sourceTree = "<group>"; };
+		EABD481B1946F95A00492B20 /* YPUserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUserPreferences.m; sourceTree = "<group>"; };
+		EABD481C1946F95A00492B20 /* YPUsersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUsersApi.h; sourceTree = "<group>"; };
+		EABD481D1946F95A00492B20 /* YPUsersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUsersApi.m; sourceTree = "<group>"; };
+		EABD481E1946F95A00492B20 /* YPWorkAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPWorkAddress.h; sourceTree = "<group>"; };
+		EABD481F1946F95A00492B20 /* YPWorkAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPWorkAddress.m; sourceTree = "<group>"; };
+		EABD485D1946F97000492B20 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EABD47661946F92800492B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD485E1946F97000492B20 /* SystemConfiguration.framework in Frameworks */,
+				EABD476F1946F92800492B20 /* CoreGraphics.framework in Frameworks */,
+				EABD47711946F92800492B20 /* UIKit.framework in Frameworks */,
+				EABD476D1946F92800492B20 /* Foundation.framework in Frameworks */,
+				1BB210CB97C6448882332D33 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABD478A1946F92800492B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD478F1946F92800492B20 /* XCTest.framework in Frameworks */,
+				EABD47911946F92800492B20 /* UIKit.framework in Frameworks */,
+				EABD47901946F92800492B20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EABD47601946F92800492B20 = {
+			isa = PBXGroup;
+			children = (
+				EABD47721946F92800492B20 /* YPLoginSample */,
+				EABD47941946F92800492B20 /* YPLoginSampleTests */,
+				EABD476B1946F92800492B20 /* Frameworks */,
+				EABD476A1946F92800492B20 /* Products */,
+				CBD58A5C395D4C1B8ACB6310 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		EABD476A1946F92800492B20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EABD47691946F92800492B20 /* YPLoginSample.app */,
+				EABD478D1946F92800492B20 /* YPLoginSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EABD476B1946F92800492B20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EABD485D1946F97000492B20 /* SystemConfiguration.framework */,
+				EABD476C1946F92800492B20 /* Foundation.framework */,
+				EABD476E1946F92800492B20 /* CoreGraphics.framework */,
+				EABD47701946F92800492B20 /* UIKit.framework */,
+				EABD478E1946F92800492B20 /* XCTest.framework */,
+				5159A749A730432CA2E880E2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EABD47721946F92800492B20 /* YPLoginSample */ = {
+			isa = PBXGroup;
+			children = (
+				EABD47A51946F95A00492B20 /* src */,
+				EABD477B1946F92800492B20 /* YPAppDelegate.h */,
+				EABD477C1946F92800492B20 /* YPAppDelegate.m */,
+				EABD477E1946F92800492B20 /* Main_iPhone.storyboard */,
+				EABD47811946F92800492B20 /* Main_iPad.storyboard */,
+				EABD47841946F92800492B20 /* YPViewController.h */,
+				EABD47851946F92800492B20 /* YPViewController.m */,
+				EABD47871946F92800492B20 /* Images.xcassets */,
+				EABD47731946F92800492B20 /* Supporting Files */,
+			);
+			path = YPLoginSample;
+			sourceTree = "<group>";
+		};
+		EABD47731946F92800492B20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EABD47741946F92800492B20 /* YPLoginSample-Info.plist */,
+				EABD47751946F92800492B20 /* InfoPlist.strings */,
+				EABD47781946F92800492B20 /* main.m */,
+				EABD477A1946F92800492B20 /* YPLoginSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EABD47941946F92800492B20 /* YPLoginSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EABD479A1946F92800492B20 /* YPLoginSampleTests.m */,
+				EABD47951946F92800492B20 /* Supporting Files */,
+			);
+			path = YPLoginSampleTests;
+			sourceTree = "<group>";
+		};
+		EABD47951946F92800492B20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EABD47961946F92800492B20 /* YPLoginSampleTests-Info.plist */,
+				EABD47971946F92800492B20 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EABD47A51946F95A00492B20 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EABD47A61946F95A00492B20 /* YPActivitiesApi.h */,
+				EABD47A71946F95A00492B20 /* YPActivitiesApi.m */,
+				EABD47A81946F95A00492B20 /* YPActivity.h */,
+				EABD47A91946F95A00492B20 /* YPActivity.m */,
+				EABD47AA1946F95A00492B20 /* YPActivityOffer.h */,
+				EABD47AB1946F95A00492B20 /* YPActivityOffer.m */,
+				EABD47AC1946F95A00492B20 /* YPActivityoffersApi.h */,
+				EABD47AD1946F95A00492B20 /* YPActivityoffersApi.m */,
+				EABD47AE1946F95A00492B20 /* YPActivityPlan.h */,
+				EABD47AF1946F95A00492B20 /* YPActivityPlan.m */,
+				EABD47B01946F95A00492B20 /* YPActivityplansApi.h */,
+				EABD47B11946F95A00492B20 /* YPActivityplansApi.m */,
+				EABD47B21946F95A00492B20 /* YPAddress.h */,
+				EABD47B31946F95A00492B20 /* YPAddress.m */,
+				EABD47B41946F95A00492B20 /* YPAnswer.h */,
+				EABD47B51946F95A00492B20 /* YPAnswer.m */,
+				EABD47B61946F95A00492B20 /* YPApiClient.h */,
+				EABD47B71946F95A00492B20 /* YPApiClient.m */,
+				EABD47B81946F95A00492B20 /* YPAssessment.h */,
+				EABD47B91946F95A00492B20 /* YPAssessment.m */,
+				EABD47BA1946F95A00492B20 /* YPAssessmentQuestion.h */,
+				EABD47BB1946F95A00492B20 /* YPAssessmentQuestion.m */,
+				EABD47BC1946F95A00492B20 /* YPAssessmentResult.h */,
+				EABD47BD1946F95A00492B20 /* YPAssessmentResult.m */,
+				EABD47BE1946F95A00492B20 /* YPAssessmentResultAnswer.h */,
+				EABD47BF1946F95A00492B20 /* YPAssessmentResultAnswer.m */,
+				EABD47C01946F95A00492B20 /* YPAssessmentsApi.h */,
+				EABD47C11946F95A00492B20 /* YPAssessmentsApi.m */,
+				EABD47C21946F95A00492B20 /* YPCampaign.h */,
+				EABD47C31946F95A00492B20 /* YPCampaign.m */,
+				EABD47C41946F95A00492B20 /* YPCampaignsApi.h */,
+				EABD47C51946F95A00492B20 /* YPCampaignsApi.m */,
+				EABD47C61946F95A00492B20 /* YPCoachmessagesApi.h */,
+				EABD47C71946F95A00492B20 /* YPCoachmessagesApi.m */,
+				EABD47C81946F95A00492B20 /* YPComment.h */,
+				EABD47C91946F95A00492B20 /* YPComment.m */,
+				EABD47CA1946F95A00492B20 /* YPCommentsApi.h */,
+				EABD47CB1946F95A00492B20 /* YPCommentsApi.m */,
+				EABD47CC1946F95A00492B20 /* YPContact.h */,
+				EABD47CD1946F95A00492B20 /* YPContact.m */,
+				EABD47CE1946F95A00492B20 /* YPDate.h */,
+				EABD47CF1946F95A00492B20 /* YPDate.m */,
+				EABD47D01946F95A00492B20 /* YPDefaultUserWeekForScheduling.h */,
+				EABD47D11946F95A00492B20 /* YPDefaultUserWeekForScheduling.m */,
+				EABD47D21946F95A00492B20 /* YPDiaryentriesApi.h */,
+				EABD47D31946F95A00492B20 /* YPDiaryentriesApi.m */,
+				EABD47D41946F95A00492B20 /* YPDiaryEntry.h */,
+				EABD47D51946F95A00492B20 /* YPDiaryEntry.m */,
+				EABD47D61946F95A00492B20 /* YPEmail.h */,
+				EABD47D71946F95A00492B20 /* YPEmail.m */,
+				EABD47D81946F95A00492B20 /* YPEmailObject.h */,
+				EABD47D91946F95A00492B20 /* YPEmailObject.m */,
+				EABD47DA1946F95A00492B20 /* YPEndby.h */,
+				EABD47DB1946F95A00492B20 /* YPEndby.m */,
+				EABD47DC1946F95A00492B20 /* YPErrorApi.h */,
+				EABD47DD1946F95A00492B20 /* YPErrorApi.m */,
+				EABD47DE1946F95A00492B20 /* YPErrorObject.h */,
+				EABD47DF1946F95A00492B20 /* YPErrorObject.m */,
+				EABD47E01946F95A00492B20 /* YPEvent.h */,
+				EABD47E11946F95A00492B20 /* YPEvent.m */,
+				EABD47E21946F95A00492B20 /* YPException.h */,
+				EABD47E31946F95A00492B20 /* YPException.m */,
+				EABD47E41946F95A00492B20 /* YPFeedback.h */,
+				EABD47E51946F95A00492B20 /* YPFeedback.m */,
+				EABD47E61946F95A00492B20 /* YPFeedbackApi.h */,
+				EABD47E71946F95A00492B20 /* YPFeedbackApi.m */,
+				EABD47E81946F95A00492B20 /* YPFile.h */,
+				EABD47E91946F95A00492B20 /* YPFile.m */,
+				EABD47EA1946F95A00492B20 /* YPFocus.h */,
+				EABD47EB1946F95A00492B20 /* YPFocus.m */,
+				EABD47EC1946F95A00492B20 /* YPHomeAddress.h */,
+				EABD47ED1946F95A00492B20 /* YPHomeAddress.m */,
+				EABD47EE1946F95A00492B20 /* YPI18nString.h */,
+				EABD47EF1946F95A00492B20 /* YPI18nString.m */,
+				EABD47F01946F95A00492B20 /* YPLoginApi.h */,
+				EABD47F11946F95A00492B20 /* YPLoginApi.m */,
+				EABD47F21946F95A00492B20 /* YPMainEvent.h */,
+				EABD47F31946F95A00492B20 /* YPMainEvent.m */,
+				EABD47F41946F95A00492B20 /* YPNotification.h */,
+				EABD47F51946F95A00492B20 /* YPNotification.m */,
+				EABD47F61946F95A00492B20 /* YPNotificationsApi.h */,
+				EABD47F71946F95A00492B20 /* YPNotificationsApi.m */,
+				EABD47F81946F95A00492B20 /* YPObject.h */,
+				EABD47F91946F95A00492B20 /* YPObject.m */,
+				EABD47FA1946F95A00492B20 /* YPObjectId.h */,
+				EABD47FB1946F95A00492B20 /* YPObjectId.m */,
+				EABD47FC1946F95A00492B20 /* YPOrganization.h */,
+				EABD47FD1946F95A00492B20 /* YPOrganization.m */,
+				EABD47FE1946F95A00492B20 /* YPOrganizationsApi.h */,
+				EABD47FF1946F95A00492B20 /* YPOrganizationsApi.m */,
+				EABD48001946F95A00492B20 /* YPPaymentCode.h */,
+				EABD48011946F95A00492B20 /* YPPaymentCode.m */,
+				EABD48021946F95A00492B20 /* YPPaymentcodesApi.h */,
+				EABD48031946F95A00492B20 /* YPPaymentcodesApi.m */,
+				EABD48041946F95A00492B20 /* YPPingApi.h */,
+				EABD48051946F95A00492B20 /* YPPingApi.m */,
+				EABD48061946F95A00492B20 /* YPProfile.h */,
+				EABD48071946F95A00492B20 /* YPProfile.m */,
+				EABD48081946F95A00492B20 /* YPProfilesApi.h */,
+				EABD48091946F95A00492B20 /* YPProfilesApi.m */,
+				EABD480A1946F95A00492B20 /* YPRecurrence.h */,
+				EABD480B1946F95A00492B20 /* YPRecurrence.m */,
+				EABD480C1946F95A00492B20 /* YPRefDoc.h */,
+				EABD480D1946F95A00492B20 /* YPRefDoc.m */,
+				EABD480E1946F95A00492B20 /* YPRejectedActivity.h */,
+				EABD480F1946F95A00492B20 /* YPRejectedActivity.m */,
+				EABD48101946F95A00492B20 /* YPRejectedActivityPlan.h */,
+				EABD48111946F95A00492B20 /* YPRejectedActivityPlan.m */,
+				EABD48121946F95A00492B20 /* YPStarredActivity.h */,
+				EABD48131946F95A00492B20 /* YPStarredActivity.m */,
+				EABD48141946F95A00492B20 /* YPStatsApi.h */,
+				EABD48151946F95A00492B20 /* YPStatsApi.m */,
+				EABD48161946F95A00492B20 /* YPUser.h */,
+				EABD48171946F95A00492B20 /* YPUser.m */,
+				EABD48181946F95A00492B20 /* YPUsernameEmail.h */,
+				EABD48191946F95A00492B20 /* YPUsernameEmail.m */,
+				EABD481A1946F95A00492B20 /* YPUserPreferences.h */,
+				EABD481B1946F95A00492B20 /* YPUserPreferences.m */,
+				EABD481C1946F95A00492B20 /* YPUsersApi.h */,
+				EABD481D1946F95A00492B20 /* YPUsersApi.m */,
+				EABD481E1946F95A00492B20 /* YPWorkAddress.h */,
+				EABD481F1946F95A00492B20 /* YPWorkAddress.m */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EABD47681946F92800492B20 /* YPLoginSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABD479E1946F92800492B20 /* Build configuration list for PBXNativeTarget "YPLoginSample" */;
+			buildPhases = (
+				6420A2474554423584C882BC /* Check Pods Manifest.lock */,
+				EABD47651946F92800492B20 /* Sources */,
+				EABD47661946F92800492B20 /* Frameworks */,
+				EABD47671946F92800492B20 /* Resources */,
+				635C5DF8FF134389B70997B1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPLoginSample;
+			productName = YPLoginSample;
+			productReference = EABD47691946F92800492B20 /* YPLoginSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EABD478C1946F92800492B20 /* YPLoginSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABD47A11946F92800492B20 /* Build configuration list for PBXNativeTarget "YPLoginSampleTests" */;
+			buildPhases = (
+				EABD47891946F92800492B20 /* Sources */,
+				EABD478A1946F92800492B20 /* Frameworks */,
+				EABD478B1946F92800492B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EABD47931946F92800492B20 /* PBXTargetDependency */,
+			);
+			name = YPLoginSampleTests;
+			productName = YPLoginSampleTests;
+			productReference = EABD478D1946F92800492B20 /* YPLoginSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EABD47611946F92800492B20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = YouPers;
+				TargetAttributes = {
+					EABD478C1946F92800492B20 = {
+						TestTargetID = EABD47681946F92800492B20;
+					};
+				};
+			};
+			buildConfigurationList = EABD47641946F92800492B20 /* Build configuration list for PBXProject "YPLoginSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EABD47601946F92800492B20;
+			productRefGroup = EABD476A1946F92800492B20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EABD47681946F92800492B20 /* YPLoginSample */,
+				EABD478C1946F92800492B20 /* YPLoginSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EABD47671946F92800492B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD47831946F92800492B20 /* Main_iPad.storyboard in Resources */,
+				EABD47881946F92800492B20 /* Images.xcassets in Resources */,
+				EABD47801946F92800492B20 /* Main_iPhone.storyboard in Resources */,
+				EABD47771946F92800492B20 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABD478B1946F92800492B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD47991946F92800492B20 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		635C5DF8FF134389B70997B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6420A2474554423584C882BC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EABD47651946F92800492B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD48571946F95A00492B20 /* YPStatsApi.m in Sources */,
+				EABD482A1946F95A00492B20 /* YPAssessmentQuestion.m in Sources */,
+				EABD48211946F95A00492B20 /* YPActivity.m in Sources */,
+				EABD483E1946F95A00492B20 /* YPException.m in Sources */,
+				EABD48341946F95A00492B20 /* YPDate.m in Sources */,
+				EABD484A1946F95A00492B20 /* YPObjectId.m in Sources */,
+				EABD48261946F95A00492B20 /* YPAddress.m in Sources */,
+				EABD483B1946F95A00492B20 /* YPErrorApi.m in Sources */,
+				EABD48431946F95A00492B20 /* YPHomeAddress.m in Sources */,
+				EABD482C1946F95A00492B20 /* YPAssessmentResultAnswer.m in Sources */,
+				EABD48371946F95A00492B20 /* YPDiaryEntry.m in Sources */,
+				EABD484C1946F95A00492B20 /* YPOrganizationsApi.m in Sources */,
+				EABD48441946F95A00492B20 /* YPI18nString.m in Sources */,
+				EABD482F1946F95A00492B20 /* YPCampaignsApi.m in Sources */,
+				EABD48451946F95A00492B20 /* YPLoginApi.m in Sources */,
+				EABD48521946F95A00492B20 /* YPRecurrence.m in Sources */,
+				EABD48591946F95A00492B20 /* YPUsernameEmail.m in Sources */,
+				EABD48481946F95A00492B20 /* YPNotificationsApi.m in Sources */,
+				EABD48231946F95A00492B20 /* YPActivityoffersApi.m in Sources */,
+				EABD48251946F95A00492B20 /* YPActivityplansApi.m in Sources */,
+				EABD48581946F95A00492B20 /* YPUser.m in Sources */,
+				EABD48201946F95A00492B20 /* YPActivitiesApi.m in Sources */,
+				EABD48411946F95A00492B20 /* YPFile.m in Sources */,
+				EABD485B1946F95A00492B20 /* YPUsersApi.m in Sources */,
+				EABD48331946F95A00492B20 /* YPContact.m in Sources */,
+				EABD48561946F95A00492B20 /* YPStarredActivity.m in Sources */,
+				EABD48221946F95A00492B20 /* YPActivityOffer.m in Sources */,
+				EABD485A1946F95A00492B20 /* YPUserPreferences.m in Sources */,
+				EABD48511946F95A00492B20 /* YPProfilesApi.m in Sources */,
+				EABD484D1946F95A00492B20 /* YPPaymentCode.m in Sources */,
+				EABD48421946F95A00492B20 /* YPFocus.m in Sources */,
+				EABD48401946F95A00492B20 /* YPFeedbackApi.m in Sources */,
+				EABD48501946F95A00492B20 /* YPProfile.m in Sources */,
+				EABD48541946F95A00492B20 /* YPRejectedActivity.m in Sources */,
+				EABD48321946F95A00492B20 /* YPCommentsApi.m in Sources */,
+				EABD484F1946F95A00492B20 /* YPPingApi.m in Sources */,
+				EABD48311946F95A00492B20 /* YPComment.m in Sources */,
+				EABD48241946F95A00492B20 /* YPActivityPlan.m in Sources */,
+				EABD484E1946F95A00492B20 /* YPPaymentcodesApi.m in Sources */,
+				EABD483F1946F95A00492B20 /* YPFeedback.m in Sources */,
+				EABD48391946F95A00492B20 /* YPEmailObject.m in Sources */,
+				EABD47861946F92800492B20 /* YPViewController.m in Sources */,
+				EABD482D1946F95A00492B20 /* YPAssessmentsApi.m in Sources */,
+				EABD48381946F95A00492B20 /* YPEmail.m in Sources */,
+				EABD483D1946F95A00492B20 /* YPEvent.m in Sources */,
+				EABD483C1946F95A00492B20 /* YPErrorObject.m in Sources */,
+				EABD48301946F95A00492B20 /* YPCoachmessagesApi.m in Sources */,
+				EABD48471946F95A00492B20 /* YPNotification.m in Sources */,
+				EABD484B1946F95A00492B20 /* YPOrganization.m in Sources */,
+				EABD48291946F95A00492B20 /* YPAssessment.m in Sources */,
+				EABD482E1946F95A00492B20 /* YPCampaign.m in Sources */,
+				EABD48271946F95A00492B20 /* YPAnswer.m in Sources */,
+				EABD48491946F95A00492B20 /* YPObject.m in Sources */,
+				EABD48531946F95A00492B20 /* YPRefDoc.m in Sources */,
+				EABD48551946F95A00492B20 /* YPRejectedActivityPlan.m in Sources */,
+				EABD483A1946F95A00492B20 /* YPEndby.m in Sources */,
+				EABD47791946F92800492B20 /* main.m in Sources */,
+				EABD48461946F95A00492B20 /* YPMainEvent.m in Sources */,
+				EABD482B1946F95A00492B20 /* YPAssessmentResult.m in Sources */,
+				EABD48361946F95A00492B20 /* YPDiaryentriesApi.m in Sources */,
+				EABD485C1946F95A00492B20 /* YPWorkAddress.m in Sources */,
+				EABD48281946F95A00492B20 /* YPApiClient.m in Sources */,
+				EABD48351946F95A00492B20 /* YPDefaultUserWeekForScheduling.m in Sources */,
+				EABD477D1946F92800492B20 /* YPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABD47891946F92800492B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABD479B1946F92800492B20 /* YPLoginSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EABD47931946F92800492B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EABD47681946F92800492B20 /* YPLoginSample */;
+			targetProxy = EABD47921946F92800492B20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EABD47751946F92800492B20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABD47761946F92800492B20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EABD477E1946F92800492B20 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABD477F1946F92800492B20 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EABD47811946F92800492B20 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABD47821946F92800492B20 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EABD47971946F92800492B20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABD47981946F92800492B20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EABD479C1946F92800492B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EABD479D1946F92800492B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EABD479F1946F92800492B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD58A5C395D4C1B8ACB6310 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YPLoginSample/YPLoginSample-Prefix.pch";
+				INFOPLIST_FILE = "YPLoginSample/YPLoginSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EABD47A01946F92800492B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD58A5C395D4C1B8ACB6310 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YPLoginSample/YPLoginSample-Prefix.pch";
+				INFOPLIST_FILE = "YPLoginSample/YPLoginSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EABD47A21946F92800492B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YPLoginSample.app/YPLoginSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YPLoginSample/YPLoginSample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YPLoginSampleTests/YPLoginSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EABD47A31946F92800492B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YPLoginSample.app/YPLoginSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YPLoginSample/YPLoginSample-Prefix.pch";
+				INFOPLIST_FILE = "YPLoginSampleTests/YPLoginSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EABD47641946F92800492B20 /* Build configuration list for PBXProject "YPLoginSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABD479C1946F92800492B20 /* Debug */,
+				EABD479D1946F92800492B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EABD479E1946F92800492B20 /* Build configuration list for PBXNativeTarget "YPLoginSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABD479F1946F92800492B20 /* Debug */,
+				EABD47A01946F92800492B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EABD47A11946F92800492B20 /* Build configuration list for PBXNativeTarget "YPLoginSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABD47A21946F92800492B20 /* Debug */,
+				EABD47A31946F92800492B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EABD47611946F92800492B20 /* Project object */;
+}

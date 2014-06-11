@@ -42,9 +42,19 @@
 
             if([(NSArray*)questions_dict count] > 0)
             {
+            	YPAssessmentQuestion* d;
+            	
                 for (NSDictionary* dict in (NSArray*)questions_dict)
                 {
-                    YPAssessmentQuestion* d = [[YPAssessmentQuestion alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPAssessmentQuestion alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPAssessmentQuestion alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 

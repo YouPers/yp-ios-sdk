@@ -41,9 +41,19 @@
 
             if([(NSArray*)exceptions_dict count] > 0)
             {
+            	YPException* d;
+            	
                 for (NSDictionary* dict in (NSArray*)exceptions_dict)
                 {
-                    YPException* d = [[YPException alloc] initWithValues:dict];
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPException alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPException alloc] initWithValues:dict];
+                    }
+                    
                     [objs addObject:d];
                 }
 
