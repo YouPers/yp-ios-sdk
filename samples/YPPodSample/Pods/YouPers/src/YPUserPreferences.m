@@ -71,19 +71,9 @@
 
             if([(NSArray*)focus_dict count] > 0)
             {
-            	YPFocus* d;
-            	
                 for (NSDictionary* dict in (NSArray*)focus_dict)
                 {
-                    if([dict isKindOfClass:[NSString class]])
-                    {
-                    	d = [[YPFocus alloc] initWithObjectId:(NSString*)dict];
-                    }
-                    else
-                    {
-                    	d = [[YPFocus alloc] initWithValues:dict];
-                    }
-                    
+                    YPFocus* d = [[YPFocus alloc] initWithValues:dict];
                     [objs addObject:d];
                 }
 
@@ -105,19 +95,9 @@
 
             if([(NSArray*)starredActivities_dict count] > 0)
             {
-            	YPStarredActivity* d;
-            	
                 for (NSDictionary* dict in (NSArray*)starredActivities_dict)
                 {
-                    if([dict isKindOfClass:[NSString class]])
-                    {
-                    	d = [[YPStarredActivity alloc] initWithObjectId:(NSString*)dict];
-                    }
-                    else
-                    {
-                    	d = [[YPStarredActivity alloc] initWithValues:dict];
-                    }
-                    
+                    YPStarredActivity* d = [[YPStarredActivity alloc] initWithValues:dict];
                     [objs addObject:d];
                 }
 
@@ -139,19 +119,9 @@
 
             if([(NSArray*)rejectedActivities_dict count] > 0)
             {
-            	YPRejectedActivity* d;
-            	
                 for (NSDictionary* dict in (NSArray*)rejectedActivities_dict)
                 {
-                    if([dict isKindOfClass:[NSString class]])
-                    {
-                    	d = [[YPRejectedActivity alloc] initWithObjectId:(NSString*)dict];
-                    }
-                    else
-                    {
-                    	d = [[YPRejectedActivity alloc] initWithValues:dict];
-                    }
-                    
+                    YPRejectedActivity* d = [[YPRejectedActivity alloc] initWithValues:dict];
                     [objs addObject:d];
                 }
 
@@ -173,19 +143,9 @@
 
             if([(NSArray*)rejectedActivityPlans_dict count] > 0)
             {
-            	YPRejectedActivityPlan* d;
-            	
                 for (NSDictionary* dict in (NSArray*)rejectedActivityPlans_dict)
                 {
-                    if([dict isKindOfClass:[NSString class]])
-                    {
-                    	d = [[YPRejectedActivityPlan alloc] initWithObjectId:(NSString*)dict];
-                    }
-                    else
-                    {
-                    	d = [[YPRejectedActivityPlan alloc] initWithValues:dict];
-                    }
-                    
+                    YPRejectedActivityPlan* d = [[YPRejectedActivityPlan alloc] initWithValues:dict];
                     [objs addObject:d];
                 }
 

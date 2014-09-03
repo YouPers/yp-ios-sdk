@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "YPPaymentCode.h"
 
+#import "YPError.h"
 
 @interface YPPaymentcodesApi: NSObject
 
@@ -16,7 +17,7 @@
  @param body payment code values
  */
 -(NSNumber*) generatePaymentCodeWithCompletionBlock:(YPPaymentCode*) body 
-        completionHandler: (void (^)(YPPaymentCode* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPPaymentCode* output, YPError* error))completionBlock;
 
 /**
 
@@ -35,7 +36,7 @@ Use with caution, it may impact performance!
         filter:(NSString*) filter 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -44,7 +45,7 @@ Use with caution, it may impact performance!
  @param body payment code
  */
 -(NSNumber*) validatePaymentCodeWithCompletionBlock:(NSString*) body 
-        completionHandler: (void (^)(NSString* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSString* output, YPError* error))completionBlock;
 
 /**
 
@@ -53,6 +54,6 @@ Use with caution, it may impact performance!
  @param body payment code
  */
 -(NSNumber*) redeemPaymentCodeWithCompletionBlock:(NSString*) body 
-        completionHandler: (void (^)(NSString* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSString* output, YPError* error))completionBlock;
 
 @end

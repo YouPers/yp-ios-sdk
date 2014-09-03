@@ -2,29 +2,37 @@
 
 @implementation YPObjectId
 
+-(id)_id: (NSString*) _id
+{
+    __id = _id;
+
+     return self;
+}
+
 - (id) initWithValues:(NSDictionary*)dict
 {
-    _isLoaded = TRUE;
-    return self;
-}
-
-- (NSDictionary*) asDictionary{
-    return [[NSDictionary alloc] init];
-}
-
-- (NSString*)description {
-    return [NSString stringWithFormat:@"%@ %@", [super description], [self asDictionary]];
-}
-
--(id) initWithObjectId:(NSString*)objectId
-{
-    self = [super init];
+    self = [super initWithValues:dict];
     if(self) {
-        _isLoaded = FALSE;
-        __idObj = objectId;
+        __id = dict[@"id"];
     }
-
+    
+        //_isLoaded = TRUE;
     return self;
 }
+
+-(NSDictionary*)asDictionary
+{
+    NSMutableDictionary* dict = [[NSMutableDictionary alloc] init];
+    if(__id != nil) dict[@"id"] = __id ;
+    
+    NSDictionary* output = [dict copy];
+    return output;
+}
+
+- (NSString*)get_idValue
+{
+    return __id;
+}
+
 
 @end

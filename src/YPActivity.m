@@ -4,41 +4,35 @@
 @implementation YPActivity
 
 -(id)_id: (NSString*) _id
-    titleI18n: (YPI18nString*) titleI18n
-    descriptionI18n: (YPI18nString*) descriptionI18n
-    textI18n: (YPI18nString*) textI18n
+    mainEvent: (YPMainEvent*) mainEvent
+    owner: (YPUser*) owner
+    idea: (YPIdea*) idea
+    joiningUsers: (NSArray*) joiningUsers
+    title: (NSString*) title
+    text: (NSString*) text
     number: (NSString*) number
-    source: (NSString*) source
-    author: (YPUser*) author
+    location: (NSString*) location
+    executionType: (NSString*) executionType
+    status: (NSString*) status
     campaign: (YPCampaign*) campaign
-    defaultfrequency: (NSString*) defaultfrequency
-    defaultexecutiontype: (NSString*) defaultexecutiontype
-    defaultvisibility: (NSString*) defaultvisibility
-    defaultduration: (NSNumber*) defaultduration
-    topics: (NSArray*) topics
-    fields: (NSArray*) fields
-    qualityFactor: (NSNumber*) qualityFactor
-    recWeights: (NSString*) recWeights
+    deletionReason: (NSString*) deletionReason
     updated: (YPDate*) updated
     created: (YPDate*) created
 
 {
     __id = _id;
-    _titleI18n = titleI18n;
-    _descriptionI18n = descriptionI18n;
-    _textI18n = textI18n;
+    _mainEvent = mainEvent;
+    _owner = owner;
+    _idea = idea;
+    _joiningUsers = joiningUsers;
+    _title = title;
+    _text = text;
     _number = number;
-    _source = source;
-    _author = author;
+    _location = location;
+    _executionType = executionType;
+    _status = status;
     _campaign = campaign;
-    _defaultfrequency = defaultfrequency;
-    _defaultexecutiontype = defaultexecutiontype;
-    _defaultvisibility = defaultvisibility;
-    _defaultduration = defaultduration;
-    _topics = topics;
-    _fields = fields;
-    _qualityFactor = qualityFactor;
-    _recWeights = recWeights;
+    _deletionReason = deletionReason;
     _updated = updated;
     _created = created;
     return self;
@@ -49,57 +43,83 @@
     self = [super initWithValues:dict];
     if(self) {
     __id = dict[@"id"];
-    id titleI18n_dict = dict[@"titleI18n"];
-        if(titleI18n_dict != nil)
+    id mainEvent_dict = dict[@"mainEvent"];
+        if(mainEvent_dict != nil)
         {
-            if([titleI18n_dict isKindOfClass:[NSString class]])
+            if([mainEvent_dict isKindOfClass:[NSString class]])
             {
-                _titleI18n = [[YPI18nString alloc]initWithObjectId:titleI18n_dict];
+                _mainEvent = [[YPMainEvent alloc]initWithObjectId:mainEvent_dict];
             }
             else
             {
-                _titleI18n = [[YPI18nString alloc]initWithValues:titleI18n_dict];
+                _mainEvent = [[YPMainEvent alloc]initWithValues:mainEvent_dict];
             }
         }
-        id descriptionI18n_dict = dict[@"descriptionI18n"];
-        if(descriptionI18n_dict != nil)
+        id owner_dict = dict[@"owner"];
+        if(owner_dict != nil)
         {
-            if([descriptionI18n_dict isKindOfClass:[NSString class]])
+            if([owner_dict isKindOfClass:[NSString class]])
             {
-                _descriptionI18n = [[YPI18nString alloc]initWithObjectId:descriptionI18n_dict];
+                _owner = [[YPUser alloc]initWithObjectId:owner_dict];
             }
             else
             {
-                _descriptionI18n = [[YPI18nString alloc]initWithValues:descriptionI18n_dict];
+                _owner = [[YPUser alloc]initWithValues:owner_dict];
             }
         }
-        id textI18n_dict = dict[@"textI18n"];
-        if(textI18n_dict != nil)
+        id idea_dict = dict[@"idea"];
+        if(idea_dict != nil)
         {
-            if([textI18n_dict isKindOfClass:[NSString class]])
+            if([idea_dict isKindOfClass:[NSString class]])
             {
-                _textI18n = [[YPI18nString alloc]initWithObjectId:textI18n_dict];
+                _idea = [[YPIdea alloc]initWithObjectId:idea_dict];
             }
             else
             {
-                _textI18n = [[YPI18nString alloc]initWithValues:textI18n_dict];
+                _idea = [[YPIdea alloc]initWithValues:idea_dict];
             }
         }
-        _number = dict[@"number"];
-    _source = dict[@"source"];
-    id author_dict = dict[@"author"];
-        if(author_dict != nil)
+        id joiningUsers_dict = dict[@"joiningUsers"];
+        if([joiningUsers_dict isKindOfClass:[NSArray class]])
         {
-            if([author_dict isKindOfClass:[NSString class]])
+            NSMutableArray * objs = [[NSMutableArray alloc] initWithCapacity:[(NSArray*)joiningUsers_dict count]];
+
+            if([(NSArray*)joiningUsers_dict count] > 0)
             {
-                _author = [[YPUser alloc]initWithObjectId:author_dict];
+            	YPUser* d;
+            	
+                for (NSDictionary* dict in (NSArray*)joiningUsers_dict)
+                {
+                    if([dict isKindOfClass:[NSString class]])
+                    {
+                    	d = [[YPUser alloc] initWithObjectId:(NSString*)dict];
+                    }
+                    else
+                    {
+                    	d = [[YPUser alloc] initWithValues:dict];
+                    }
+                    
+                    [objs addObject:d];
+                }
+
+                _joiningUsers = [[NSArray alloc] initWithArray:objs];
             }
             else
             {
-                _author = [[YPUser alloc]initWithValues:author_dict];
+                _joiningUsers = [[NSArray alloc] init];
             }
         }
-        id campaign_dict = dict[@"campaign"];
+        else
+        {
+            _joiningUsers = [[NSArray alloc] init];
+        }
+        _title = dict[@"title"];
+    _text = dict[@"text"];
+    _number = dict[@"number"];
+    _location = dict[@"location"];
+    _executionType = dict[@"executionType"];
+    _status = dict[@"status"];
+    id campaign_dict = dict[@"campaign"];
         if(campaign_dict != nil)
         {
             if([campaign_dict isKindOfClass:[NSString class]])
@@ -111,14 +131,7 @@
                 _campaign = [[YPCampaign alloc]initWithValues:campaign_dict];
             }
         }
-        _defaultfrequency = dict[@"defaultfrequency"];
-    _defaultexecutiontype = dict[@"defaultexecutiontype"];
-    _defaultvisibility = dict[@"defaultvisibility"];
-    _defaultduration = dict[@"defaultduration"];
-    _topics = dict[@"topics"];
-    _fields = dict[@"fields"];
-    _qualityFactor = dict[@"qualityFactor"];
-    _recWeights = dict[@"recWeights"];
+        _deletionReason = dict[@"deletionReason"];
     id updated_dict = dict[@"updated"];
         if(updated_dict != nil)
         {
@@ -154,109 +167,113 @@
 {
     NSMutableDictionary* dict = [[NSMutableDictionary alloc] init];
     if(__id != nil) dict[@"id"] = __id ;
-        if(_titleI18n != nil)
+        if(_mainEvent != nil)
     {
-        if([_titleI18n isKindOfClass:[NSArray class]])
+        if([_mainEvent isKindOfClass:[NSArray class]])
         {
             NSMutableArray * array = [[NSMutableArray alloc] init];
-            for( YPI18nString *titleI18n in (NSArray*)_titleI18n)
+            for( YPMainEvent *mainEvent in (NSArray*)_mainEvent)
             {
-                [array addObject:[(YPObject*)titleI18n asDictionary]];
+                [array addObject:[(YPObject*)mainEvent asDictionary]];
             }
 
-            dict[@"titleI18n"] = array;
+            dict[@"mainEvent"] = array;
         }
-        else if(_titleI18n && [_titleI18n isKindOfClass:[YPDate class]])
+        else if(_mainEvent && [_mainEvent isKindOfClass:[YPDate class]])
         {
-            NSString * dateString = [(YPDate*)_titleI18n toString];
+            NSString * dateString = [(YPDate*)_mainEvent toString];
             if(dateString)
             {
-                dict[@"titleI18n"] = dateString;
+                dict[@"mainEvent"] = dateString;
             }
         }
         else
         {
-        if(_titleI18n != nil) dict[@"titleI18n"] = [(YPObject*)_titleI18n asDictionary];
+        if(_mainEvent != nil) dict[@"mainEvent"] = [(YPObject*)_mainEvent asDictionary];
         }
     }
-    if(_descriptionI18n != nil)
+    if(_owner != nil)
     {
-        if([_descriptionI18n isKindOfClass:[NSArray class]])
+        if([_owner isKindOfClass:[NSArray class]])
         {
             NSMutableArray * array = [[NSMutableArray alloc] init];
-            for( YPI18nString *descriptionI18n in (NSArray*)_descriptionI18n)
+            for( YPUser *owner in (NSArray*)_owner)
             {
-                [array addObject:[(YPObject*)descriptionI18n asDictionary]];
+                [array addObject:[(YPObject*)owner asDictionary]];
             }
 
-            dict[@"descriptionI18n"] = array;
+            dict[@"owner"] = array;
         }
-        else if(_descriptionI18n && [_descriptionI18n isKindOfClass:[YPDate class]])
+        else if(_owner && [_owner isKindOfClass:[YPDate class]])
         {
-            NSString * dateString = [(YPDate*)_descriptionI18n toString];
+            NSString * dateString = [(YPDate*)_owner toString];
             if(dateString)
             {
-                dict[@"descriptionI18n"] = dateString;
+                dict[@"owner"] = dateString;
             }
         }
         else
         {
-        if(_descriptionI18n != nil) dict[@"descriptionI18n"] = [(YPObject*)_descriptionI18n asDictionary];
+        if(_owner != nil) dict[@"owner"] = [(YPObject*)_owner asDictionary];
         }
     }
-    if(_textI18n != nil)
+    if(_idea != nil)
     {
-        if([_textI18n isKindOfClass:[NSArray class]])
+        if([_idea isKindOfClass:[NSArray class]])
         {
             NSMutableArray * array = [[NSMutableArray alloc] init];
-            for( YPI18nString *textI18n in (NSArray*)_textI18n)
+            for( YPIdea *idea in (NSArray*)_idea)
             {
-                [array addObject:[(YPObject*)textI18n asDictionary]];
+                [array addObject:[(YPObject*)idea asDictionary]];
             }
 
-            dict[@"textI18n"] = array;
+            dict[@"idea"] = array;
         }
-        else if(_textI18n && [_textI18n isKindOfClass:[YPDate class]])
+        else if(_idea && [_idea isKindOfClass:[YPDate class]])
         {
-            NSString * dateString = [(YPDate*)_textI18n toString];
+            NSString * dateString = [(YPDate*)_idea toString];
             if(dateString)
             {
-                dict[@"textI18n"] = dateString;
+                dict[@"idea"] = dateString;
             }
         }
         else
         {
-        if(_textI18n != nil) dict[@"textI18n"] = [(YPObject*)_textI18n asDictionary];
+        if(_idea != nil) dict[@"idea"] = [(YPObject*)_idea asDictionary];
         }
     }
-    if(_number != nil) dict[@"number"] = _number ;
-        if(_source != nil) dict[@"source"] = _source ;
-        if(_author != nil)
+    if(_joiningUsers != nil)
     {
-        if([_author isKindOfClass:[NSArray class]])
+        if([_joiningUsers isKindOfClass:[NSArray class]])
         {
             NSMutableArray * array = [[NSMutableArray alloc] init];
-            for( YPUser *author in (NSArray*)_author)
+            for( YPUser *joiningUsers in (NSArray*)_joiningUsers)
             {
-                [array addObject:[(YPObject*)author asDictionary]];
+                [array addObject:[(YPObject*)joiningUsers asDictionary]];
             }
 
-            dict[@"author"] = array;
+            dict[@"joiningUsers"] = array;
         }
-        else if(_author && [_author isKindOfClass:[YPDate class]])
+        else if(_joiningUsers && [_joiningUsers isKindOfClass:[YPDate class]])
         {
-            NSString * dateString = [(YPDate*)_author toString];
+            NSString * dateString = [(YPDate*)_joiningUsers toString];
             if(dateString)
             {
-                dict[@"author"] = dateString;
+                dict[@"joiningUsers"] = dateString;
             }
         }
         else
         {
-        if(_author != nil) dict[@"author"] = [(YPObject*)_author asDictionary];
+        if(_joiningUsers != nil) dict[@"joiningUsers"] = [(YPObject*)_joiningUsers asDictionary];
         }
     }
-    if(_campaign != nil)
+    if(_title != nil) dict[@"title"] = _title ;
+        if(_text != nil) dict[@"text"] = _text ;
+        if(_number != nil) dict[@"number"] = _number ;
+        if(_location != nil) dict[@"location"] = _location ;
+        if(_executionType != nil) dict[@"executionType"] = _executionType ;
+        if(_status != nil) dict[@"status"] = _status ;
+        if(_campaign != nil)
     {
         if([_campaign isKindOfClass:[NSArray class]])
         {
@@ -281,14 +298,7 @@
         if(_campaign != nil) dict[@"campaign"] = [(YPObject*)_campaign asDictionary];
         }
     }
-    if(_defaultfrequency != nil) dict[@"defaultfrequency"] = _defaultfrequency ;
-        if(_defaultexecutiontype != nil) dict[@"defaultexecutiontype"] = _defaultexecutiontype ;
-        if(_defaultvisibility != nil) dict[@"defaultvisibility"] = _defaultvisibility ;
-        if(_defaultduration != nil) dict[@"defaultduration"] = _defaultduration ;
-        if(_topics != nil) dict[@"topics"] = _topics ;
-        if(_fields != nil) dict[@"fields"] = _fields ;
-        if(_qualityFactor != nil) dict[@"qualityFactor"] = _qualityFactor ;
-        if(_recWeights != nil) dict[@"recWeights"] = _recWeights ;
+    if(_deletionReason != nil) dict[@"deletionReason"] = _deletionReason ;
         if(_updated != nil)
     {
         if([_updated isKindOfClass:[NSArray class]])
@@ -353,36 +363,54 @@
 }
 
 
-- (YPI18nString*)gettitleI18nValue:(NSError**)err
+- (YPMainEvent*)getmainEventValue:(NSError**)err
 {
-    if(!_titleI18n.isLoaded)
+    if(!_mainEvent.isLoaded)
     {
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
         *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
     }
-    return _titleI18n;
+    return _mainEvent;
 }
 
 
-- (YPI18nString*)getdescriptionI18nValue:(NSError**)err
+- (YPUser*)getownerValue:(NSError**)err
 {
-    if(!_descriptionI18n.isLoaded)
+    if(!_owner.isLoaded)
     {
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
         *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
     }
-    return _descriptionI18n;
+    return _owner;
 }
 
 
-- (YPI18nString*)gettextI18nValue:(NSError**)err
+- (YPIdea*)getideaValue:(NSError**)err
 {
-    if(!_textI18n.isLoaded)
+    if(!_idea.isLoaded)
     {
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
         *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
     }
-    return _textI18n;
+    return _idea;
+}
+
+
+- (NSArray*)getjoiningUsersValue
+{
+    return _joiningUsers;
+}
+
+
+- (NSString*)gettitleValue
+{
+    return _title;
+}
+
+
+- (NSString*)gettextValue
+{
+    return _text;
 }
 
 
@@ -392,20 +420,21 @@
 }
 
 
-- (NSString*)getsourceValue
+- (NSString*)getlocationValue
 {
-    return _source;
+    return _location;
 }
 
 
-- (YPUser*)getauthorValue:(NSError**)err
+- (NSString*)getexecutionTypeValue
 {
-    if(!_author.isLoaded)
-    {
-        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
-        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
-    }
-    return _author;
+    return _executionType;
+}
+
+
+- (NSString*)getstatusValue
+{
+    return _status;
 }
 
 
@@ -420,51 +449,9 @@
 }
 
 
-- (NSString*)getdefaultfrequencyValue
+- (NSString*)getdeletionReasonValue
 {
-    return _defaultfrequency;
-}
-
-
-- (NSString*)getdefaultexecutiontypeValue
-{
-    return _defaultexecutiontype;
-}
-
-
-- (NSString*)getdefaultvisibilityValue
-{
-    return _defaultvisibility;
-}
-
-
-- (NSNumber*)getdefaultdurationValue
-{
-    return _defaultduration;
-}
-
-
-- (NSArray*)gettopicsValue
-{
-    return _topics;
-}
-
-
-- (NSArray*)getfieldsValue
-{
-    return _fields;
-}
-
-
-- (NSNumber*)getqualityFactorValue
-{
-    return _qualityFactor;
-}
-
-
-- (NSString*)getrecWeightsValue
-{
-    return _recWeights;
+    return _deletionReason;
 }
 
 

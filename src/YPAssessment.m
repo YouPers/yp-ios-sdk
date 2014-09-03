@@ -5,14 +5,22 @@
 
 -(id)_id: (NSString*) _id
     nameI18n: (YPI18nString*) nameI18n
+    impactQuestionI18n: (YPI18nString*) impactQuestionI18n
+    impactQuestionLeftI18n: (YPI18nString*) impactQuestionLeftI18n
+    impactQuestionRightI18n: (YPI18nString*) impactQuestionRightI18n
     questions: (NSArray*) questions
+    topic: (YPTopic*) topic
     updated: (YPDate*) updated
     created: (YPDate*) created
 
 {
     __id = _id;
     _nameI18n = nameI18n;
+    _impactQuestionI18n = impactQuestionI18n;
+    _impactQuestionLeftI18n = impactQuestionLeftI18n;
+    _impactQuestionRightI18n = impactQuestionRightI18n;
     _questions = questions;
+    _topic = topic;
     _updated = updated;
     _created = created;
     return self;
@@ -33,6 +41,42 @@
             else
             {
                 _nameI18n = [[YPI18nString alloc]initWithValues:nameI18n_dict];
+            }
+        }
+        id impactQuestionI18n_dict = dict[@"impactQuestionI18n"];
+        if(impactQuestionI18n_dict != nil)
+        {
+            if([impactQuestionI18n_dict isKindOfClass:[NSString class]])
+            {
+                _impactQuestionI18n = [[YPI18nString alloc]initWithObjectId:impactQuestionI18n_dict];
+            }
+            else
+            {
+                _impactQuestionI18n = [[YPI18nString alloc]initWithValues:impactQuestionI18n_dict];
+            }
+        }
+        id impactQuestionLeftI18n_dict = dict[@"impactQuestionLeftI18n"];
+        if(impactQuestionLeftI18n_dict != nil)
+        {
+            if([impactQuestionLeftI18n_dict isKindOfClass:[NSString class]])
+            {
+                _impactQuestionLeftI18n = [[YPI18nString alloc]initWithObjectId:impactQuestionLeftI18n_dict];
+            }
+            else
+            {
+                _impactQuestionLeftI18n = [[YPI18nString alloc]initWithValues:impactQuestionLeftI18n_dict];
+            }
+        }
+        id impactQuestionRightI18n_dict = dict[@"impactQuestionRightI18n"];
+        if(impactQuestionRightI18n_dict != nil)
+        {
+            if([impactQuestionRightI18n_dict isKindOfClass:[NSString class]])
+            {
+                _impactQuestionRightI18n = [[YPI18nString alloc]initWithObjectId:impactQuestionRightI18n_dict];
+            }
+            else
+            {
+                _impactQuestionRightI18n = [[YPI18nString alloc]initWithValues:impactQuestionRightI18n_dict];
             }
         }
         id questions_dict = dict[@"questions"];
@@ -68,6 +112,18 @@
         else
         {
             _questions = [[NSArray alloc] init];
+        }
+        id topic_dict = dict[@"topic"];
+        if(topic_dict != nil)
+        {
+            if([topic_dict isKindOfClass:[NSString class]])
+            {
+                _topic = [[YPTopic alloc]initWithObjectId:topic_dict];
+            }
+            else
+            {
+                _topic = [[YPTopic alloc]initWithValues:topic_dict];
+            }
         }
         id updated_dict = dict[@"updated"];
         if(updated_dict != nil)
@@ -129,6 +185,81 @@
         if(_nameI18n != nil) dict[@"nameI18n"] = [(YPObject*)_nameI18n asDictionary];
         }
     }
+    if(_impactQuestionI18n != nil)
+    {
+        if([_impactQuestionI18n isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPI18nString *impactQuestionI18n in (NSArray*)_impactQuestionI18n)
+            {
+                [array addObject:[(YPObject*)impactQuestionI18n asDictionary]];
+            }
+
+            dict[@"impactQuestionI18n"] = array;
+        }
+        else if(_impactQuestionI18n && [_impactQuestionI18n isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_impactQuestionI18n toString];
+            if(dateString)
+            {
+                dict[@"impactQuestionI18n"] = dateString;
+            }
+        }
+        else
+        {
+        if(_impactQuestionI18n != nil) dict[@"impactQuestionI18n"] = [(YPObject*)_impactQuestionI18n asDictionary];
+        }
+    }
+    if(_impactQuestionLeftI18n != nil)
+    {
+        if([_impactQuestionLeftI18n isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPI18nString *impactQuestionLeftI18n in (NSArray*)_impactQuestionLeftI18n)
+            {
+                [array addObject:[(YPObject*)impactQuestionLeftI18n asDictionary]];
+            }
+
+            dict[@"impactQuestionLeftI18n"] = array;
+        }
+        else if(_impactQuestionLeftI18n && [_impactQuestionLeftI18n isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_impactQuestionLeftI18n toString];
+            if(dateString)
+            {
+                dict[@"impactQuestionLeftI18n"] = dateString;
+            }
+        }
+        else
+        {
+        if(_impactQuestionLeftI18n != nil) dict[@"impactQuestionLeftI18n"] = [(YPObject*)_impactQuestionLeftI18n asDictionary];
+        }
+    }
+    if(_impactQuestionRightI18n != nil)
+    {
+        if([_impactQuestionRightI18n isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPI18nString *impactQuestionRightI18n in (NSArray*)_impactQuestionRightI18n)
+            {
+                [array addObject:[(YPObject*)impactQuestionRightI18n asDictionary]];
+            }
+
+            dict[@"impactQuestionRightI18n"] = array;
+        }
+        else if(_impactQuestionRightI18n && [_impactQuestionRightI18n isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_impactQuestionRightI18n toString];
+            if(dateString)
+            {
+                dict[@"impactQuestionRightI18n"] = dateString;
+            }
+        }
+        else
+        {
+        if(_impactQuestionRightI18n != nil) dict[@"impactQuestionRightI18n"] = [(YPObject*)_impactQuestionRightI18n asDictionary];
+        }
+    }
     if(_questions != nil)
     {
         if([_questions isKindOfClass:[NSArray class]])
@@ -152,6 +283,31 @@
         else
         {
         if(_questions != nil) dict[@"questions"] = [(YPObject*)_questions asDictionary];
+        }
+    }
+    if(_topic != nil)
+    {
+        if([_topic isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPTopic *topic in (NSArray*)_topic)
+            {
+                [array addObject:[(YPObject*)topic asDictionary]];
+            }
+
+            dict[@"topic"] = array;
+        }
+        else if(_topic && [_topic isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_topic toString];
+            if(dateString)
+            {
+                dict[@"topic"] = dateString;
+            }
+        }
+        else
+        {
+        if(_topic != nil) dict[@"topic"] = [(YPObject*)_topic asDictionary];
         }
     }
     if(_updated != nil)
@@ -229,9 +385,53 @@
 }
 
 
+- (YPI18nString*)getimpactQuestionI18nValue:(NSError**)err
+{
+    if(!_impactQuestionI18n.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _impactQuestionI18n;
+}
+
+
+- (YPI18nString*)getimpactQuestionLeftI18nValue:(NSError**)err
+{
+    if(!_impactQuestionLeftI18n.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _impactQuestionLeftI18n;
+}
+
+
+- (YPI18nString*)getimpactQuestionRightI18nValue:(NSError**)err
+{
+    if(!_impactQuestionRightI18n.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _impactQuestionRightI18n;
+}
+
+
 - (NSArray*)getquestionsValue
 {
     return _questions;
+}
+
+
+- (YPTopic*)gettopicValue:(NSError**)err
+{
+    if(!_topic.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _topic;
 }
 
 

@@ -7,7 +7,7 @@
     title: (NSString*) title
     start: (YPDate*) start
     end: (YPDate*) end
-    relatedService: (NSString*) relatedService
+    topic: (YPTopic*) topic
     organization: (YPOrganization*) organization
     participants: (NSString*) participants
     location: (NSString*) location
@@ -25,7 +25,7 @@
     _title = title;
     _start = start;
     _end = end;
-    _relatedService = relatedService;
+    _topic = topic;
     _organization = organization;
     _participants = participants;
     _location = location;
@@ -70,8 +70,19 @@
                 _end = [[YPDate alloc]initWithValues:end_dict];
             }
         }
-        _relatedService = dict[@"relatedService"];
-    id organization_dict = dict[@"organization"];
+        id topic_dict = dict[@"topic"];
+        if(topic_dict != nil)
+        {
+            if([topic_dict isKindOfClass:[NSString class]])
+            {
+                _topic = [[YPTopic alloc]initWithObjectId:topic_dict];
+            }
+            else
+            {
+                _topic = [[YPTopic alloc]initWithValues:topic_dict];
+            }
+        }
+        id organization_dict = dict[@"organization"];
         if(organization_dict != nil)
         {
             if([organization_dict isKindOfClass:[NSString class]])
@@ -210,8 +221,32 @@
         if(_end != nil) dict[@"end"] = [(YPObject*)_end asDictionary];
         }
     }
-    if(_relatedService != nil) dict[@"relatedService"] = _relatedService ;
-        if(_organization != nil)
+    if(_topic != nil)
+    {
+        if([_topic isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPTopic *topic in (NSArray*)_topic)
+            {
+                [array addObject:[(YPObject*)topic asDictionary]];
+            }
+
+            dict[@"topic"] = array;
+        }
+        else if(_topic && [_topic isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_topic toString];
+            if(dateString)
+            {
+                dict[@"topic"] = dateString;
+            }
+        }
+        else
+        {
+        if(_topic != nil) dict[@"topic"] = [(YPObject*)_topic asDictionary];
+        }
+    }
+    if(_organization != nil)
     {
         if([_organization isKindOfClass:[NSArray class]])
         {
@@ -360,9 +395,14 @@
 }
 
 
-- (NSString*)getrelatedServiceValue
+- (YPTopic*)gettopicValue:(NSError**)err
 {
-    return _relatedService;
+    if(!_topic.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _topic;
 }
 
 

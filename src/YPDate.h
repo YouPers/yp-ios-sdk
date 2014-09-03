@@ -5,7 +5,7 @@
 @private
     NSDate *_date;
 }
-@property(nonatomic, readonly) NSDate* date;
+@property(nonatomic) NSDate* date;
 
 - (id) initWithValues: (NSString*)input;
 -(NSString*) toString;

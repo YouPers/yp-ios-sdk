@@ -6,7 +6,7 @@
 -(id)_id: (NSString*) _id
     code: (NSString*) code
     campaign: (YPObjectId*) campaign
-    relatedService: (NSString*) relatedService
+    topic: (YPTopic*) topic
     productType: (NSString*) productType
     users: (NSNumber*) users
     updated: (YPDate*) updated
@@ -16,7 +16,7 @@
     __id = _id;
     _code = code;
     _campaign = campaign;
-    _relatedService = relatedService;
+    _topic = topic;
     _productType = productType;
     _users = users;
     _updated = updated;
@@ -42,8 +42,19 @@
                 _campaign = [[YPObjectId alloc]initWithValues:campaign_dict];
             }
         }
-        _relatedService = dict[@"relatedService"];
-    _productType = dict[@"productType"];
+        id topic_dict = dict[@"topic"];
+        if(topic_dict != nil)
+        {
+            if([topic_dict isKindOfClass:[NSString class]])
+            {
+                _topic = [[YPTopic alloc]initWithObjectId:topic_dict];
+            }
+            else
+            {
+                _topic = [[YPTopic alloc]initWithValues:topic_dict];
+            }
+        }
+        _productType = dict[@"productType"];
     _users = dict[@"users"];
     id updated_dict = dict[@"updated"];
         if(updated_dict != nil)
@@ -106,8 +117,32 @@
         if(_campaign != nil) dict[@"campaign"] = [(YPObject*)_campaign asDictionary];
         }
     }
-    if(_relatedService != nil) dict[@"relatedService"] = _relatedService ;
-        if(_productType != nil) dict[@"productType"] = _productType ;
+    if(_topic != nil)
+    {
+        if([_topic isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPTopic *topic in (NSArray*)_topic)
+            {
+                [array addObject:[(YPObject*)topic asDictionary]];
+            }
+
+            dict[@"topic"] = array;
+        }
+        else if(_topic && [_topic isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_topic toString];
+            if(dateString)
+            {
+                dict[@"topic"] = dateString;
+            }
+        }
+        else
+        {
+        if(_topic != nil) dict[@"topic"] = [(YPObject*)_topic asDictionary];
+        }
+    }
+    if(_productType != nil) dict[@"productType"] = _productType ;
         if(_users != nil) dict[@"users"] = _users ;
         if(_updated != nil)
     {
@@ -190,9 +225,14 @@
 }
 
 
-- (NSString*)getrelatedServiceValue
+- (YPTopic*)gettopicValue:(NSError**)err
 {
-    return _relatedService;
+    if(!_topic.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _topic;
 }
 
 

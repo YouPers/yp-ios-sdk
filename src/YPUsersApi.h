@@ -2,6 +2,7 @@
 #import "YPUsernameEmail.h"
 #import "YPUser.h"
 
+#import "YPError.h"
 
 @interface YPUsersApi: NSObject
 
@@ -17,41 +18,18 @@
  @param body check if username is unique
  */
 -(NSNumber*) validateUserWithCompletionBlock:(YPUsernameEmail*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
  avatar image upload, AccessLevel: al_user
  uses traditional HTTP Multipart post, accepting at least jpg and png
+ @param _id ID of the user to be fetched
+ @param body The avatar image as string representation
  */
--(NSNumber*) avatarImagePostWithCompletionBlock:(void (^)(NSError* error))completionBlock;
-
-/**
-
- email verification, AccessLevel: al_user
- email verification notes
- @param body the token a user's email address is verified with
- */
--(NSNumber*) verifyEmailTokenWithCompletionBlock:(NSString*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
-
-/**
-
- password reset, AccessLevel: al_anonymousonly
- resets a user's password to a new password with a temporary token as credentials
- @param body a JSON object with two attributes 'token' and 'password'
- */
--(NSNumber*) resetpasswordWithCompletionBlock:(NSString*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
-
-/**
-
- requests a password reset for the supplied username or email., AccessLevel: al_anonymousonly
- requests a password reset for the supplied username or email. An email will be sent to the user with a link that allows him to reset his password
- @param body a JSON object with one attribute 'usernameOrEmail'
- */
--(NSNumber*) requestPasswordResetWithCompletionBlock:(NSString*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+-(NSNumber*) avatarImagePostWithCompletionBlock:(NSString*) _id 
+        body:(NSString*) body 
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -66,11 +44,11 @@ Use with caution, it may impact performance!
 -(NSNumber*) getUserByIdWithCompletionBlock:(NSString*) _id 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(YPUser* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPUser* output, YPError* error))completionBlock;
 
 /**
 
- returns all users, AccessLevel: al_admin
+ returns all users, AccessLevel: al_user
  returns all users
  @param sort sorts the results by the specified properties, add &quot;:-1&quot; to reverse sort: e.g. sort=&quot;created:-1&quot;
  @param limit limit the amount of returned objects, default is 100, max is 1000
@@ -85,7 +63,7 @@ Use with caution, it may impact performance!
         filter:(NSString*) filter 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -96,16 +74,18 @@ Use with caution, it may impact performance!
  */
 -(NSNumber*) putUserByIdWithCompletionBlock:(NSString*) _id 
         body:(YPUser*) body 
-        completionHandler: (void (^)(YPUser* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPUser* output, YPError* error))completionBlock;
 
 /**
 
  creates a new user and an empty user profile, AccessLevel: al_all
  creates the user and an associated empty user profile from the object passed in the body and returns the new use
  @param body updated user object
+ @param password the password to be set for this new user
  */
 -(NSNumber*) postUserWithCompletionBlock:(YPUser*) body 
-        completionHandler: (void (^)(YPUser* output, NSError* error))completionBlock;
+        password:(NSString*) password 
+        completionHandler: (void (^)(YPUser* output, YPError* error))completionBlock;
 
 /**
 
@@ -114,13 +94,13 @@ Use with caution, it may impact performance!
  @param _id ID of the user to be deleted
  */
 -(NSNumber*) deleteUserWithCompletionBlock:(NSString*) _id 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
  deletes all users, AccessLevel: al_systemadmin
  deletes all users
  */
--(NSNumber*) deleteAllUsersWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) deleteAllUsersWithCompletionBlock:(void (^)(YPError* error))completionBlock;
 
 @end

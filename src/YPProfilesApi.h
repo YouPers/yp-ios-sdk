@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "YPProfile.h"
 
+#import "YPError.h"
 
 @interface YPProfilesApi: NSObject
 
@@ -22,7 +23,7 @@ Use with caution, it may impact performance!
 -(NSNumber*) getProfilesWithCompletionBlock:(NSString*) sort 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -33,6 +34,6 @@ Use with caution, it may impact performance!
  */
 -(NSNumber*) putUserProfileByIdWithCompletionBlock:(NSString*) _id 
         body:(YPProfile*) body 
-        completionHandler: (void (^)(YPProfile* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPProfile* output, YPError* error))completionBlock;
 
 @end

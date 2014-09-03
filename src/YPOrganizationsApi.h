@@ -2,6 +2,7 @@
 #import "YPEmailObject.h"
 #import "YPOrganization.h"
 
+#import "YPError.h"
 
 @interface YPOrganizationsApi: NSObject
 
@@ -15,7 +16,7 @@
  avatar image upload, AccessLevel: al_orgadmin
  
  */
--(NSNumber*) avatarImagePostWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) avatarImagePostWithCompletionBlock:(void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -24,16 +25,18 @@
  @param body organization object
  */
 -(NSNumber*) postOrganizationWithCompletionBlock:(YPOrganization*) body 
-        completionHandler: (void (^)(YPOrganization* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPOrganization* output, YPError* error))completionBlock;
 
 /**
 
  updates an organization, AccessLevel: al_orgadmin
  updates an organization
+ @param _id ID of the organization to be updated
  @param body organization object
  */
--(NSNumber*) putOrganizationWithCompletionBlock:(YPOrganization*) body 
-        completionHandler: (void (^)(YPOrganization* output, NSError* error))completionBlock;
+-(NSNumber*) putOrganizationWithCompletionBlock:(NSString*) _id 
+        body:(YPOrganization*) body 
+        completionHandler: (void (^)(YPOrganization* output, YPError* error))completionBlock;
 
 /**
 
@@ -48,7 +51,7 @@ Use with caution, it may impact performance!
 -(NSNumber*) getOrganizationByIdWithCompletionBlock:(NSString*) _id 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(YPOrganization* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPOrganization* output, YPError* error))completionBlock;
 
 /**
 
@@ -67,7 +70,7 @@ Use with caution, it may impact performance!
         filter:(NSString*) filter 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -76,7 +79,7 @@ Use with caution, it may impact performance!
  @param _id ID of the organization to be deleted
  */
 -(NSNumber*) deleteOrganizationWithCompletionBlock:(NSString*) _id 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -85,7 +88,7 @@ Use with caution, it may impact performance!
  @param body object with one property: 'email', an email address, or an array of adresses, or a separated String of emails (by ';, ')
  */
 -(NSNumber*) postOrganizationAdminInviteWithCompletionBlock:(YPEmailObject*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -94,6 +97,6 @@ Use with caution, it may impact performance!
  @param token the authtoken the user has gotten with his invitation email
  */
 -(NSNumber*) assignOrganizationAdminWithCompletionBlock:(NSString*) token 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 @end

@@ -98,19 +98,9 @@
 
             if([(NSArray*)joiningUsers_dict count] > 0)
             {
-            	YPUser* d;
-            	
                 for (NSDictionary* dict in (NSArray*)joiningUsers_dict)
                 {
-                    if([dict isKindOfClass:[NSString class]])
-                    {
-                    	d = [[YPUser alloc] initWithObjectId:(NSString*)dict];
-                    }
-                    else
-                    {
-                    	d = [[YPUser alloc] initWithValues:dict];
-                    }
-                    
+                    YPUser* d = [[YPUser alloc] initWithValues:dict];
                     [objs addObject:d];
                 }
 
@@ -178,19 +168,9 @@
 
             if([(NSArray*)events_dict count] > 0)
             {
-            	YPEvent* d;
-            	
                 for (NSDictionary* dict in (NSArray*)events_dict)
                 {
-                    if([dict isKindOfClass:[NSString class]])
-                    {
-                    	d = [[YPEvent alloc] initWithObjectId:(NSString*)dict];
-                    }
-                    else
-                    {
-                    	d = [[YPEvent alloc] initWithValues:dict];
-                    }
-                    
+                    YPEvent* d = [[YPEvent alloc] initWithValues:dict];
                     [objs addObject:d];
                 }
 

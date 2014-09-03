@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 
+#import "YPError.h"
 
 @interface YPCoachmessagesApi: NSObject
 
@@ -17,6 +18,6 @@
  */
 -(NSNumber*) coachMessagesGetWithCompletionBlock:(NSString*) uistate 
         debug:(NSNumber*) debug 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 @end

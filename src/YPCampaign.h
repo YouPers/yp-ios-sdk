@@ -3,10 +3,12 @@
 #import "YPDate.h"
 #import "YPUser.h"
 #import "YPOrganization.h"
+#import "YPTopic.h"
 
 @class YPDate;
 @class YPUser;
 @class YPOrganization;
+@class YPTopic;
 
 
 @interface YPCampaign : YPObject
@@ -19,7 +21,7 @@
 
 @property(nonatomic) YPDate* end;  
 
-@property(nonatomic) NSString* relatedService;  
+@property(nonatomic) YPTopic* topic;  
 
 @property(nonatomic) YPOrganization* organization;  
 
@@ -47,7 +49,7 @@
      title: (NSString*) title
      start: (YPDate*) start
      end: (YPDate*) end
-     relatedService: (NSString*) relatedService
+     topic: (YPTopic*) topic
      organization: (YPOrganization*) organization
      participants: (NSString*) participants
      location: (NSString*) location
@@ -73,7 +75,7 @@
 
 - (YPDate*)getendValue:(NSError**)err;
 
-- (NSString*)getrelatedServiceValue;
+- (YPTopic*)gettopicValue:(NSError**)err;
 
 - (YPOrganization*)getorganizationValue:(NSError**)err;
 

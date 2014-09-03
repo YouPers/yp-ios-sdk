@@ -5,14 +5,14 @@
 #import "YPUser.h"
 #import "YPCampaign.h"
 #import "YPHomeAddress.h"
-#import "YPUserPreferences.h"
+#import "YPPrefs.h"
 
 @class YPDate;
 @class YPWorkAddress;
 @class YPUser;
 @class YPCampaign;
 @class YPHomeAddress;
-@class YPUserPreferences;
+@class YPPrefs;
 
 
 @interface YPProfile : YPObject
@@ -23,7 +23,7 @@
 
 @property(nonatomic) YPWorkAddress* workAddress;  
 
-@property(nonatomic) YPUserPreferences* userPreferences;  
+@property(nonatomic) YPPrefs* prefs;  
 
 @property(nonatomic) YPUser* owner;  
 
@@ -44,7 +44,7 @@
 - (id) _id: (NSString*) _id
      homeAddress: (YPHomeAddress*) homeAddress
      workAddress: (YPWorkAddress*) workAddress
-     userPreferences: (YPUserPreferences*) userPreferences
+     prefs: (YPPrefs*) prefs
      owner: (YPUser*) owner
      gender: (NSString*) gender
      birthDate: (YPDate*) birthDate
@@ -65,7 +65,7 @@
 
 - (YPWorkAddress*)getworkAddressValue:(NSError**)err;
 
-- (YPUserPreferences*)getuserPreferencesValue:(NSError**)err;
+- (YPPrefs*)getprefsValue:(NSError**)err;
 
 - (YPUser*)getownerValue:(NSError**)err;
 

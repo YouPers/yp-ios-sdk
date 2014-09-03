@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "YPFeedback.h"
 
+#import "YPError.h"
 
 @interface YPFeedbackApi: NSObject
 
@@ -16,6 +17,6 @@
  @param body feedback object
  */
 -(NSNumber*) postFeedbackWithCompletionBlock:(YPFeedback*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 @end

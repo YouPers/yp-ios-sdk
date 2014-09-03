@@ -4,12 +4,14 @@
 #import "YPAssessment.h"
 #import "YPUser.h"
 #import "YPCampaign.h"
+#import "YPTopic.h"
 #import "YPAnswer.h"
 
 @class YPDate;
 @class YPAssessment;
 @class YPUser;
 @class YPCampaign;
+@class YPTopic;
 @class YPAnswer;
 
 
@@ -20,6 +22,8 @@
 @property(nonatomic) YPUser* owner;  /* reference to the user owning this Result */
 
 @property(nonatomic) YPCampaign* campaign;  /* reference to the campaign this result was entered in, used for statistics [optional]*/
+
+@property(nonatomic) YPTopic* topic;  
 
 @property(nonatomic) YPAssessment* assessment;  /* reference to the assessment this result belongs to */
 
@@ -36,6 +40,7 @@
 - (id) _id: (NSString*) _id
      owner: (YPUser*) owner
      campaign: (YPCampaign*) campaign
+     topic: (YPTopic*) topic
      assessment: (YPAssessment*) assessment
      dirty: (NSNumber*) dirty
      answers: (NSArray*) answers
@@ -53,6 +58,8 @@
 - (YPUser*)getownerValue:(NSError**)err;
 
 - (YPCampaign*)getcampaignValue:(NSError**)err;
+
+- (YPTopic*)gettopicValue:(NSError**)err;
 
 - (YPAssessment*)getassessmentValue:(NSError**)err;
 

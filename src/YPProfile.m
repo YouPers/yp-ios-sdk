@@ -6,7 +6,7 @@
 -(id)_id: (NSString*) _id
     homeAddress: (YPHomeAddress*) homeAddress
     workAddress: (YPWorkAddress*) workAddress
-    userPreferences: (YPUserPreferences*) userPreferences
+    prefs: (YPPrefs*) prefs
     owner: (YPUser*) owner
     gender: (NSString*) gender
     birthDate: (YPDate*) birthDate
@@ -20,7 +20,7 @@
     __id = _id;
     _homeAddress = homeAddress;
     _workAddress = workAddress;
-    _userPreferences = userPreferences;
+    _prefs = prefs;
     _owner = owner;
     _gender = gender;
     _birthDate = birthDate;
@@ -61,16 +61,16 @@
                 _workAddress = [[YPWorkAddress alloc]initWithValues:workAddress_dict];
             }
         }
-        id userPreferences_dict = dict[@"userPreferences"];
-        if(userPreferences_dict != nil)
+        id prefs_dict = dict[@"prefs"];
+        if(prefs_dict != nil)
         {
-            if([userPreferences_dict isKindOfClass:[NSString class]])
+            if([prefs_dict isKindOfClass:[NSString class]])
             {
-                _userPreferences = [[YPUserPreferences alloc]initWithObjectId:userPreferences_dict];
+                _prefs = [[YPPrefs alloc]initWithObjectId:prefs_dict];
             }
             else
             {
-                _userPreferences = [[YPUserPreferences alloc]initWithValues:userPreferences_dict];
+                _prefs = [[YPPrefs alloc]initWithValues:prefs_dict];
             }
         }
         id owner_dict = dict[@"owner"];
@@ -197,29 +197,29 @@
         if(_workAddress != nil) dict[@"workAddress"] = [(YPObject*)_workAddress asDictionary];
         }
     }
-    if(_userPreferences != nil)
+    if(_prefs != nil)
     {
-        if([_userPreferences isKindOfClass:[NSArray class]])
+        if([_prefs isKindOfClass:[NSArray class]])
         {
             NSMutableArray * array = [[NSMutableArray alloc] init];
-            for( YPUserPreferences *userPreferences in (NSArray*)_userPreferences)
+            for( YPPrefs *prefs in (NSArray*)_prefs)
             {
-                [array addObject:[(YPObject*)userPreferences asDictionary]];
+                [array addObject:[(YPObject*)prefs asDictionary]];
             }
 
-            dict[@"userPreferences"] = array;
+            dict[@"prefs"] = array;
         }
-        else if(_userPreferences && [_userPreferences isKindOfClass:[YPDate class]])
+        else if(_prefs && [_prefs isKindOfClass:[YPDate class]])
         {
-            NSString * dateString = [(YPDate*)_userPreferences toString];
+            NSString * dateString = [(YPDate*)_prefs toString];
             if(dateString)
             {
-                dict[@"userPreferences"] = dateString;
+                dict[@"prefs"] = dateString;
             }
         }
         else
         {
-        if(_userPreferences != nil) dict[@"userPreferences"] = [(YPObject*)_userPreferences asDictionary];
+        if(_prefs != nil) dict[@"prefs"] = [(YPObject*)_prefs asDictionary];
         }
     }
     if(_owner != nil)
@@ -386,14 +386,14 @@
 }
 
 
-- (YPUserPreferences*)getuserPreferencesValue:(NSError**)err
+- (YPPrefs*)getprefsValue:(NSError**)err
 {
-    if(!_userPreferences.isLoaded)
+    if(!_prefs.isLoaded)
     {
         NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
         *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
     }
-    return _userPreferences;
+    return _prefs;
 }
 
 

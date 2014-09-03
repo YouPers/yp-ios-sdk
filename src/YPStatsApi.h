@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 
+#import "YPError.h"
 
 @interface YPStatsApi: NSObject
 
@@ -21,6 +22,6 @@
         scopeType:(NSString*) scopeType 
         scopeId:(NSString*) scopeId 
         range:(NSString*) range 
-        completionHandler: (void (^)(NSString* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSString* output, YPError* error))completionBlock;
 
 @end

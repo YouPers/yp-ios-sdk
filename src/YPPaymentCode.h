@@ -2,9 +2,11 @@
 #import "YPObject.h"
 #import "YPDate.h"
 #import "YPObjectId.h"
+#import "YPTopic.h"
 
 @class YPDate;
 @class YPObjectId;
+@class YPTopic;
 
 
 @interface YPPaymentCode : YPObject
@@ -15,7 +17,7 @@
 
 @property(nonatomic) YPObjectId* campaign;  
 
-@property(nonatomic) NSString* relatedService;  
+@property(nonatomic) YPTopic* topic;  
 
 @property(nonatomic) NSString* productType;  
 
@@ -28,7 +30,7 @@
 - (id) _id: (NSString*) _id
      code: (NSString*) code
      campaign: (YPObjectId*) campaign
-     relatedService: (NSString*) relatedService
+     topic: (YPTopic*) topic
      productType: (NSString*) productType
      users: (NSNumber*) users
      updated: (YPDate*) updated
@@ -45,7 +47,7 @@
 
 - (YPObjectId*)getcampaignValue:(NSError**)err;
 
-- (NSString*)getrelatedServiceValue;
+- (YPTopic*)gettopicValue:(NSError**)err;
 
 - (NSString*)getproductTypeValue;
 

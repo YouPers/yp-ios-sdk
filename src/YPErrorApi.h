@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "YPErrorObject.h"
 
+#import "YPError.h"
 
 @interface YPErrorApi: NSObject
 
@@ -16,6 +17,6 @@
  @param body error object
  */
 -(NSNumber*) postErrorWithCompletionBlock:(YPErrorObject*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 @end

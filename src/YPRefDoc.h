@@ -13,9 +13,12 @@
 
 @property(nonatomic) NSString* model;  
 
+@property(nonatomic) NSString* doc;  
+
 - (id) _id: (NSString*) _id
      docId: (YPObjectId*) docId
-     model: (NSString*) model;
+     model: (NSString*) model
+     doc: (NSString*) doc;
 
 - (id) initWithValues: (NSDictionary*)dict;
 - (NSDictionary*) asDictionary;
@@ -27,6 +30,8 @@
 - (YPObjectId*)getdocIdValue:(NSError**)err;
 
 - (NSString*)getmodelValue;
+
+- (NSString*)getdocValue;
 
 
 

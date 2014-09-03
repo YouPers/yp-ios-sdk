@@ -2,69 +2,62 @@
 #import "YPObject.h"
 #import "YPDate.h"
 #import "YPUser.h"
-#import "YPI18nString.h"
+#import "YPIdea.h"
 #import "YPCampaign.h"
+#import "YPMainEvent.h"
 
 @class YPDate;
 @class YPUser;
-@class YPI18nString;
+@class YPIdea;
 @class YPCampaign;
+@class YPMainEvent;
 
 
 @interface YPActivity : YPObject
 
 @property(nonatomic) NSString* _id;  
 
-@property(nonatomic) YPI18nString* titleI18n;  
+@property(nonatomic) YPMainEvent* mainEvent;  
 
-@property(nonatomic) YPI18nString* descriptionI18n;  
+@property(nonatomic) YPUser* owner;  
 
-@property(nonatomic) YPI18nString* textI18n;  
+@property(nonatomic) YPIdea* idea;  
+
+@property(nonatomic) NSArray* joiningUsers;  
+
+@property(nonatomic) NSString* title;  
+
+@property(nonatomic) NSString* text;  
 
 @property(nonatomic) NSString* number;  
 
-@property(nonatomic) NSString* source;  
+@property(nonatomic) NSString* location;  
 
-@property(nonatomic) YPUser* author;  
+@property(nonatomic) NSString* executionType;  
+
+@property(nonatomic) NSString* status;  
 
 @property(nonatomic) YPCampaign* campaign;  
 
-@property(nonatomic) NSString* defaultfrequency;  
-
-@property(nonatomic) NSString* defaultexecutiontype;  
-
-@property(nonatomic) NSString* defaultvisibility;  
-
-@property(nonatomic) NSNumber* defaultduration;  
-
-@property(nonatomic) NSArray* topics;  
-
-@property(nonatomic) NSArray* fields;  
-
-@property(nonatomic) NSNumber* qualityFactor;  
-
-@property(nonatomic) NSString* recWeights;  
+@property(nonatomic) NSString* deletionReason;  
 
 @property(nonatomic) YPDate* updated;  
 
 @property(nonatomic) YPDate* created;  
 
 - (id) _id: (NSString*) _id
-     titleI18n: (YPI18nString*) titleI18n
-     descriptionI18n: (YPI18nString*) descriptionI18n
-     textI18n: (YPI18nString*) textI18n
+     mainEvent: (YPMainEvent*) mainEvent
+     owner: (YPUser*) owner
+     idea: (YPIdea*) idea
+     joiningUsers: (NSArray*) joiningUsers
+     title: (NSString*) title
+     text: (NSString*) text
      number: (NSString*) number
-     source: (NSString*) source
-     author: (YPUser*) author
+     location: (NSString*) location
+     executionType: (NSString*) executionType
+     status: (NSString*) status
      campaign: (YPCampaign*) campaign
-     defaultfrequency: (NSString*) defaultfrequency
-     defaultexecutiontype: (NSString*) defaultexecutiontype
-     defaultvisibility: (NSString*) defaultvisibility
-     defaultduration: (NSNumber*) defaultduration
-     topics: (NSArray*) topics
-     fields: (NSArray*) fields
-     qualityFactor: (NSNumber*) qualityFactor
-     recWeights: (NSString*) recWeights
+     deletionReason: (NSString*) deletionReason
      updated: (YPDate*) updated
      created: (YPDate*) created;
 
@@ -75,35 +68,29 @@
 
 - (NSString*)get_idValue;
 
-- (YPI18nString*)gettitleI18nValue:(NSError**)err;
+- (YPMainEvent*)getmainEventValue:(NSError**)err;
 
-- (YPI18nString*)getdescriptionI18nValue:(NSError**)err;
+- (YPUser*)getownerValue:(NSError**)err;
 
-- (YPI18nString*)gettextI18nValue:(NSError**)err;
+- (YPIdea*)getideaValue:(NSError**)err;
+
+- (NSArray*)getjoiningUsersValue;
+
+- (NSString*)gettitleValue;
+
+- (NSString*)gettextValue;
 
 - (NSString*)getnumberValue;
 
-- (NSString*)getsourceValue;
+- (NSString*)getlocationValue;
 
-- (YPUser*)getauthorValue:(NSError**)err;
+- (NSString*)getexecutionTypeValue;
+
+- (NSString*)getstatusValue;
 
 - (YPCampaign*)getcampaignValue:(NSError**)err;
 
-- (NSString*)getdefaultfrequencyValue;
-
-- (NSString*)getdefaultexecutiontypeValue;
-
-- (NSString*)getdefaultvisibilityValue;
-
-- (NSNumber*)getdefaultdurationValue;
-
-- (NSArray*)gettopicsValue;
-
-- (NSArray*)getfieldsValue;
-
-- (NSNumber*)getqualityFactorValue;
-
-- (NSString*)getrecWeightsValue;
+- (NSString*)getdeletionReasonValue;
 
 - (YPDate*)getupdatedValue:(NSError**)err;
 

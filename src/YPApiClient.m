@@ -257,6 +257,40 @@ static bool loggingEnabled = false;
                                                          fileName:[file name]
                                                          mimeType:[file mimeType]];
                              }];
+
+        NSMutableDictionary* _params = [[NSMutableDictionary alloc] init];
+        [_params setObject:@"avatar_image" forKey:@"title"];
+
+        // string constant for the post parameter 'file'. My server uses this name: `file`. Your's may differ
+        NSString* FileParamConstant = @"file";
+
+        NSString *boundary = @"----daklndalskndasklnd";
+
+        // set Content-Type in HTTP header
+        NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
+        [request setValue:contentType forHTTPHeaderField: @"Content-Type"];
+
+        // post body
+        NSMutableData *bodyDef = [NSMutableData data];
+
+        // add params (all params are strings)
+        for (NSString *param in _params) {
+            [bodyDef appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+            [bodyDef appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", param] dataUsingEncoding:NSUTF8StringEncoding]];
+            [bodyDef appendData:[[NSString stringWithFormat:@"%@\r\n", [_params objectForKey:param]] dataUsingEncoding:NSUTF8StringEncoding]];
+        }
+
+        [bodyDef appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        //[bodyDef appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"image.jpg\"\r\n", FileParamConstant] dataUsingEncoding:NSUTF8StringEncoding]];
+        [bodyDef appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", FileParamConstant, [file name]] dataUsingEncoding:NSUTF8StringEncoding]];
+        [bodyDef appendData:[@"Content-Type: image/jpeg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+        [bodyDef appendData:file.data];
+        [bodyDef appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+
+        [bodyDef appendData:[[NSString stringWithFormat:@"--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+
+        [request setHTTPBody:bodyDef];
     }
     else {
         request = [self requestWithMethod:method
@@ -352,6 +386,40 @@ static bool loggingEnabled = false;
                                                          fileName:[file name]
                                                          mimeType:[file mimeType]];
                              }];
+
+        NSMutableDictionary* _params = [[NSMutableDictionary alloc] init];
+        [_params setObject:@"avatar_image" forKey:@"title"];
+
+        // string constant for the post parameter 'file'. My server uses this name: `file`. Your's may differ
+        NSString* FileParamConstant = @"file";
+
+        NSString *boundary = @"----daklndalskndasklnd";
+
+        // set Content-Type in HTTP header
+        NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@", boundary];
+        [request setValue:contentType forHTTPHeaderField: @"Content-Type"];
+
+        // post body
+        NSMutableData *bodyDef = [NSMutableData data];
+
+        // add params (all params are strings)
+        for (NSString *param in _params) {
+            [bodyDef appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+            [bodyDef appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", param] dataUsingEncoding:NSUTF8StringEncoding]];
+            [bodyDef appendData:[[NSString stringWithFormat:@"%@\r\n", [_params objectForKey:param]] dataUsingEncoding:NSUTF8StringEncoding]];
+        }
+
+        [bodyDef appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+        //[bodyDef appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"image.jpg\"\r\n", FileParamConstant] dataUsingEncoding:NSUTF8StringEncoding]];
+        [bodyDef appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", FileParamConstant, [file name]] dataUsingEncoding:NSUTF8StringEncoding]];
+        [bodyDef appendData:[@"Content-Type: image/jpeg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+
+        [bodyDef appendData:file.data];
+        [bodyDef appendData:[[NSString stringWithFormat:@"\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+
+        [bodyDef appendData:[[NSString stringWithFormat:@"--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+
+        [request setHTTPBody:bodyDef];
     }
     else {
         request = [self requestWithMethod:method

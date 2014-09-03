@@ -6,11 +6,13 @@
 -(id)_id: (NSString*) _id
     docId: (YPObjectId*) docId
     model: (NSString*) model
+    doc: (NSString*) doc
 
 {
     __id = _id;
     _docId = docId;
     _model = model;
+    _doc = doc;
     return self;
 }
 
@@ -32,6 +34,7 @@
             }
         }
         _model = dict[@"model"];
+    _doc = dict[@"doc"];
     
 
     }
@@ -69,6 +72,7 @@
         }
     }
     if(_model != nil) dict[@"model"] = _model ;
+        if(_doc != nil) dict[@"doc"] = _doc ;
         NSDictionary* output = [dict copy];
     return output;
 }
@@ -97,6 +101,12 @@
 - (NSString*)getmodelValue
 {
     return _model;
+}
+
+
+- (NSString*)getdocValue
+{
+    return _doc;
 }
 
 

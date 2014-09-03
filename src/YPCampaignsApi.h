@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "YPEmailObject.h"
 #import "YPCampaign.h"
 
+#import "YPError.h"
 
 @interface YPCampaignsApi: NSObject
 
@@ -10,13 +10,6 @@
 +(YPCampaignsApi*) apiWithHeader:(NSString*)headerValue key:(NSString*)key;
 +(void) setBasePath:(NSString*)basePath;
 +(NSString*) getBasePath;
-/**
-
- avatar image upload, AccessLevel: al_campaignlead
- 
- */
--(NSNumber*) avatarImagePostWithCompletionBlock:(void (^)(NSError* error))completionBlock;
-
 /**
 
  find campaign by id, AccessLevel: al_all
@@ -30,7 +23,7 @@ Use with caution, it may impact performance!
 -(NSNumber*) getCampaignByIdWithCompletionBlock:(NSString*) _id 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(YPCampaign* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPCampaign* output, YPError* error))completionBlock;
 
 /**
 
@@ -43,11 +36,11 @@ Use with caution, it may impact performance!
 -(NSNumber*) getCampaignStatsByIdWithCompletionBlock:(NSString*) _id 
         type:(NSString*) type 
         range:(NSString*) range 
-        completionHandler: (void (^)(NSString* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSString* output, YPError* error))completionBlock;
 
 /**
 
- returns all campaigns for the authenticated user, AccessLevel: al_campaignlead
+ returns all campaigns for the authenticated user, AccessLevel: al_all
  returns all campaigns for the authenticated user
  @param sort sorts the results by the specified properties, add &quot;:-1&quot; to reverse sort: e.g. sort=&quot;created:-1&quot;
  @param limit limit the amount of returned objects, default is 100, max is 1000
@@ -62,60 +55,6 @@ Use with caution, it may impact performance!
         filter:(NSString*) filter 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
-
-/**
-
- creates a campaign, AccessLevel: al_orgadmin
- creates a campaign and assigns the authenticated user as campaign lead
- @param body campaign object
- */
--(NSNumber*) postCampaignWithCompletionBlock:(YPCampaign*) body 
-        completionHandler: (void (^)(YPCampaign* output, NSError* error))completionBlock;
-
-/**
-
- Request an invitation for to become campaign lead to be sent by the backend to the supplied email address(es), AccessLevel: al_campaignlead
- Posts a request for an invitation for one or more email-addresses
- @param body object with one property: 'email', an email address, or an array of adresses, or a separated String of emails (by ';, ')
- */
--(NSNumber*) postCampaignLeadPlanInviteWithCompletionBlock:(YPEmailObject*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
-
-/**
-
- With this endpoint a non-privileged user can assign himself to become campaign lead when he has an invitation token., AccessLevel: al_user
- Posts a request to add the current user as campaignLead to this campaign: special endpoint that can be called without al_campaignLead but needs a token instead for auth
- @param token the authtoken the user has gotten with his invitation email
- */
--(NSNumber*) assignCampaignLeadWithCompletionBlock:(NSString*) token 
-        completionHandler: (void (^)(NSError* error))completionBlock;
-
-/**
-
- deletes the campaign with passed id, AccessLevel: al_systemadmin
- deletes the campaign with passed id
- @param _id ID of the user to be deleted
- */
--(NSNumber*) deleteCampaignWithCompletionBlock:(NSString*) _id 
-        completionHandler: (void (^)(NSError* error))completionBlock;
-
-/**
-
- deletes all campaigns, AccessLevel: al_systemadmin
- deletes all campaigns
- */
--(NSNumber*) deleteAllCampaignsWithCompletionBlock:(void (^)(NSError* error))completionBlock;
-
-/**
-
- updates the campaign, AccessLevel: al_campaignlead
- updates the campaign with id id
- @param _id ID of the campaign to be updated
- @param body campaign object to be updated
- */
--(NSNumber*) putCampaignByIdWithCompletionBlock:(NSString*) _id 
-        body:(YPCampaign*) body 
-        completionHandler: (void (^)(YPCampaign* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 @end

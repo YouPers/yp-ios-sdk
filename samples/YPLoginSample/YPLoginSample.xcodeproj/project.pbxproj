@@ -8,6 +8,76 @@
 
 /* Begin PBXBuildFile section */
 		1BB210CB97C6448882332D33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5159A749A730432CA2E880E2 /* libPods.a */; };
+		EA6BAF0A19B6F60F00688104 /* YPActivitiesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE7F19B6F60F00688104 /* YPActivitiesApi.m */; };
+		EA6BAF0B19B6F60F00688104 /* YPActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8119B6F60F00688104 /* YPActivity.m */; };
+		EA6BAF0C19B6F60F00688104 /* YPActivityEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8319B6F60F00688104 /* YPActivityEvent.m */; };
+		EA6BAF0D19B6F60F00688104 /* YPActivityeventsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8519B6F60F00688104 /* YPActivityeventsApi.m */; };
+		EA6BAF0E19B6F60F00688104 /* YPActivityInvitationStatusResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8719B6F60F00688104 /* YPActivityInvitationStatusResult.m */; };
+		EA6BAF0F19B6F60F00688104 /* YPActivityValidationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8919B6F60F00688104 /* YPActivityValidationResult.m */; };
+		EA6BAF1019B6F60F00688104 /* YPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8B19B6F60F00688104 /* YPAddress.m */; };
+		EA6BAF1119B6F60F00688104 /* YPAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8D19B6F60F00688104 /* YPAnswer.m */; };
+		EA6BAF1219B6F60F00688104 /* YPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE8F19B6F60F00688104 /* YPApiClient.m */; };
+		EA6BAF1319B6F60F00688104 /* YPAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9119B6F60F00688104 /* YPAssessment.m */; };
+		EA6BAF1419B6F60F00688104 /* YPAssessmentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9319B6F60F00688104 /* YPAssessmentQuestion.m */; };
+		EA6BAF1519B6F60F00688104 /* YPAssessmentResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9519B6F60F00688104 /* YPAssessmentResult.m */; };
+		EA6BAF1619B6F60F00688104 /* YPAssessmentResultAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9719B6F60F00688104 /* YPAssessmentResultAnswer.m */; };
+		EA6BAF1719B6F60F00688104 /* YPAssessmentsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9919B6F60F00688104 /* YPAssessmentsApi.m */; };
+		EA6BAF1819B6F60F00688104 /* YPAuthApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9B19B6F60F00688104 /* YPAuthApi.m */; };
+		EA6BAF1919B6F61000688104 /* YPCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9D19B6F60F00688104 /* YPCampaign.m */; };
+		EA6BAF1A19B6F61000688104 /* YPCampaignsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAE9F19B6F60F00688104 /* YPCampaignsApi.m */; };
+		EA6BAF1B19B6F61000688104 /* YPCoachmessagesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEA119B6F60F00688104 /* YPCoachmessagesApi.m */; };
+		EA6BAF1C19B6F61000688104 /* YPContact.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEA319B6F60F00688104 /* YPContact.m */; };
+		EA6BAF1D19B6F61000688104 /* YPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEA519B6F60F00688104 /* YPDate.m */; };
+		EA6BAF1E19B6F61000688104 /* YPEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEA719B6F60F00688104 /* YPEmail.m */; };
+		EA6BAF1F19B6F61000688104 /* YPEmailObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEA919B6F60F00688104 /* YPEmailObject.m */; };
+		EA6BAF2019B6F61000688104 /* YPEndby.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEAB19B6F60F00688104 /* YPEndby.m */; };
+		EA6BAF2119B6F61000688104 /* YPError.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEAD19B6F60F00688104 /* YPError.m */; };
+		EA6BAF2219B6F61000688104 /* YPErrorApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEAF19B6F60F00688104 /* YPErrorApi.m */; };
+		EA6BAF2319B6F61000688104 /* YPErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEB119B6F60F00688104 /* YPErrorObject.m */; };
+		EA6BAF2419B6F61000688104 /* YPFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEB319B6F60F00688104 /* YPFeedback.m */; };
+		EA6BAF2519B6F61000688104 /* YPFeedbackApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEB519B6F60F00688104 /* YPFeedbackApi.m */; };
+		EA6BAF2619B6F61000688104 /* YPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEB719B6F60F00688104 /* YPFile.m */; };
+		EA6BAF2719B6F61000688104 /* YPFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEB919B6F60F00688104 /* YPFocus.m */; };
+		EA6BAF2819B6F61000688104 /* YPHomeAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEBB19B6F60F00688104 /* YPHomeAddress.m */; };
+		EA6BAF2919B6F61000688104 /* YPI18nString.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEBD19B6F60F00688104 /* YPI18nString.m */; };
+		EA6BAF2A19B6F61000688104 /* YPIdea.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEBF19B6F60F00688104 /* YPIdea.m */; };
+		EA6BAF2B19B6F61000688104 /* YPIdeasApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEC119B6F60F00688104 /* YPIdeasApi.m */; };
+		EA6BAF2C19B6F61000688104 /* YPInvitation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEC319B6F60F00688104 /* YPInvitation.m */; };
+		EA6BAF2D19B6F61000688104 /* YPInvitationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEC519B6F60F00688104 /* YPInvitationsApi.m */; };
+		EA6BAF2E19B6F61000688104 /* YPLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEC719B6F60F00688104 /* YPLoginApi.m */; };
+		EA6BAF2F19B6F61000688104 /* YPMainEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEC919B6F60F00688104 /* YPMainEvent.m */; };
+		EA6BAF3019B6F61000688104 /* YPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAECB19B6F60F00688104 /* YPMessage.m */; };
+		EA6BAF3119B6F61000688104 /* YPMessagesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAECD19B6F60F00688104 /* YPMessagesApi.m */; };
+		EA6BAF3219B6F61000688104 /* YPNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAECF19B6F60F00688104 /* YPNotification.m */; };
+		EA6BAF3319B6F61000688104 /* YPNotificationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAED119B6F60F00688104 /* YPNotificationsApi.m */; };
+		EA6BAF3419B6F61000688104 /* YPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAED319B6F60F00688104 /* YPObject.m */; };
+		EA6BAF3519B6F61000688104 /* YPObjectId.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAED519B6F60F00688104 /* YPObjectId.m */; };
+		EA6BAF3619B6F61000688104 /* YPOffersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAED719B6F60F00688104 /* YPOffersApi.m */; };
+		EA6BAF3719B6F61000688104 /* YPOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAED919B6F60F00688104 /* YPOrganization.m */; };
+		EA6BAF3819B6F61000688104 /* YPOrganizationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEDB19B6F60F00688104 /* YPOrganizationsApi.m */; };
+		EA6BAF3919B6F61000688104 /* YPPaymentCode.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEDD19B6F60F00688104 /* YPPaymentCode.m */; };
+		EA6BAF3A19B6F61000688104 /* YPPaymentcodesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEDF19B6F60F00688104 /* YPPaymentcodesApi.m */; };
+		EA6BAF3B19B6F61000688104 /* YPPingApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEE119B6F60F00688104 /* YPPingApi.m */; };
+		EA6BAF3C19B6F61000688104 /* YPPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEE319B6F60F00688104 /* YPPrefs.m */; };
+		EA6BAF3D19B6F61000688104 /* YPProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEE519B6F60F00688104 /* YPProfile.m */; };
+		EA6BAF3E19B6F61000688104 /* YPProfilesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEE719B6F60F00688104 /* YPProfilesApi.m */; };
+		EA6BAF3F19B6F61000688104 /* YPRecommendation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEE919B6F60F00688104 /* YPRecommendation.m */; };
+		EA6BAF4019B6F61000688104 /* YPRecommendationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEEB19B6F60F00688104 /* YPRecommendationsApi.m */; };
+		EA6BAF4119B6F61000688104 /* YPRecurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEED19B6F60F00688104 /* YPRecurrence.m */; };
+		EA6BAF4219B6F61000688104 /* YPRefDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEEF19B6F60F00688104 /* YPRefDoc.m */; };
+		EA6BAF4319B6F61000688104 /* YPRejectedActivitie.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEF119B6F60F00688104 /* YPRejectedActivitie.m */; };
+		EA6BAF4419B6F61000688104 /* YPRejectedIdea.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEF319B6F60F00688104 /* YPRejectedIdea.m */; };
+		EA6BAF4519B6F61000688104 /* YPSocialInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEF519B6F60F00688104 /* YPSocialInteraction.m */; };
+		EA6BAF4619B6F61000688104 /* YPSocialInteractionsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEF719B6F60F00688104 /* YPSocialInteractionsApi.m */; };
+		EA6BAF4719B6F61000688104 /* YPStarredIdea.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEF919B6F60F00688104 /* YPStarredIdea.m */; };
+		EA6BAF4819B6F61000688104 /* YPStatsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEFB19B6F60F00688104 /* YPStatsApi.m */; };
+		EA6BAF4919B6F61000688104 /* YPTargetSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEFD19B6F60F00688104 /* YPTargetSpace.m */; };
+		EA6BAF4A19B6F61000688104 /* YPTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAEFF19B6F60F00688104 /* YPTopic.m */; };
+		EA6BAF4B19B6F61000688104 /* YPTopicsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAF0119B6F60F00688104 /* YPTopicsApi.m */; };
+		EA6BAF4C19B6F61000688104 /* YPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAF0319B6F60F00688104 /* YPUser.m */; };
+		EA6BAF4D19B6F61000688104 /* YPUsernameEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAF0519B6F60F00688104 /* YPUsernameEmail.m */; };
+		EA6BAF4E19B6F61000688104 /* YPUsersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAF0719B6F60F00688104 /* YPUsersApi.m */; };
+		EA6BAF4F19B6F61000688104 /* YPWorkAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BAF0919B6F60F00688104 /* YPWorkAddress.m */; };
 		EABD476D1946F92800492B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD476C1946F92800492B20 /* Foundation.framework */; };
 		EABD476F1946F92800492B20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD476E1946F92800492B20 /* CoreGraphics.framework */; };
 		EABD47711946F92800492B20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD47701946F92800492B20 /* UIKit.framework */; };
@@ -23,67 +93,6 @@
 		EABD47911946F92800492B20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD47701946F92800492B20 /* UIKit.framework */; };
 		EABD47991946F92800492B20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EABD47971946F92800492B20 /* InfoPlist.strings */; };
 		EABD479B1946F92800492B20 /* YPLoginSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD479A1946F92800492B20 /* YPLoginSampleTests.m */; };
-		EABD48201946F95A00492B20 /* YPActivitiesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47A71946F95A00492B20 /* YPActivitiesApi.m */; };
-		EABD48211946F95A00492B20 /* YPActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47A91946F95A00492B20 /* YPActivity.m */; };
-		EABD48221946F95A00492B20 /* YPActivityOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47AB1946F95A00492B20 /* YPActivityOffer.m */; };
-		EABD48231946F95A00492B20 /* YPActivityoffersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47AD1946F95A00492B20 /* YPActivityoffersApi.m */; };
-		EABD48241946F95A00492B20 /* YPActivityPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47AF1946F95A00492B20 /* YPActivityPlan.m */; };
-		EABD48251946F95A00492B20 /* YPActivityplansApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B11946F95A00492B20 /* YPActivityplansApi.m */; };
-		EABD48261946F95A00492B20 /* YPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B31946F95A00492B20 /* YPAddress.m */; };
-		EABD48271946F95A00492B20 /* YPAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B51946F95A00492B20 /* YPAnswer.m */; };
-		EABD48281946F95A00492B20 /* YPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B71946F95A00492B20 /* YPApiClient.m */; };
-		EABD48291946F95A00492B20 /* YPAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47B91946F95A00492B20 /* YPAssessment.m */; };
-		EABD482A1946F95A00492B20 /* YPAssessmentQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47BB1946F95A00492B20 /* YPAssessmentQuestion.m */; };
-		EABD482B1946F95A00492B20 /* YPAssessmentResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47BD1946F95A00492B20 /* YPAssessmentResult.m */; };
-		EABD482C1946F95A00492B20 /* YPAssessmentResultAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47BF1946F95A00492B20 /* YPAssessmentResultAnswer.m */; };
-		EABD482D1946F95A00492B20 /* YPAssessmentsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C11946F95A00492B20 /* YPAssessmentsApi.m */; };
-		EABD482E1946F95A00492B20 /* YPCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C31946F95A00492B20 /* YPCampaign.m */; };
-		EABD482F1946F95A00492B20 /* YPCampaignsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C51946F95A00492B20 /* YPCampaignsApi.m */; };
-		EABD48301946F95A00492B20 /* YPCoachmessagesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C71946F95A00492B20 /* YPCoachmessagesApi.m */; };
-		EABD48311946F95A00492B20 /* YPComment.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47C91946F95A00492B20 /* YPComment.m */; };
-		EABD48321946F95A00492B20 /* YPCommentsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47CB1946F95A00492B20 /* YPCommentsApi.m */; };
-		EABD48331946F95A00492B20 /* YPContact.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47CD1946F95A00492B20 /* YPContact.m */; };
-		EABD48341946F95A00492B20 /* YPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47CF1946F95A00492B20 /* YPDate.m */; };
-		EABD48351946F95A00492B20 /* YPDefaultUserWeekForScheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D11946F95A00492B20 /* YPDefaultUserWeekForScheduling.m */; };
-		EABD48361946F95A00492B20 /* YPDiaryentriesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D31946F95A00492B20 /* YPDiaryentriesApi.m */; };
-		EABD48371946F95A00492B20 /* YPDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D51946F95A00492B20 /* YPDiaryEntry.m */; };
-		EABD48381946F95A00492B20 /* YPEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D71946F95A00492B20 /* YPEmail.m */; };
-		EABD48391946F95A00492B20 /* YPEmailObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47D91946F95A00492B20 /* YPEmailObject.m */; };
-		EABD483A1946F95A00492B20 /* YPEndby.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47DB1946F95A00492B20 /* YPEndby.m */; };
-		EABD483B1946F95A00492B20 /* YPErrorApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47DD1946F95A00492B20 /* YPErrorApi.m */; };
-		EABD483C1946F95A00492B20 /* YPErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47DF1946F95A00492B20 /* YPErrorObject.m */; };
-		EABD483D1946F95A00492B20 /* YPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E11946F95A00492B20 /* YPEvent.m */; };
-		EABD483E1946F95A00492B20 /* YPException.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E31946F95A00492B20 /* YPException.m */; };
-		EABD483F1946F95A00492B20 /* YPFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E51946F95A00492B20 /* YPFeedback.m */; };
-		EABD48401946F95A00492B20 /* YPFeedbackApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E71946F95A00492B20 /* YPFeedbackApi.m */; };
-		EABD48411946F95A00492B20 /* YPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47E91946F95A00492B20 /* YPFile.m */; };
-		EABD48421946F95A00492B20 /* YPFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47EB1946F95A00492B20 /* YPFocus.m */; };
-		EABD48431946F95A00492B20 /* YPHomeAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47ED1946F95A00492B20 /* YPHomeAddress.m */; };
-		EABD48441946F95A00492B20 /* YPI18nString.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47EF1946F95A00492B20 /* YPI18nString.m */; };
-		EABD48451946F95A00492B20 /* YPLoginApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F11946F95A00492B20 /* YPLoginApi.m */; };
-		EABD48461946F95A00492B20 /* YPMainEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F31946F95A00492B20 /* YPMainEvent.m */; };
-		EABD48471946F95A00492B20 /* YPNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F51946F95A00492B20 /* YPNotification.m */; };
-		EABD48481946F95A00492B20 /* YPNotificationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F71946F95A00492B20 /* YPNotificationsApi.m */; };
-		EABD48491946F95A00492B20 /* YPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47F91946F95A00492B20 /* YPObject.m */; };
-		EABD484A1946F95A00492B20 /* YPObjectId.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47FB1946F95A00492B20 /* YPObjectId.m */; };
-		EABD484B1946F95A00492B20 /* YPOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47FD1946F95A00492B20 /* YPOrganization.m */; };
-		EABD484C1946F95A00492B20 /* YPOrganizationsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD47FF1946F95A00492B20 /* YPOrganizationsApi.m */; };
-		EABD484D1946F95A00492B20 /* YPPaymentCode.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48011946F95A00492B20 /* YPPaymentCode.m */; };
-		EABD484E1946F95A00492B20 /* YPPaymentcodesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48031946F95A00492B20 /* YPPaymentcodesApi.m */; };
-		EABD484F1946F95A00492B20 /* YPPingApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48051946F95A00492B20 /* YPPingApi.m */; };
-		EABD48501946F95A00492B20 /* YPProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48071946F95A00492B20 /* YPProfile.m */; };
-		EABD48511946F95A00492B20 /* YPProfilesApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48091946F95A00492B20 /* YPProfilesApi.m */; };
-		EABD48521946F95A00492B20 /* YPRecurrence.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD480B1946F95A00492B20 /* YPRecurrence.m */; };
-		EABD48531946F95A00492B20 /* YPRefDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD480D1946F95A00492B20 /* YPRefDoc.m */; };
-		EABD48541946F95A00492B20 /* YPRejectedActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD480F1946F95A00492B20 /* YPRejectedActivity.m */; };
-		EABD48551946F95A00492B20 /* YPRejectedActivityPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48111946F95A00492B20 /* YPRejectedActivityPlan.m */; };
-		EABD48561946F95A00492B20 /* YPStarredActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48131946F95A00492B20 /* YPStarredActivity.m */; };
-		EABD48571946F95A00492B20 /* YPStatsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48151946F95A00492B20 /* YPStatsApi.m */; };
-		EABD48581946F95A00492B20 /* YPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48171946F95A00492B20 /* YPUser.m */; };
-		EABD48591946F95A00492B20 /* YPUsernameEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD48191946F95A00492B20 /* YPUsernameEmail.m */; };
-		EABD485A1946F95A00492B20 /* YPUserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD481B1946F95A00492B20 /* YPUserPreferences.m */; };
-		EABD485B1946F95A00492B20 /* YPUsersApi.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD481D1946F95A00492B20 /* YPUsersApi.m */; };
-		EABD485C1946F95A00492B20 /* YPWorkAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = EABD481F1946F95A00492B20 /* YPWorkAddress.m */; };
 		EABD485E1946F97000492B20 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD485D1946F97000492B20 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +109,146 @@
 /* Begin PBXFileReference section */
 		5159A749A730432CA2E880E2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD58A5C395D4C1B8ACB6310 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EA6BAE7E19B6F60F00688104 /* YPActivitiesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPActivitiesApi.h; path = ../../../src/YPActivitiesApi.h; sourceTree = "<group>"; };
+		EA6BAE7F19B6F60F00688104 /* YPActivitiesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPActivitiesApi.m; path = ../../../src/YPActivitiesApi.m; sourceTree = "<group>"; };
+		EA6BAE8019B6F60F00688104 /* YPActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPActivity.h; path = ../../../src/YPActivity.h; sourceTree = "<group>"; };
+		EA6BAE8119B6F60F00688104 /* YPActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPActivity.m; path = ../../../src/YPActivity.m; sourceTree = "<group>"; };
+		EA6BAE8219B6F60F00688104 /* YPActivityEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPActivityEvent.h; path = ../../../src/YPActivityEvent.h; sourceTree = "<group>"; };
+		EA6BAE8319B6F60F00688104 /* YPActivityEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPActivityEvent.m; path = ../../../src/YPActivityEvent.m; sourceTree = "<group>"; };
+		EA6BAE8419B6F60F00688104 /* YPActivityeventsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPActivityeventsApi.h; path = ../../../src/YPActivityeventsApi.h; sourceTree = "<group>"; };
+		EA6BAE8519B6F60F00688104 /* YPActivityeventsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPActivityeventsApi.m; path = ../../../src/YPActivityeventsApi.m; sourceTree = "<group>"; };
+		EA6BAE8619B6F60F00688104 /* YPActivityInvitationStatusResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPActivityInvitationStatusResult.h; path = ../../../src/YPActivityInvitationStatusResult.h; sourceTree = "<group>"; };
+		EA6BAE8719B6F60F00688104 /* YPActivityInvitationStatusResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPActivityInvitationStatusResult.m; path = ../../../src/YPActivityInvitationStatusResult.m; sourceTree = "<group>"; };
+		EA6BAE8819B6F60F00688104 /* YPActivityValidationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPActivityValidationResult.h; path = ../../../src/YPActivityValidationResult.h; sourceTree = "<group>"; };
+		EA6BAE8919B6F60F00688104 /* YPActivityValidationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPActivityValidationResult.m; path = ../../../src/YPActivityValidationResult.m; sourceTree = "<group>"; };
+		EA6BAE8A19B6F60F00688104 /* YPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAddress.h; path = ../../../src/YPAddress.h; sourceTree = "<group>"; };
+		EA6BAE8B19B6F60F00688104 /* YPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAddress.m; path = ../../../src/YPAddress.m; sourceTree = "<group>"; };
+		EA6BAE8C19B6F60F00688104 /* YPAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAnswer.h; path = ../../../src/YPAnswer.h; sourceTree = "<group>"; };
+		EA6BAE8D19B6F60F00688104 /* YPAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAnswer.m; path = ../../../src/YPAnswer.m; sourceTree = "<group>"; };
+		EA6BAE8E19B6F60F00688104 /* YPApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPApiClient.h; path = ../../../src/YPApiClient.h; sourceTree = "<group>"; };
+		EA6BAE8F19B6F60F00688104 /* YPApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPApiClient.m; path = ../../../src/YPApiClient.m; sourceTree = "<group>"; };
+		EA6BAE9019B6F60F00688104 /* YPAssessment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAssessment.h; path = ../../../src/YPAssessment.h; sourceTree = "<group>"; };
+		EA6BAE9119B6F60F00688104 /* YPAssessment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAssessment.m; path = ../../../src/YPAssessment.m; sourceTree = "<group>"; };
+		EA6BAE9219B6F60F00688104 /* YPAssessmentQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAssessmentQuestion.h; path = ../../../src/YPAssessmentQuestion.h; sourceTree = "<group>"; };
+		EA6BAE9319B6F60F00688104 /* YPAssessmentQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAssessmentQuestion.m; path = ../../../src/YPAssessmentQuestion.m; sourceTree = "<group>"; };
+		EA6BAE9419B6F60F00688104 /* YPAssessmentResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAssessmentResult.h; path = ../../../src/YPAssessmentResult.h; sourceTree = "<group>"; };
+		EA6BAE9519B6F60F00688104 /* YPAssessmentResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAssessmentResult.m; path = ../../../src/YPAssessmentResult.m; sourceTree = "<group>"; };
+		EA6BAE9619B6F60F00688104 /* YPAssessmentResultAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAssessmentResultAnswer.h; path = ../../../src/YPAssessmentResultAnswer.h; sourceTree = "<group>"; };
+		EA6BAE9719B6F60F00688104 /* YPAssessmentResultAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAssessmentResultAnswer.m; path = ../../../src/YPAssessmentResultAnswer.m; sourceTree = "<group>"; };
+		EA6BAE9819B6F60F00688104 /* YPAssessmentsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAssessmentsApi.h; path = ../../../src/YPAssessmentsApi.h; sourceTree = "<group>"; };
+		EA6BAE9919B6F60F00688104 /* YPAssessmentsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAssessmentsApi.m; path = ../../../src/YPAssessmentsApi.m; sourceTree = "<group>"; };
+		EA6BAE9A19B6F60F00688104 /* YPAuthApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPAuthApi.h; path = ../../../src/YPAuthApi.h; sourceTree = "<group>"; };
+		EA6BAE9B19B6F60F00688104 /* YPAuthApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPAuthApi.m; path = ../../../src/YPAuthApi.m; sourceTree = "<group>"; };
+		EA6BAE9C19B6F60F00688104 /* YPCampaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPCampaign.h; path = ../../../src/YPCampaign.h; sourceTree = "<group>"; };
+		EA6BAE9D19B6F60F00688104 /* YPCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPCampaign.m; path = ../../../src/YPCampaign.m; sourceTree = "<group>"; };
+		EA6BAE9E19B6F60F00688104 /* YPCampaignsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPCampaignsApi.h; path = ../../../src/YPCampaignsApi.h; sourceTree = "<group>"; };
+		EA6BAE9F19B6F60F00688104 /* YPCampaignsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPCampaignsApi.m; path = ../../../src/YPCampaignsApi.m; sourceTree = "<group>"; };
+		EA6BAEA019B6F60F00688104 /* YPCoachmessagesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPCoachmessagesApi.h; path = ../../../src/YPCoachmessagesApi.h; sourceTree = "<group>"; };
+		EA6BAEA119B6F60F00688104 /* YPCoachmessagesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPCoachmessagesApi.m; path = ../../../src/YPCoachmessagesApi.m; sourceTree = "<group>"; };
+		EA6BAEA219B6F60F00688104 /* YPContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPContact.h; path = ../../../src/YPContact.h; sourceTree = "<group>"; };
+		EA6BAEA319B6F60F00688104 /* YPContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPContact.m; path = ../../../src/YPContact.m; sourceTree = "<group>"; };
+		EA6BAEA419B6F60F00688104 /* YPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDate.h; path = ../../../src/YPDate.h; sourceTree = "<group>"; };
+		EA6BAEA519B6F60F00688104 /* YPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDate.m; path = ../../../src/YPDate.m; sourceTree = "<group>"; };
+		EA6BAEA619B6F60F00688104 /* YPEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPEmail.h; path = ../../../src/YPEmail.h; sourceTree = "<group>"; };
+		EA6BAEA719B6F60F00688104 /* YPEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPEmail.m; path = ../../../src/YPEmail.m; sourceTree = "<group>"; };
+		EA6BAEA819B6F60F00688104 /* YPEmailObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPEmailObject.h; path = ../../../src/YPEmailObject.h; sourceTree = "<group>"; };
+		EA6BAEA919B6F60F00688104 /* YPEmailObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPEmailObject.m; path = ../../../src/YPEmailObject.m; sourceTree = "<group>"; };
+		EA6BAEAA19B6F60F00688104 /* YPEndby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPEndby.h; path = ../../../src/YPEndby.h; sourceTree = "<group>"; };
+		EA6BAEAB19B6F60F00688104 /* YPEndby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPEndby.m; path = ../../../src/YPEndby.m; sourceTree = "<group>"; };
+		EA6BAEAC19B6F60F00688104 /* YPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPError.h; path = ../../../src/YPError.h; sourceTree = "<group>"; };
+		EA6BAEAD19B6F60F00688104 /* YPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPError.m; path = ../../../src/YPError.m; sourceTree = "<group>"; };
+		EA6BAEAE19B6F60F00688104 /* YPErrorApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPErrorApi.h; path = ../../../src/YPErrorApi.h; sourceTree = "<group>"; };
+		EA6BAEAF19B6F60F00688104 /* YPErrorApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPErrorApi.m; path = ../../../src/YPErrorApi.m; sourceTree = "<group>"; };
+		EA6BAEB019B6F60F00688104 /* YPErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPErrorObject.h; path = ../../../src/YPErrorObject.h; sourceTree = "<group>"; };
+		EA6BAEB119B6F60F00688104 /* YPErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPErrorObject.m; path = ../../../src/YPErrorObject.m; sourceTree = "<group>"; };
+		EA6BAEB219B6F60F00688104 /* YPFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPFeedback.h; path = ../../../src/YPFeedback.h; sourceTree = "<group>"; };
+		EA6BAEB319B6F60F00688104 /* YPFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPFeedback.m; path = ../../../src/YPFeedback.m; sourceTree = "<group>"; };
+		EA6BAEB419B6F60F00688104 /* YPFeedbackApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPFeedbackApi.h; path = ../../../src/YPFeedbackApi.h; sourceTree = "<group>"; };
+		EA6BAEB519B6F60F00688104 /* YPFeedbackApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPFeedbackApi.m; path = ../../../src/YPFeedbackApi.m; sourceTree = "<group>"; };
+		EA6BAEB619B6F60F00688104 /* YPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPFile.h; path = ../../../src/YPFile.h; sourceTree = "<group>"; };
+		EA6BAEB719B6F60F00688104 /* YPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPFile.m; path = ../../../src/YPFile.m; sourceTree = "<group>"; };
+		EA6BAEB819B6F60F00688104 /* YPFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPFocus.h; path = ../../../src/YPFocus.h; sourceTree = "<group>"; };
+		EA6BAEB919B6F60F00688104 /* YPFocus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPFocus.m; path = ../../../src/YPFocus.m; sourceTree = "<group>"; };
+		EA6BAEBA19B6F60F00688104 /* YPHomeAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPHomeAddress.h; path = ../../../src/YPHomeAddress.h; sourceTree = "<group>"; };
+		EA6BAEBB19B6F60F00688104 /* YPHomeAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPHomeAddress.m; path = ../../../src/YPHomeAddress.m; sourceTree = "<group>"; };
+		EA6BAEBC19B6F60F00688104 /* YPI18nString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPI18nString.h; path = ../../../src/YPI18nString.h; sourceTree = "<group>"; };
+		EA6BAEBD19B6F60F00688104 /* YPI18nString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPI18nString.m; path = ../../../src/YPI18nString.m; sourceTree = "<group>"; };
+		EA6BAEBE19B6F60F00688104 /* YPIdea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPIdea.h; path = ../../../src/YPIdea.h; sourceTree = "<group>"; };
+		EA6BAEBF19B6F60F00688104 /* YPIdea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPIdea.m; path = ../../../src/YPIdea.m; sourceTree = "<group>"; };
+		EA6BAEC019B6F60F00688104 /* YPIdeasApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPIdeasApi.h; path = ../../../src/YPIdeasApi.h; sourceTree = "<group>"; };
+		EA6BAEC119B6F60F00688104 /* YPIdeasApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPIdeasApi.m; path = ../../../src/YPIdeasApi.m; sourceTree = "<group>"; };
+		EA6BAEC219B6F60F00688104 /* YPInvitation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPInvitation.h; path = ../../../src/YPInvitation.h; sourceTree = "<group>"; };
+		EA6BAEC319B6F60F00688104 /* YPInvitation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPInvitation.m; path = ../../../src/YPInvitation.m; sourceTree = "<group>"; };
+		EA6BAEC419B6F60F00688104 /* YPInvitationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPInvitationsApi.h; path = ../../../src/YPInvitationsApi.h; sourceTree = "<group>"; };
+		EA6BAEC519B6F60F00688104 /* YPInvitationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPInvitationsApi.m; path = ../../../src/YPInvitationsApi.m; sourceTree = "<group>"; };
+		EA6BAEC619B6F60F00688104 /* YPLoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPLoginApi.h; path = ../../../src/YPLoginApi.h; sourceTree = "<group>"; };
+		EA6BAEC719B6F60F00688104 /* YPLoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPLoginApi.m; path = ../../../src/YPLoginApi.m; sourceTree = "<group>"; };
+		EA6BAEC819B6F60F00688104 /* YPMainEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPMainEvent.h; path = ../../../src/YPMainEvent.h; sourceTree = "<group>"; };
+		EA6BAEC919B6F60F00688104 /* YPMainEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPMainEvent.m; path = ../../../src/YPMainEvent.m; sourceTree = "<group>"; };
+		EA6BAECA19B6F60F00688104 /* YPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPMessage.h; path = ../../../src/YPMessage.h; sourceTree = "<group>"; };
+		EA6BAECB19B6F60F00688104 /* YPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPMessage.m; path = ../../../src/YPMessage.m; sourceTree = "<group>"; };
+		EA6BAECC19B6F60F00688104 /* YPMessagesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPMessagesApi.h; path = ../../../src/YPMessagesApi.h; sourceTree = "<group>"; };
+		EA6BAECD19B6F60F00688104 /* YPMessagesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPMessagesApi.m; path = ../../../src/YPMessagesApi.m; sourceTree = "<group>"; };
+		EA6BAECE19B6F60F00688104 /* YPNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPNotification.h; path = ../../../src/YPNotification.h; sourceTree = "<group>"; };
+		EA6BAECF19B6F60F00688104 /* YPNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPNotification.m; path = ../../../src/YPNotification.m; sourceTree = "<group>"; };
+		EA6BAED019B6F60F00688104 /* YPNotificationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPNotificationsApi.h; path = ../../../src/YPNotificationsApi.h; sourceTree = "<group>"; };
+		EA6BAED119B6F60F00688104 /* YPNotificationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPNotificationsApi.m; path = ../../../src/YPNotificationsApi.m; sourceTree = "<group>"; };
+		EA6BAED219B6F60F00688104 /* YPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPObject.h; path = ../../../src/YPObject.h; sourceTree = "<group>"; };
+		EA6BAED319B6F60F00688104 /* YPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPObject.m; path = ../../../src/YPObject.m; sourceTree = "<group>"; };
+		EA6BAED419B6F60F00688104 /* YPObjectId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPObjectId.h; path = ../../../src/YPObjectId.h; sourceTree = "<group>"; };
+		EA6BAED519B6F60F00688104 /* YPObjectId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPObjectId.m; path = ../../../src/YPObjectId.m; sourceTree = "<group>"; };
+		EA6BAED619B6F60F00688104 /* YPOffersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPOffersApi.h; path = ../../../src/YPOffersApi.h; sourceTree = "<group>"; };
+		EA6BAED719B6F60F00688104 /* YPOffersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPOffersApi.m; path = ../../../src/YPOffersApi.m; sourceTree = "<group>"; };
+		EA6BAED819B6F60F00688104 /* YPOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPOrganization.h; path = ../../../src/YPOrganization.h; sourceTree = "<group>"; };
+		EA6BAED919B6F60F00688104 /* YPOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPOrganization.m; path = ../../../src/YPOrganization.m; sourceTree = "<group>"; };
+		EA6BAEDA19B6F60F00688104 /* YPOrganizationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPOrganizationsApi.h; path = ../../../src/YPOrganizationsApi.h; sourceTree = "<group>"; };
+		EA6BAEDB19B6F60F00688104 /* YPOrganizationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPOrganizationsApi.m; path = ../../../src/YPOrganizationsApi.m; sourceTree = "<group>"; };
+		EA6BAEDC19B6F60F00688104 /* YPPaymentCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPPaymentCode.h; path = ../../../src/YPPaymentCode.h; sourceTree = "<group>"; };
+		EA6BAEDD19B6F60F00688104 /* YPPaymentCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPPaymentCode.m; path = ../../../src/YPPaymentCode.m; sourceTree = "<group>"; };
+		EA6BAEDE19B6F60F00688104 /* YPPaymentcodesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPPaymentcodesApi.h; path = ../../../src/YPPaymentcodesApi.h; sourceTree = "<group>"; };
+		EA6BAEDF19B6F60F00688104 /* YPPaymentcodesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPPaymentcodesApi.m; path = ../../../src/YPPaymentcodesApi.m; sourceTree = "<group>"; };
+		EA6BAEE019B6F60F00688104 /* YPPingApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPPingApi.h; path = ../../../src/YPPingApi.h; sourceTree = "<group>"; };
+		EA6BAEE119B6F60F00688104 /* YPPingApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPPingApi.m; path = ../../../src/YPPingApi.m; sourceTree = "<group>"; };
+		EA6BAEE219B6F60F00688104 /* YPPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPPrefs.h; path = ../../../src/YPPrefs.h; sourceTree = "<group>"; };
+		EA6BAEE319B6F60F00688104 /* YPPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPPrefs.m; path = ../../../src/YPPrefs.m; sourceTree = "<group>"; };
+		EA6BAEE419B6F60F00688104 /* YPProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPProfile.h; path = ../../../src/YPProfile.h; sourceTree = "<group>"; };
+		EA6BAEE519B6F60F00688104 /* YPProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPProfile.m; path = ../../../src/YPProfile.m; sourceTree = "<group>"; };
+		EA6BAEE619B6F60F00688104 /* YPProfilesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPProfilesApi.h; path = ../../../src/YPProfilesApi.h; sourceTree = "<group>"; };
+		EA6BAEE719B6F60F00688104 /* YPProfilesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPProfilesApi.m; path = ../../../src/YPProfilesApi.m; sourceTree = "<group>"; };
+		EA6BAEE819B6F60F00688104 /* YPRecommendation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPRecommendation.h; path = ../../../src/YPRecommendation.h; sourceTree = "<group>"; };
+		EA6BAEE919B6F60F00688104 /* YPRecommendation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPRecommendation.m; path = ../../../src/YPRecommendation.m; sourceTree = "<group>"; };
+		EA6BAEEA19B6F60F00688104 /* YPRecommendationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPRecommendationsApi.h; path = ../../../src/YPRecommendationsApi.h; sourceTree = "<group>"; };
+		EA6BAEEB19B6F60F00688104 /* YPRecommendationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPRecommendationsApi.m; path = ../../../src/YPRecommendationsApi.m; sourceTree = "<group>"; };
+		EA6BAEEC19B6F60F00688104 /* YPRecurrence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPRecurrence.h; path = ../../../src/YPRecurrence.h; sourceTree = "<group>"; };
+		EA6BAEED19B6F60F00688104 /* YPRecurrence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPRecurrence.m; path = ../../../src/YPRecurrence.m; sourceTree = "<group>"; };
+		EA6BAEEE19B6F60F00688104 /* YPRefDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPRefDoc.h; path = ../../../src/YPRefDoc.h; sourceTree = "<group>"; };
+		EA6BAEEF19B6F60F00688104 /* YPRefDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPRefDoc.m; path = ../../../src/YPRefDoc.m; sourceTree = "<group>"; };
+		EA6BAEF019B6F60F00688104 /* YPRejectedActivitie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPRejectedActivitie.h; path = ../../../src/YPRejectedActivitie.h; sourceTree = "<group>"; };
+		EA6BAEF119B6F60F00688104 /* YPRejectedActivitie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPRejectedActivitie.m; path = ../../../src/YPRejectedActivitie.m; sourceTree = "<group>"; };
+		EA6BAEF219B6F60F00688104 /* YPRejectedIdea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPRejectedIdea.h; path = ../../../src/YPRejectedIdea.h; sourceTree = "<group>"; };
+		EA6BAEF319B6F60F00688104 /* YPRejectedIdea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPRejectedIdea.m; path = ../../../src/YPRejectedIdea.m; sourceTree = "<group>"; };
+		EA6BAEF419B6F60F00688104 /* YPSocialInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPSocialInteraction.h; path = ../../../src/YPSocialInteraction.h; sourceTree = "<group>"; };
+		EA6BAEF519B6F60F00688104 /* YPSocialInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPSocialInteraction.m; path = ../../../src/YPSocialInteraction.m; sourceTree = "<group>"; };
+		EA6BAEF619B6F60F00688104 /* YPSocialInteractionsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPSocialInteractionsApi.h; path = ../../../src/YPSocialInteractionsApi.h; sourceTree = "<group>"; };
+		EA6BAEF719B6F60F00688104 /* YPSocialInteractionsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPSocialInteractionsApi.m; path = ../../../src/YPSocialInteractionsApi.m; sourceTree = "<group>"; };
+		EA6BAEF819B6F60F00688104 /* YPStarredIdea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPStarredIdea.h; path = ../../../src/YPStarredIdea.h; sourceTree = "<group>"; };
+		EA6BAEF919B6F60F00688104 /* YPStarredIdea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPStarredIdea.m; path = ../../../src/YPStarredIdea.m; sourceTree = "<group>"; };
+		EA6BAEFA19B6F60F00688104 /* YPStatsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPStatsApi.h; path = ../../../src/YPStatsApi.h; sourceTree = "<group>"; };
+		EA6BAEFB19B6F60F00688104 /* YPStatsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPStatsApi.m; path = ../../../src/YPStatsApi.m; sourceTree = "<group>"; };
+		EA6BAEFC19B6F60F00688104 /* YPTargetSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTargetSpace.h; path = ../../../src/YPTargetSpace.h; sourceTree = "<group>"; };
+		EA6BAEFD19B6F60F00688104 /* YPTargetSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTargetSpace.m; path = ../../../src/YPTargetSpace.m; sourceTree = "<group>"; };
+		EA6BAEFE19B6F60F00688104 /* YPTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTopic.h; path = ../../../src/YPTopic.h; sourceTree = "<group>"; };
+		EA6BAEFF19B6F60F00688104 /* YPTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTopic.m; path = ../../../src/YPTopic.m; sourceTree = "<group>"; };
+		EA6BAF0019B6F60F00688104 /* YPTopicsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPTopicsApi.h; path = ../../../src/YPTopicsApi.h; sourceTree = "<group>"; };
+		EA6BAF0119B6F60F00688104 /* YPTopicsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPTopicsApi.m; path = ../../../src/YPTopicsApi.m; sourceTree = "<group>"; };
+		EA6BAF0219B6F60F00688104 /* YPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPUser.h; path = ../../../src/YPUser.h; sourceTree = "<group>"; };
+		EA6BAF0319B6F60F00688104 /* YPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPUser.m; path = ../../../src/YPUser.m; sourceTree = "<group>"; };
+		EA6BAF0419B6F60F00688104 /* YPUsernameEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPUsernameEmail.h; path = ../../../src/YPUsernameEmail.h; sourceTree = "<group>"; };
+		EA6BAF0519B6F60F00688104 /* YPUsernameEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPUsernameEmail.m; path = ../../../src/YPUsernameEmail.m; sourceTree = "<group>"; };
+		EA6BAF0619B6F60F00688104 /* YPUsersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPUsersApi.h; path = ../../../src/YPUsersApi.h; sourceTree = "<group>"; };
+		EA6BAF0719B6F60F00688104 /* YPUsersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPUsersApi.m; path = ../../../src/YPUsersApi.m; sourceTree = "<group>"; };
+		EA6BAF0819B6F60F00688104 /* YPWorkAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPWorkAddress.h; path = ../../../src/YPWorkAddress.h; sourceTree = "<group>"; };
+		EA6BAF0919B6F60F00688104 /* YPWorkAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPWorkAddress.m; path = ../../../src/YPWorkAddress.m; sourceTree = "<group>"; };
 		EABD47691946F92800492B20 /* YPLoginSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPLoginSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABD476C1946F92800492B20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EABD476E1946F92800492B20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,128 +269,6 @@
 		EABD47961946F92800492B20 /* YPLoginSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YPLoginSampleTests-Info.plist"; sourceTree = "<group>"; };
 		EABD47981946F92800492B20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EABD479A1946F92800492B20 /* YPLoginSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPLoginSampleTests.m; sourceTree = "<group>"; };
-		EABD47A61946F95A00492B20 /* YPActivitiesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivitiesApi.h; sourceTree = "<group>"; };
-		EABD47A71946F95A00492B20 /* YPActivitiesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivitiesApi.m; sourceTree = "<group>"; };
-		EABD47A81946F95A00492B20 /* YPActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivity.h; sourceTree = "<group>"; };
-		EABD47A91946F95A00492B20 /* YPActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivity.m; sourceTree = "<group>"; };
-		EABD47AA1946F95A00492B20 /* YPActivityOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityOffer.h; sourceTree = "<group>"; };
-		EABD47AB1946F95A00492B20 /* YPActivityOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityOffer.m; sourceTree = "<group>"; };
-		EABD47AC1946F95A00492B20 /* YPActivityoffersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityoffersApi.h; sourceTree = "<group>"; };
-		EABD47AD1946F95A00492B20 /* YPActivityoffersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityoffersApi.m; sourceTree = "<group>"; };
-		EABD47AE1946F95A00492B20 /* YPActivityPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityPlan.h; sourceTree = "<group>"; };
-		EABD47AF1946F95A00492B20 /* YPActivityPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityPlan.m; sourceTree = "<group>"; };
-		EABD47B01946F95A00492B20 /* YPActivityplansApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPActivityplansApi.h; sourceTree = "<group>"; };
-		EABD47B11946F95A00492B20 /* YPActivityplansApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPActivityplansApi.m; sourceTree = "<group>"; };
-		EABD47B21946F95A00492B20 /* YPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAddress.h; sourceTree = "<group>"; };
-		EABD47B31946F95A00492B20 /* YPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAddress.m; sourceTree = "<group>"; };
-		EABD47B41946F95A00492B20 /* YPAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAnswer.h; sourceTree = "<group>"; };
-		EABD47B51946F95A00492B20 /* YPAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAnswer.m; sourceTree = "<group>"; };
-		EABD47B61946F95A00492B20 /* YPApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPApiClient.h; sourceTree = "<group>"; };
-		EABD47B71946F95A00492B20 /* YPApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPApiClient.m; sourceTree = "<group>"; };
-		EABD47B81946F95A00492B20 /* YPAssessment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessment.h; sourceTree = "<group>"; };
-		EABD47B91946F95A00492B20 /* YPAssessment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessment.m; sourceTree = "<group>"; };
-		EABD47BA1946F95A00492B20 /* YPAssessmentQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentQuestion.h; sourceTree = "<group>"; };
-		EABD47BB1946F95A00492B20 /* YPAssessmentQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentQuestion.m; sourceTree = "<group>"; };
-		EABD47BC1946F95A00492B20 /* YPAssessmentResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentResult.h; sourceTree = "<group>"; };
-		EABD47BD1946F95A00492B20 /* YPAssessmentResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentResult.m; sourceTree = "<group>"; };
-		EABD47BE1946F95A00492B20 /* YPAssessmentResultAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentResultAnswer.h; sourceTree = "<group>"; };
-		EABD47BF1946F95A00492B20 /* YPAssessmentResultAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentResultAnswer.m; sourceTree = "<group>"; };
-		EABD47C01946F95A00492B20 /* YPAssessmentsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAssessmentsApi.h; sourceTree = "<group>"; };
-		EABD47C11946F95A00492B20 /* YPAssessmentsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAssessmentsApi.m; sourceTree = "<group>"; };
-		EABD47C21946F95A00492B20 /* YPCampaign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCampaign.h; sourceTree = "<group>"; };
-		EABD47C31946F95A00492B20 /* YPCampaign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCampaign.m; sourceTree = "<group>"; };
-		EABD47C41946F95A00492B20 /* YPCampaignsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCampaignsApi.h; sourceTree = "<group>"; };
-		EABD47C51946F95A00492B20 /* YPCampaignsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCampaignsApi.m; sourceTree = "<group>"; };
-		EABD47C61946F95A00492B20 /* YPCoachmessagesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCoachmessagesApi.h; sourceTree = "<group>"; };
-		EABD47C71946F95A00492B20 /* YPCoachmessagesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCoachmessagesApi.m; sourceTree = "<group>"; };
-		EABD47C81946F95A00492B20 /* YPComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPComment.h; sourceTree = "<group>"; };
-		EABD47C91946F95A00492B20 /* YPComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPComment.m; sourceTree = "<group>"; };
-		EABD47CA1946F95A00492B20 /* YPCommentsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPCommentsApi.h; sourceTree = "<group>"; };
-		EABD47CB1946F95A00492B20 /* YPCommentsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPCommentsApi.m; sourceTree = "<group>"; };
-		EABD47CC1946F95A00492B20 /* YPContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPContact.h; sourceTree = "<group>"; };
-		EABD47CD1946F95A00492B20 /* YPContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPContact.m; sourceTree = "<group>"; };
-		EABD47CE1946F95A00492B20 /* YPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDate.h; sourceTree = "<group>"; };
-		EABD47CF1946F95A00492B20 /* YPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDate.m; sourceTree = "<group>"; };
-		EABD47D01946F95A00492B20 /* YPDefaultUserWeekForScheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDefaultUserWeekForScheduling.h; sourceTree = "<group>"; };
-		EABD47D11946F95A00492B20 /* YPDefaultUserWeekForScheduling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDefaultUserWeekForScheduling.m; sourceTree = "<group>"; };
-		EABD47D21946F95A00492B20 /* YPDiaryentriesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDiaryentriesApi.h; sourceTree = "<group>"; };
-		EABD47D31946F95A00492B20 /* YPDiaryentriesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDiaryentriesApi.m; sourceTree = "<group>"; };
-		EABD47D41946F95A00492B20 /* YPDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDiaryEntry.h; sourceTree = "<group>"; };
-		EABD47D51946F95A00492B20 /* YPDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDiaryEntry.m; sourceTree = "<group>"; };
-		EABD47D61946F95A00492B20 /* YPEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEmail.h; sourceTree = "<group>"; };
-		EABD47D71946F95A00492B20 /* YPEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEmail.m; sourceTree = "<group>"; };
-		EABD47D81946F95A00492B20 /* YPEmailObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEmailObject.h; sourceTree = "<group>"; };
-		EABD47D91946F95A00492B20 /* YPEmailObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEmailObject.m; sourceTree = "<group>"; };
-		EABD47DA1946F95A00492B20 /* YPEndby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEndby.h; sourceTree = "<group>"; };
-		EABD47DB1946F95A00492B20 /* YPEndby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEndby.m; sourceTree = "<group>"; };
-		EABD47DC1946F95A00492B20 /* YPErrorApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPErrorApi.h; sourceTree = "<group>"; };
-		EABD47DD1946F95A00492B20 /* YPErrorApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPErrorApi.m; sourceTree = "<group>"; };
-		EABD47DE1946F95A00492B20 /* YPErrorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPErrorObject.h; sourceTree = "<group>"; };
-		EABD47DF1946F95A00492B20 /* YPErrorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPErrorObject.m; sourceTree = "<group>"; };
-		EABD47E01946F95A00492B20 /* YPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPEvent.h; sourceTree = "<group>"; };
-		EABD47E11946F95A00492B20 /* YPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPEvent.m; sourceTree = "<group>"; };
-		EABD47E21946F95A00492B20 /* YPException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPException.h; sourceTree = "<group>"; };
-		EABD47E31946F95A00492B20 /* YPException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPException.m; sourceTree = "<group>"; };
-		EABD47E41946F95A00492B20 /* YPFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFeedback.h; sourceTree = "<group>"; };
-		EABD47E51946F95A00492B20 /* YPFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFeedback.m; sourceTree = "<group>"; };
-		EABD47E61946F95A00492B20 /* YPFeedbackApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFeedbackApi.h; sourceTree = "<group>"; };
-		EABD47E71946F95A00492B20 /* YPFeedbackApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFeedbackApi.m; sourceTree = "<group>"; };
-		EABD47E81946F95A00492B20 /* YPFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFile.h; sourceTree = "<group>"; };
-		EABD47E91946F95A00492B20 /* YPFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFile.m; sourceTree = "<group>"; };
-		EABD47EA1946F95A00492B20 /* YPFocus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPFocus.h; sourceTree = "<group>"; };
-		EABD47EB1946F95A00492B20 /* YPFocus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPFocus.m; sourceTree = "<group>"; };
-		EABD47EC1946F95A00492B20 /* YPHomeAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPHomeAddress.h; sourceTree = "<group>"; };
-		EABD47ED1946F95A00492B20 /* YPHomeAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPHomeAddress.m; sourceTree = "<group>"; };
-		EABD47EE1946F95A00492B20 /* YPI18nString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPI18nString.h; sourceTree = "<group>"; };
-		EABD47EF1946F95A00492B20 /* YPI18nString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPI18nString.m; sourceTree = "<group>"; };
-		EABD47F01946F95A00492B20 /* YPLoginApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPLoginApi.h; sourceTree = "<group>"; };
-		EABD47F11946F95A00492B20 /* YPLoginApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPLoginApi.m; sourceTree = "<group>"; };
-		EABD47F21946F95A00492B20 /* YPMainEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPMainEvent.h; sourceTree = "<group>"; };
-		EABD47F31946F95A00492B20 /* YPMainEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMainEvent.m; sourceTree = "<group>"; };
-		EABD47F41946F95A00492B20 /* YPNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNotification.h; sourceTree = "<group>"; };
-		EABD47F51946F95A00492B20 /* YPNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNotification.m; sourceTree = "<group>"; };
-		EABD47F61946F95A00492B20 /* YPNotificationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNotificationsApi.h; sourceTree = "<group>"; };
-		EABD47F71946F95A00492B20 /* YPNotificationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNotificationsApi.m; sourceTree = "<group>"; };
-		EABD47F81946F95A00492B20 /* YPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPObject.h; sourceTree = "<group>"; };
-		EABD47F91946F95A00492B20 /* YPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPObject.m; sourceTree = "<group>"; };
-		EABD47FA1946F95A00492B20 /* YPObjectId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPObjectId.h; sourceTree = "<group>"; };
-		EABD47FB1946F95A00492B20 /* YPObjectId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPObjectId.m; sourceTree = "<group>"; };
-		EABD47FC1946F95A00492B20 /* YPOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPOrganization.h; sourceTree = "<group>"; };
-		EABD47FD1946F95A00492B20 /* YPOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPOrganization.m; sourceTree = "<group>"; };
-		EABD47FE1946F95A00492B20 /* YPOrganizationsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPOrganizationsApi.h; sourceTree = "<group>"; };
-		EABD47FF1946F95A00492B20 /* YPOrganizationsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPOrganizationsApi.m; sourceTree = "<group>"; };
-		EABD48001946F95A00492B20 /* YPPaymentCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPaymentCode.h; sourceTree = "<group>"; };
-		EABD48011946F95A00492B20 /* YPPaymentCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPaymentCode.m; sourceTree = "<group>"; };
-		EABD48021946F95A00492B20 /* YPPaymentcodesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPaymentcodesApi.h; sourceTree = "<group>"; };
-		EABD48031946F95A00492B20 /* YPPaymentcodesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPaymentcodesApi.m; sourceTree = "<group>"; };
-		EABD48041946F95A00492B20 /* YPPingApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPingApi.h; sourceTree = "<group>"; };
-		EABD48051946F95A00492B20 /* YPPingApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPingApi.m; sourceTree = "<group>"; };
-		EABD48061946F95A00492B20 /* YPProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPProfile.h; sourceTree = "<group>"; };
-		EABD48071946F95A00492B20 /* YPProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPProfile.m; sourceTree = "<group>"; };
-		EABD48081946F95A00492B20 /* YPProfilesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPProfilesApi.h; sourceTree = "<group>"; };
-		EABD48091946F95A00492B20 /* YPProfilesApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPProfilesApi.m; sourceTree = "<group>"; };
-		EABD480A1946F95A00492B20 /* YPRecurrence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRecurrence.h; sourceTree = "<group>"; };
-		EABD480B1946F95A00492B20 /* YPRecurrence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRecurrence.m; sourceTree = "<group>"; };
-		EABD480C1946F95A00492B20 /* YPRefDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRefDoc.h; sourceTree = "<group>"; };
-		EABD480D1946F95A00492B20 /* YPRefDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRefDoc.m; sourceTree = "<group>"; };
-		EABD480E1946F95A00492B20 /* YPRejectedActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRejectedActivity.h; sourceTree = "<group>"; };
-		EABD480F1946F95A00492B20 /* YPRejectedActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRejectedActivity.m; sourceTree = "<group>"; };
-		EABD48101946F95A00492B20 /* YPRejectedActivityPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRejectedActivityPlan.h; sourceTree = "<group>"; };
-		EABD48111946F95A00492B20 /* YPRejectedActivityPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRejectedActivityPlan.m; sourceTree = "<group>"; };
-		EABD48121946F95A00492B20 /* YPStarredActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStarredActivity.h; sourceTree = "<group>"; };
-		EABD48131946F95A00492B20 /* YPStarredActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStarredActivity.m; sourceTree = "<group>"; };
-		EABD48141946F95A00492B20 /* YPStatsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPStatsApi.h; sourceTree = "<group>"; };
-		EABD48151946F95A00492B20 /* YPStatsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPStatsApi.m; sourceTree = "<group>"; };
-		EABD48161946F95A00492B20 /* YPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUser.h; sourceTree = "<group>"; };
-		EABD48171946F95A00492B20 /* YPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUser.m; sourceTree = "<group>"; };
-		EABD48181946F95A00492B20 /* YPUsernameEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUsernameEmail.h; sourceTree = "<group>"; };
-		EABD48191946F95A00492B20 /* YPUsernameEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUsernameEmail.m; sourceTree = "<group>"; };
-		EABD481A1946F95A00492B20 /* YPUserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUserPreferences.h; sourceTree = "<group>"; };
-		EABD481B1946F95A00492B20 /* YPUserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUserPreferences.m; sourceTree = "<group>"; };
-		EABD481C1946F95A00492B20 /* YPUsersApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPUsersApi.h; sourceTree = "<group>"; };
-		EABD481D1946F95A00492B20 /* YPUsersApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPUsersApi.m; sourceTree = "<group>"; };
-		EABD481E1946F95A00492B20 /* YPWorkAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPWorkAddress.h; sourceTree = "<group>"; };
-		EABD481F1946F95A00492B20 /* YPWorkAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPWorkAddress.m; sourceTree = "<group>"; };
 		EABD485D1946F97000492B20 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -271,6 +298,153 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA33E4B819B5CA33005F0FC2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA6BAE7E19B6F60F00688104 /* YPActivitiesApi.h */,
+				EA6BAE7F19B6F60F00688104 /* YPActivitiesApi.m */,
+				EA6BAE8019B6F60F00688104 /* YPActivity.h */,
+				EA6BAE8119B6F60F00688104 /* YPActivity.m */,
+				EA6BAE8219B6F60F00688104 /* YPActivityEvent.h */,
+				EA6BAE8319B6F60F00688104 /* YPActivityEvent.m */,
+				EA6BAE8419B6F60F00688104 /* YPActivityeventsApi.h */,
+				EA6BAE8519B6F60F00688104 /* YPActivityeventsApi.m */,
+				EA6BAE8619B6F60F00688104 /* YPActivityInvitationStatusResult.h */,
+				EA6BAE8719B6F60F00688104 /* YPActivityInvitationStatusResult.m */,
+				EA6BAE8819B6F60F00688104 /* YPActivityValidationResult.h */,
+				EA6BAE8919B6F60F00688104 /* YPActivityValidationResult.m */,
+				EA6BAE8A19B6F60F00688104 /* YPAddress.h */,
+				EA6BAE8B19B6F60F00688104 /* YPAddress.m */,
+				EA6BAE8C19B6F60F00688104 /* YPAnswer.h */,
+				EA6BAE8D19B6F60F00688104 /* YPAnswer.m */,
+				EA6BAE8E19B6F60F00688104 /* YPApiClient.h */,
+				EA6BAE8F19B6F60F00688104 /* YPApiClient.m */,
+				EA6BAE9019B6F60F00688104 /* YPAssessment.h */,
+				EA6BAE9119B6F60F00688104 /* YPAssessment.m */,
+				EA6BAE9219B6F60F00688104 /* YPAssessmentQuestion.h */,
+				EA6BAE9319B6F60F00688104 /* YPAssessmentQuestion.m */,
+				EA6BAE9419B6F60F00688104 /* YPAssessmentResult.h */,
+				EA6BAE9519B6F60F00688104 /* YPAssessmentResult.m */,
+				EA6BAE9619B6F60F00688104 /* YPAssessmentResultAnswer.h */,
+				EA6BAE9719B6F60F00688104 /* YPAssessmentResultAnswer.m */,
+				EA6BAE9819B6F60F00688104 /* YPAssessmentsApi.h */,
+				EA6BAE9919B6F60F00688104 /* YPAssessmentsApi.m */,
+				EA6BAE9A19B6F60F00688104 /* YPAuthApi.h */,
+				EA6BAE9B19B6F60F00688104 /* YPAuthApi.m */,
+				EA6BAE9C19B6F60F00688104 /* YPCampaign.h */,
+				EA6BAE9D19B6F60F00688104 /* YPCampaign.m */,
+				EA6BAE9E19B6F60F00688104 /* YPCampaignsApi.h */,
+				EA6BAE9F19B6F60F00688104 /* YPCampaignsApi.m */,
+				EA6BAEA019B6F60F00688104 /* YPCoachmessagesApi.h */,
+				EA6BAEA119B6F60F00688104 /* YPCoachmessagesApi.m */,
+				EA6BAEA219B6F60F00688104 /* YPContact.h */,
+				EA6BAEA319B6F60F00688104 /* YPContact.m */,
+				EA6BAEA419B6F60F00688104 /* YPDate.h */,
+				EA6BAEA519B6F60F00688104 /* YPDate.m */,
+				EA6BAEA619B6F60F00688104 /* YPEmail.h */,
+				EA6BAEA719B6F60F00688104 /* YPEmail.m */,
+				EA6BAEA819B6F60F00688104 /* YPEmailObject.h */,
+				EA6BAEA919B6F60F00688104 /* YPEmailObject.m */,
+				EA6BAEAA19B6F60F00688104 /* YPEndby.h */,
+				EA6BAEAB19B6F60F00688104 /* YPEndby.m */,
+				EA6BAEAC19B6F60F00688104 /* YPError.h */,
+				EA6BAEAD19B6F60F00688104 /* YPError.m */,
+				EA6BAEAE19B6F60F00688104 /* YPErrorApi.h */,
+				EA6BAEAF19B6F60F00688104 /* YPErrorApi.m */,
+				EA6BAEB019B6F60F00688104 /* YPErrorObject.h */,
+				EA6BAEB119B6F60F00688104 /* YPErrorObject.m */,
+				EA6BAEB219B6F60F00688104 /* YPFeedback.h */,
+				EA6BAEB319B6F60F00688104 /* YPFeedback.m */,
+				EA6BAEB419B6F60F00688104 /* YPFeedbackApi.h */,
+				EA6BAEB519B6F60F00688104 /* YPFeedbackApi.m */,
+				EA6BAEB619B6F60F00688104 /* YPFile.h */,
+				EA6BAEB719B6F60F00688104 /* YPFile.m */,
+				EA6BAEB819B6F60F00688104 /* YPFocus.h */,
+				EA6BAEB919B6F60F00688104 /* YPFocus.m */,
+				EA6BAEBA19B6F60F00688104 /* YPHomeAddress.h */,
+				EA6BAEBB19B6F60F00688104 /* YPHomeAddress.m */,
+				EA6BAEBC19B6F60F00688104 /* YPI18nString.h */,
+				EA6BAEBD19B6F60F00688104 /* YPI18nString.m */,
+				EA6BAEBE19B6F60F00688104 /* YPIdea.h */,
+				EA6BAEBF19B6F60F00688104 /* YPIdea.m */,
+				EA6BAEC019B6F60F00688104 /* YPIdeasApi.h */,
+				EA6BAEC119B6F60F00688104 /* YPIdeasApi.m */,
+				EA6BAEC219B6F60F00688104 /* YPInvitation.h */,
+				EA6BAEC319B6F60F00688104 /* YPInvitation.m */,
+				EA6BAEC419B6F60F00688104 /* YPInvitationsApi.h */,
+				EA6BAEC519B6F60F00688104 /* YPInvitationsApi.m */,
+				EA6BAEC619B6F60F00688104 /* YPLoginApi.h */,
+				EA6BAEC719B6F60F00688104 /* YPLoginApi.m */,
+				EA6BAEC819B6F60F00688104 /* YPMainEvent.h */,
+				EA6BAEC919B6F60F00688104 /* YPMainEvent.m */,
+				EA6BAECA19B6F60F00688104 /* YPMessage.h */,
+				EA6BAECB19B6F60F00688104 /* YPMessage.m */,
+				EA6BAECC19B6F60F00688104 /* YPMessagesApi.h */,
+				EA6BAECD19B6F60F00688104 /* YPMessagesApi.m */,
+				EA6BAECE19B6F60F00688104 /* YPNotification.h */,
+				EA6BAECF19B6F60F00688104 /* YPNotification.m */,
+				EA6BAED019B6F60F00688104 /* YPNotificationsApi.h */,
+				EA6BAED119B6F60F00688104 /* YPNotificationsApi.m */,
+				EA6BAED219B6F60F00688104 /* YPObject.h */,
+				EA6BAED319B6F60F00688104 /* YPObject.m */,
+				EA6BAED419B6F60F00688104 /* YPObjectId.h */,
+				EA6BAED519B6F60F00688104 /* YPObjectId.m */,
+				EA6BAED619B6F60F00688104 /* YPOffersApi.h */,
+				EA6BAED719B6F60F00688104 /* YPOffersApi.m */,
+				EA6BAED819B6F60F00688104 /* YPOrganization.h */,
+				EA6BAED919B6F60F00688104 /* YPOrganization.m */,
+				EA6BAEDA19B6F60F00688104 /* YPOrganizationsApi.h */,
+				EA6BAEDB19B6F60F00688104 /* YPOrganizationsApi.m */,
+				EA6BAEDC19B6F60F00688104 /* YPPaymentCode.h */,
+				EA6BAEDD19B6F60F00688104 /* YPPaymentCode.m */,
+				EA6BAEDE19B6F60F00688104 /* YPPaymentcodesApi.h */,
+				EA6BAEDF19B6F60F00688104 /* YPPaymentcodesApi.m */,
+				EA6BAEE019B6F60F00688104 /* YPPingApi.h */,
+				EA6BAEE119B6F60F00688104 /* YPPingApi.m */,
+				EA6BAEE219B6F60F00688104 /* YPPrefs.h */,
+				EA6BAEE319B6F60F00688104 /* YPPrefs.m */,
+				EA6BAEE419B6F60F00688104 /* YPProfile.h */,
+				EA6BAEE519B6F60F00688104 /* YPProfile.m */,
+				EA6BAEE619B6F60F00688104 /* YPProfilesApi.h */,
+				EA6BAEE719B6F60F00688104 /* YPProfilesApi.m */,
+				EA6BAEE819B6F60F00688104 /* YPRecommendation.h */,
+				EA6BAEE919B6F60F00688104 /* YPRecommendation.m */,
+				EA6BAEEA19B6F60F00688104 /* YPRecommendationsApi.h */,
+				EA6BAEEB19B6F60F00688104 /* YPRecommendationsApi.m */,
+				EA6BAEEC19B6F60F00688104 /* YPRecurrence.h */,
+				EA6BAEED19B6F60F00688104 /* YPRecurrence.m */,
+				EA6BAEEE19B6F60F00688104 /* YPRefDoc.h */,
+				EA6BAEEF19B6F60F00688104 /* YPRefDoc.m */,
+				EA6BAEF019B6F60F00688104 /* YPRejectedActivitie.h */,
+				EA6BAEF119B6F60F00688104 /* YPRejectedActivitie.m */,
+				EA6BAEF219B6F60F00688104 /* YPRejectedIdea.h */,
+				EA6BAEF319B6F60F00688104 /* YPRejectedIdea.m */,
+				EA6BAEF419B6F60F00688104 /* YPSocialInteraction.h */,
+				EA6BAEF519B6F60F00688104 /* YPSocialInteraction.m */,
+				EA6BAEF619B6F60F00688104 /* YPSocialInteractionsApi.h */,
+				EA6BAEF719B6F60F00688104 /* YPSocialInteractionsApi.m */,
+				EA6BAEF819B6F60F00688104 /* YPStarredIdea.h */,
+				EA6BAEF919B6F60F00688104 /* YPStarredIdea.m */,
+				EA6BAEFA19B6F60F00688104 /* YPStatsApi.h */,
+				EA6BAEFB19B6F60F00688104 /* YPStatsApi.m */,
+				EA6BAEFC19B6F60F00688104 /* YPTargetSpace.h */,
+				EA6BAEFD19B6F60F00688104 /* YPTargetSpace.m */,
+				EA6BAEFE19B6F60F00688104 /* YPTopic.h */,
+				EA6BAEFF19B6F60F00688104 /* YPTopic.m */,
+				EA6BAF0019B6F60F00688104 /* YPTopicsApi.h */,
+				EA6BAF0119B6F60F00688104 /* YPTopicsApi.m */,
+				EA6BAF0219B6F60F00688104 /* YPUser.h */,
+				EA6BAF0319B6F60F00688104 /* YPUser.m */,
+				EA6BAF0419B6F60F00688104 /* YPUsernameEmail.h */,
+				EA6BAF0519B6F60F00688104 /* YPUsernameEmail.m */,
+				EA6BAF0619B6F60F00688104 /* YPUsersApi.h */,
+				EA6BAF0719B6F60F00688104 /* YPUsersApi.m */,
+				EA6BAF0819B6F60F00688104 /* YPWorkAddress.h */,
+				EA6BAF0919B6F60F00688104 /* YPWorkAddress.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		EABD47601946F92800492B20 = {
 			isa = PBXGroup;
 			children = (
@@ -307,7 +481,7 @@
 		EABD47721946F92800492B20 /* YPLoginSample */ = {
 			isa = PBXGroup;
 			children = (
-				EABD47A51946F95A00492B20 /* src */,
+				EA33E4B819B5CA33005F0FC2 /* src */,
 				EABD477B1946F92800492B20 /* YPAppDelegate.h */,
 				EABD477C1946F92800492B20 /* YPAppDelegate.m */,
 				EABD477E1946F92800492B20 /* Main_iPhone.storyboard */,
@@ -347,136 +521,6 @@
 				EABD47971946F92800492B20 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EABD47A51946F95A00492B20 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				EABD47A61946F95A00492B20 /* YPActivitiesApi.h */,
-				EABD47A71946F95A00492B20 /* YPActivitiesApi.m */,
-				EABD47A81946F95A00492B20 /* YPActivity.h */,
-				EABD47A91946F95A00492B20 /* YPActivity.m */,
-				EABD47AA1946F95A00492B20 /* YPActivityOffer.h */,
-				EABD47AB1946F95A00492B20 /* YPActivityOffer.m */,
-				EABD47AC1946F95A00492B20 /* YPActivityoffersApi.h */,
-				EABD47AD1946F95A00492B20 /* YPActivityoffersApi.m */,
-				EABD47AE1946F95A00492B20 /* YPActivityPlan.h */,
-				EABD47AF1946F95A00492B20 /* YPActivityPlan.m */,
-				EABD47B01946F95A00492B20 /* YPActivityplansApi.h */,
-				EABD47B11946F95A00492B20 /* YPActivityplansApi.m */,
-				EABD47B21946F95A00492B20 /* YPAddress.h */,
-				EABD47B31946F95A00492B20 /* YPAddress.m */,
-				EABD47B41946F95A00492B20 /* YPAnswer.h */,
-				EABD47B51946F95A00492B20 /* YPAnswer.m */,
-				EABD47B61946F95A00492B20 /* YPApiClient.h */,
-				EABD47B71946F95A00492B20 /* YPApiClient.m */,
-				EABD47B81946F95A00492B20 /* YPAssessment.h */,
-				EABD47B91946F95A00492B20 /* YPAssessment.m */,
-				EABD47BA1946F95A00492B20 /* YPAssessmentQuestion.h */,
-				EABD47BB1946F95A00492B20 /* YPAssessmentQuestion.m */,
-				EABD47BC1946F95A00492B20 /* YPAssessmentResult.h */,
-				EABD47BD1946F95A00492B20 /* YPAssessmentResult.m */,
-				EABD47BE1946F95A00492B20 /* YPAssessmentResultAnswer.h */,
-				EABD47BF1946F95A00492B20 /* YPAssessmentResultAnswer.m */,
-				EABD47C01946F95A00492B20 /* YPAssessmentsApi.h */,
-				EABD47C11946F95A00492B20 /* YPAssessmentsApi.m */,
-				EABD47C21946F95A00492B20 /* YPCampaign.h */,
-				EABD47C31946F95A00492B20 /* YPCampaign.m */,
-				EABD47C41946F95A00492B20 /* YPCampaignsApi.h */,
-				EABD47C51946F95A00492B20 /* YPCampaignsApi.m */,
-				EABD47C61946F95A00492B20 /* YPCoachmessagesApi.h */,
-				EABD47C71946F95A00492B20 /* YPCoachmessagesApi.m */,
-				EABD47C81946F95A00492B20 /* YPComment.h */,
-				EABD47C91946F95A00492B20 /* YPComment.m */,
-				EABD47CA1946F95A00492B20 /* YPCommentsApi.h */,
-				EABD47CB1946F95A00492B20 /* YPCommentsApi.m */,
-				EABD47CC1946F95A00492B20 /* YPContact.h */,
-				EABD47CD1946F95A00492B20 /* YPContact.m */,
-				EABD47CE1946F95A00492B20 /* YPDate.h */,
-				EABD47CF1946F95A00492B20 /* YPDate.m */,
-				EABD47D01946F95A00492B20 /* YPDefaultUserWeekForScheduling.h */,
-				EABD47D11946F95A00492B20 /* YPDefaultUserWeekForScheduling.m */,
-				EABD47D21946F95A00492B20 /* YPDiaryentriesApi.h */,
-				EABD47D31946F95A00492B20 /* YPDiaryentriesApi.m */,
-				EABD47D41946F95A00492B20 /* YPDiaryEntry.h */,
-				EABD47D51946F95A00492B20 /* YPDiaryEntry.m */,
-				EABD47D61946F95A00492B20 /* YPEmail.h */,
-				EABD47D71946F95A00492B20 /* YPEmail.m */,
-				EABD47D81946F95A00492B20 /* YPEmailObject.h */,
-				EABD47D91946F95A00492B20 /* YPEmailObject.m */,
-				EABD47DA1946F95A00492B20 /* YPEndby.h */,
-				EABD47DB1946F95A00492B20 /* YPEndby.m */,
-				EABD47DC1946F95A00492B20 /* YPErrorApi.h */,
-				EABD47DD1946F95A00492B20 /* YPErrorApi.m */,
-				EABD47DE1946F95A00492B20 /* YPErrorObject.h */,
-				EABD47DF1946F95A00492B20 /* YPErrorObject.m */,
-				EABD47E01946F95A00492B20 /* YPEvent.h */,
-				EABD47E11946F95A00492B20 /* YPEvent.m */,
-				EABD47E21946F95A00492B20 /* YPException.h */,
-				EABD47E31946F95A00492B20 /* YPException.m */,
-				EABD47E41946F95A00492B20 /* YPFeedback.h */,
-				EABD47E51946F95A00492B20 /* YPFeedback.m */,
-				EABD47E61946F95A00492B20 /* YPFeedbackApi.h */,
-				EABD47E71946F95A00492B20 /* YPFeedbackApi.m */,
-				EABD47E81946F95A00492B20 /* YPFile.h */,
-				EABD47E91946F95A00492B20 /* YPFile.m */,
-				EABD47EA1946F95A00492B20 /* YPFocus.h */,
-				EABD47EB1946F95A00492B20 /* YPFocus.m */,
-				EABD47EC1946F95A00492B20 /* YPHomeAddress.h */,
-				EABD47ED1946F95A00492B20 /* YPHomeAddress.m */,
-				EABD47EE1946F95A00492B20 /* YPI18nString.h */,
-				EABD47EF1946F95A00492B20 /* YPI18nString.m */,
-				EABD47F01946F95A00492B20 /* YPLoginApi.h */,
-				EABD47F11946F95A00492B20 /* YPLoginApi.m */,
-				EABD47F21946F95A00492B20 /* YPMainEvent.h */,
-				EABD47F31946F95A00492B20 /* YPMainEvent.m */,
-				EABD47F41946F95A00492B20 /* YPNotification.h */,
-				EABD47F51946F95A00492B20 /* YPNotification.m */,
-				EABD47F61946F95A00492B20 /* YPNotificationsApi.h */,
-				EABD47F71946F95A00492B20 /* YPNotificationsApi.m */,
-				EABD47F81946F95A00492B20 /* YPObject.h */,
-				EABD47F91946F95A00492B20 /* YPObject.m */,
-				EABD47FA1946F95A00492B20 /* YPObjectId.h */,
-				EABD47FB1946F95A00492B20 /* YPObjectId.m */,
-				EABD47FC1946F95A00492B20 /* YPOrganization.h */,
-				EABD47FD1946F95A00492B20 /* YPOrganization.m */,
-				EABD47FE1946F95A00492B20 /* YPOrganizationsApi.h */,
-				EABD47FF1946F95A00492B20 /* YPOrganizationsApi.m */,
-				EABD48001946F95A00492B20 /* YPPaymentCode.h */,
-				EABD48011946F95A00492B20 /* YPPaymentCode.m */,
-				EABD48021946F95A00492B20 /* YPPaymentcodesApi.h */,
-				EABD48031946F95A00492B20 /* YPPaymentcodesApi.m */,
-				EABD48041946F95A00492B20 /* YPPingApi.h */,
-				EABD48051946F95A00492B20 /* YPPingApi.m */,
-				EABD48061946F95A00492B20 /* YPProfile.h */,
-				EABD48071946F95A00492B20 /* YPProfile.m */,
-				EABD48081946F95A00492B20 /* YPProfilesApi.h */,
-				EABD48091946F95A00492B20 /* YPProfilesApi.m */,
-				EABD480A1946F95A00492B20 /* YPRecurrence.h */,
-				EABD480B1946F95A00492B20 /* YPRecurrence.m */,
-				EABD480C1946F95A00492B20 /* YPRefDoc.h */,
-				EABD480D1946F95A00492B20 /* YPRefDoc.m */,
-				EABD480E1946F95A00492B20 /* YPRejectedActivity.h */,
-				EABD480F1946F95A00492B20 /* YPRejectedActivity.m */,
-				EABD48101946F95A00492B20 /* YPRejectedActivityPlan.h */,
-				EABD48111946F95A00492B20 /* YPRejectedActivityPlan.m */,
-				EABD48121946F95A00492B20 /* YPStarredActivity.h */,
-				EABD48131946F95A00492B20 /* YPStarredActivity.m */,
-				EABD48141946F95A00492B20 /* YPStatsApi.h */,
-				EABD48151946F95A00492B20 /* YPStatsApi.m */,
-				EABD48161946F95A00492B20 /* YPUser.h */,
-				EABD48171946F95A00492B20 /* YPUser.m */,
-				EABD48181946F95A00492B20 /* YPUsernameEmail.h */,
-				EABD48191946F95A00492B20 /* YPUsernameEmail.m */,
-				EABD481A1946F95A00492B20 /* YPUserPreferences.h */,
-				EABD481B1946F95A00492B20 /* YPUserPreferences.m */,
-				EABD481C1946F95A00492B20 /* YPUsersApi.h */,
-				EABD481D1946F95A00492B20 /* YPUsersApi.m */,
-				EABD481E1946F95A00492B20 /* YPWorkAddress.h */,
-				EABD481F1946F95A00492B20 /* YPWorkAddress.m */,
-			);
-			name = src;
-			path = ../../../src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,70 +657,79 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EABD48571946F95A00492B20 /* YPStatsApi.m in Sources */,
-				EABD482A1946F95A00492B20 /* YPAssessmentQuestion.m in Sources */,
-				EABD48211946F95A00492B20 /* YPActivity.m in Sources */,
-				EABD483E1946F95A00492B20 /* YPException.m in Sources */,
-				EABD48341946F95A00492B20 /* YPDate.m in Sources */,
-				EABD484A1946F95A00492B20 /* YPObjectId.m in Sources */,
-				EABD48261946F95A00492B20 /* YPAddress.m in Sources */,
-				EABD483B1946F95A00492B20 /* YPErrorApi.m in Sources */,
-				EABD48431946F95A00492B20 /* YPHomeAddress.m in Sources */,
-				EABD482C1946F95A00492B20 /* YPAssessmentResultAnswer.m in Sources */,
-				EABD48371946F95A00492B20 /* YPDiaryEntry.m in Sources */,
-				EABD484C1946F95A00492B20 /* YPOrganizationsApi.m in Sources */,
-				EABD48441946F95A00492B20 /* YPI18nString.m in Sources */,
-				EABD482F1946F95A00492B20 /* YPCampaignsApi.m in Sources */,
-				EABD48451946F95A00492B20 /* YPLoginApi.m in Sources */,
-				EABD48521946F95A00492B20 /* YPRecurrence.m in Sources */,
-				EABD48591946F95A00492B20 /* YPUsernameEmail.m in Sources */,
-				EABD48481946F95A00492B20 /* YPNotificationsApi.m in Sources */,
-				EABD48231946F95A00492B20 /* YPActivityoffersApi.m in Sources */,
-				EABD48251946F95A00492B20 /* YPActivityplansApi.m in Sources */,
-				EABD48581946F95A00492B20 /* YPUser.m in Sources */,
-				EABD48201946F95A00492B20 /* YPActivitiesApi.m in Sources */,
-				EABD48411946F95A00492B20 /* YPFile.m in Sources */,
-				EABD485B1946F95A00492B20 /* YPUsersApi.m in Sources */,
-				EABD48331946F95A00492B20 /* YPContact.m in Sources */,
-				EABD48561946F95A00492B20 /* YPStarredActivity.m in Sources */,
-				EABD48221946F95A00492B20 /* YPActivityOffer.m in Sources */,
-				EABD485A1946F95A00492B20 /* YPUserPreferences.m in Sources */,
-				EABD48511946F95A00492B20 /* YPProfilesApi.m in Sources */,
-				EABD484D1946F95A00492B20 /* YPPaymentCode.m in Sources */,
-				EABD48421946F95A00492B20 /* YPFocus.m in Sources */,
-				EABD48401946F95A00492B20 /* YPFeedbackApi.m in Sources */,
-				EABD48501946F95A00492B20 /* YPProfile.m in Sources */,
-				EABD48541946F95A00492B20 /* YPRejectedActivity.m in Sources */,
-				EABD48321946F95A00492B20 /* YPCommentsApi.m in Sources */,
-				EABD484F1946F95A00492B20 /* YPPingApi.m in Sources */,
-				EABD48311946F95A00492B20 /* YPComment.m in Sources */,
-				EABD48241946F95A00492B20 /* YPActivityPlan.m in Sources */,
-				EABD484E1946F95A00492B20 /* YPPaymentcodesApi.m in Sources */,
-				EABD483F1946F95A00492B20 /* YPFeedback.m in Sources */,
-				EABD48391946F95A00492B20 /* YPEmailObject.m in Sources */,
+				EA6BAF2519B6F61000688104 /* YPFeedbackApi.m in Sources */,
+				EA6BAF4219B6F61000688104 /* YPRefDoc.m in Sources */,
+				EA6BAF1419B6F60F00688104 /* YPAssessmentQuestion.m in Sources */,
+				EA6BAF3119B6F61000688104 /* YPMessagesApi.m in Sources */,
+				EA6BAF1D19B6F61000688104 /* YPDate.m in Sources */,
+				EA6BAF4619B6F61000688104 /* YPSocialInteractionsApi.m in Sources */,
+				EA6BAF2E19B6F61000688104 /* YPLoginApi.m in Sources */,
+				EA6BAF0D19B6F60F00688104 /* YPActivityeventsApi.m in Sources */,
+				EA6BAF1019B6F60F00688104 /* YPAddress.m in Sources */,
+				EA6BAF1619B6F60F00688104 /* YPAssessmentResultAnswer.m in Sources */,
+				EA6BAF3919B6F61000688104 /* YPPaymentCode.m in Sources */,
+				EA6BAF4719B6F61000688104 /* YPStarredIdea.m in Sources */,
+				EA6BAF2319B6F61000688104 /* YPErrorObject.m in Sources */,
+				EA6BAF1E19B6F61000688104 /* YPEmail.m in Sources */,
+				EA6BAF3D19B6F61000688104 /* YPProfile.m in Sources */,
+				EA6BAF1F19B6F61000688104 /* YPEmailObject.m in Sources */,
+				EA6BAF2B19B6F61000688104 /* YPIdeasApi.m in Sources */,
+				EA6BAF3819B6F61000688104 /* YPOrganizationsApi.m in Sources */,
+				EA6BAF4319B6F61000688104 /* YPRejectedActivitie.m in Sources */,
+				EA6BAF1919B6F61000688104 /* YPCampaign.m in Sources */,
+				EA6BAF4B19B6F61000688104 /* YPTopicsApi.m in Sources */,
+				EA6BAF2219B6F61000688104 /* YPErrorApi.m in Sources */,
+				EA6BAF0B19B6F60F00688104 /* YPActivity.m in Sources */,
+				EA6BAF3719B6F61000688104 /* YPOrganization.m in Sources */,
+				EA6BAF3B19B6F61000688104 /* YPPingApi.m in Sources */,
+				EA6BAF2F19B6F61000688104 /* YPMainEvent.m in Sources */,
+				EA6BAF3619B6F61000688104 /* YPOffersApi.m in Sources */,
+				EA6BAF2C19B6F61000688104 /* YPInvitation.m in Sources */,
+				EA6BAF4519B6F61000688104 /* YPSocialInteraction.m in Sources */,
+				EA6BAF2819B6F61000688104 /* YPHomeAddress.m in Sources */,
+				EA6BAF4919B6F61000688104 /* YPTargetSpace.m in Sources */,
+				EA6BAF3C19B6F61000688104 /* YPPrefs.m in Sources */,
+				EA6BAF3E19B6F61000688104 /* YPProfilesApi.m in Sources */,
+				EA6BAF4A19B6F61000688104 /* YPTopic.m in Sources */,
+				EA6BAF2619B6F61000688104 /* YPFile.m in Sources */,
+				EA6BAF2919B6F61000688104 /* YPI18nString.m in Sources */,
+				EA6BAF4819B6F61000688104 /* YPStatsApi.m in Sources */,
+				EA6BAF2A19B6F61000688104 /* YPIdea.m in Sources */,
+				EA6BAF3419B6F61000688104 /* YPObject.m in Sources */,
+				EA6BAF0A19B6F60F00688104 /* YPActivitiesApi.m in Sources */,
+				EA6BAF3F19B6F61000688104 /* YPRecommendation.m in Sources */,
+				EA6BAF0C19B6F60F00688104 /* YPActivityEvent.m in Sources */,
+				EA6BAF2019B6F61000688104 /* YPEndby.m in Sources */,
 				EABD47861946F92800492B20 /* YPViewController.m in Sources */,
-				EABD482D1946F95A00492B20 /* YPAssessmentsApi.m in Sources */,
-				EABD48381946F95A00492B20 /* YPEmail.m in Sources */,
-				EABD483D1946F95A00492B20 /* YPEvent.m in Sources */,
-				EABD483C1946F95A00492B20 /* YPErrorObject.m in Sources */,
-				EABD48301946F95A00492B20 /* YPCoachmessagesApi.m in Sources */,
-				EABD48471946F95A00492B20 /* YPNotification.m in Sources */,
-				EABD484B1946F95A00492B20 /* YPOrganization.m in Sources */,
-				EABD48291946F95A00492B20 /* YPAssessment.m in Sources */,
-				EABD482E1946F95A00492B20 /* YPCampaign.m in Sources */,
-				EABD48271946F95A00492B20 /* YPAnswer.m in Sources */,
-				EABD48491946F95A00492B20 /* YPObject.m in Sources */,
-				EABD48531946F95A00492B20 /* YPRefDoc.m in Sources */,
-				EABD48551946F95A00492B20 /* YPRejectedActivityPlan.m in Sources */,
-				EABD483A1946F95A00492B20 /* YPEndby.m in Sources */,
+				EA6BAF2D19B6F61000688104 /* YPInvitationsApi.m in Sources */,
+				EA6BAF2719B6F61000688104 /* YPFocus.m in Sources */,
+				EA6BAF4F19B6F61000688104 /* YPWorkAddress.m in Sources */,
+				EA6BAF0F19B6F60F00688104 /* YPActivityValidationResult.m in Sources */,
 				EABD47791946F92800492B20 /* main.m in Sources */,
-				EABD48461946F95A00492B20 /* YPMainEvent.m in Sources */,
-				EABD482B1946F95A00492B20 /* YPAssessmentResult.m in Sources */,
-				EABD48361946F95A00492B20 /* YPDiaryentriesApi.m in Sources */,
-				EABD485C1946F95A00492B20 /* YPWorkAddress.m in Sources */,
-				EABD48281946F95A00492B20 /* YPApiClient.m in Sources */,
-				EABD48351946F95A00492B20 /* YPDefaultUserWeekForScheduling.m in Sources */,
+				EA6BAF3319B6F61000688104 /* YPNotificationsApi.m in Sources */,
+				EA6BAF2419B6F61000688104 /* YPFeedback.m in Sources */,
+				EA6BAF1719B6F60F00688104 /* YPAssessmentsApi.m in Sources */,
+				EA6BAF4019B6F61000688104 /* YPRecommendationsApi.m in Sources */,
+				EA6BAF1319B6F60F00688104 /* YPAssessment.m in Sources */,
+				EA6BAF4119B6F61000688104 /* YPRecurrence.m in Sources */,
+				EA6BAF1C19B6F61000688104 /* YPContact.m in Sources */,
+				EA6BAF1A19B6F61000688104 /* YPCampaignsApi.m in Sources */,
+				EA6BAF1119B6F60F00688104 /* YPAnswer.m in Sources */,
+				EA6BAF3019B6F61000688104 /* YPMessage.m in Sources */,
+				EA6BAF3519B6F61000688104 /* YPObjectId.m in Sources */,
+				EA6BAF1B19B6F61000688104 /* YPCoachmessagesApi.m in Sources */,
+				EA6BAF1819B6F60F00688104 /* YPAuthApi.m in Sources */,
+				EA6BAF3A19B6F61000688104 /* YPPaymentcodesApi.m in Sources */,
 				EABD477D1946F92800492B20 /* YPAppDelegate.m in Sources */,
+				EA6BAF2119B6F61000688104 /* YPError.m in Sources */,
+				EA6BAF4419B6F61000688104 /* YPRejectedIdea.m in Sources */,
+				EA6BAF1519B6F60F00688104 /* YPAssessmentResult.m in Sources */,
+				EA6BAF1219B6F60F00688104 /* YPApiClient.m in Sources */,
+				EA6BAF0E19B6F60F00688104 /* YPActivityInvitationStatusResult.m in Sources */,
+				EA6BAF4E19B6F61000688104 /* YPUsersApi.m in Sources */,
+				EA6BAF4D19B6F61000688104 /* YPUsernameEmail.m in Sources */,
+				EA6BAF3219B6F61000688104 /* YPNotification.m in Sources */,
+				EA6BAF4C19B6F61000688104 /* YPUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

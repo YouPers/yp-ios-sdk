@@ -7,11 +7,16 @@
     firstname: (NSString*) firstname
     lastname: (NSString*) lastname
     fullname: (NSString*) fullname
+    accessToken: (NSString*) accessToken
+    refreshToken: (NSString*) refreshToken
+    provider: (NSString*) provider
+    providerId: (NSString*) providerId
+    emails: (NSArray*) emails
+    photos: (NSArray*) photos
     email: (NSString*) email
     avatar: (NSString*) avatar
     emailValidatedFlag: (NSNumber*) emailValidatedFlag
     username: (NSString*) username
-    password:(NSString *)password
     roles: (NSArray*) roles
     hashed_password: (NSString*) hashed_password
     tempPasswordFlag: (NSNumber*) tempPasswordFlag
@@ -25,11 +30,16 @@
     _firstname = firstname;
     _lastname = lastname;
     _fullname = fullname;
+    _accessToken = accessToken;
+    _refreshToken = refreshToken;
+    _provider = provider;
+    _providerId = providerId;
+    _emails = emails;
+    _photos = photos;
     _email = email;
     _avatar = avatar;
     _emailValidatedFlag = emailValidatedFlag;
     _username = username;
-    _password = password;
     _roles = roles;
     _hashed_password = hashed_password;
     _tempPasswordFlag = tempPasswordFlag;
@@ -48,11 +58,16 @@
     _firstname = dict[@"firstname"];
     _lastname = dict[@"lastname"];
     _fullname = dict[@"fullname"];
+    _accessToken = dict[@"accessToken"];
+    _refreshToken = dict[@"refreshToken"];
+    _provider = dict[@"provider"];
+    _providerId = dict[@"providerId"];
+    _emails = dict[@"emails"];
+    _photos = dict[@"photos"];
     _email = dict[@"email"];
     _avatar = dict[@"avatar"];
     _emailValidatedFlag = dict[@"emailValidatedFlag"];
     _username = dict[@"username"];
-    _password = dict[@"password"];
     _roles = dict[@"roles"];
     _hashed_password = dict[@"hashed_password"];
     _tempPasswordFlag = dict[@"tempPasswordFlag"];
@@ -118,11 +133,16 @@
         if(_firstname != nil) dict[@"firstname"] = _firstname ;
         if(_lastname != nil) dict[@"lastname"] = _lastname ;
         if(_fullname != nil) dict[@"fullname"] = _fullname ;
+        if(_accessToken != nil) dict[@"accessToken"] = _accessToken ;
+        if(_refreshToken != nil) dict[@"refreshToken"] = _refreshToken ;
+        if(_provider != nil) dict[@"provider"] = _provider ;
+        if(_providerId != nil) dict[@"providerId"] = _providerId ;
+        if(_emails != nil) dict[@"emails"] = _emails ;
+        if(_photos != nil) dict[@"photos"] = _photos ;
         if(_email != nil) dict[@"email"] = _email ;
         if(_avatar != nil) dict[@"avatar"] = _avatar ;
         if(_emailValidatedFlag != nil) dict[@"emailValidatedFlag"] = _emailValidatedFlag ;
         if(_username != nil) dict[@"username"] = _username ;
-        if(_password != nil) dict[@"password"] = _password ;
         if(_roles != nil) dict[@"roles"] = _roles ;
         if(_hashed_password != nil) dict[@"hashed_password"] = _hashed_password ;
         if(_tempPasswordFlag != nil) dict[@"tempPasswordFlag"] = _tempPasswordFlag ;
@@ -258,6 +278,42 @@
 }
 
 
+- (NSString*)getaccessTokenValue
+{
+    return _accessToken;
+}
+
+
+- (NSString*)getrefreshTokenValue
+{
+    return _refreshToken;
+}
+
+
+- (NSString*)getproviderValue
+{
+    return _provider;
+}
+
+
+- (NSString*)getproviderIdValue
+{
+    return _providerId;
+}
+
+
+- (NSArray*)getemailsValue
+{
+    return _emails;
+}
+
+
+- (NSArray*)getphotosValue
+{
+    return _photos;
+}
+
+
 - (NSString*)getemailValue
 {
     return _email;
@@ -279,11 +335,6 @@
 - (NSString*)getusernameValue
 {
     return _username;
-}
-
-- (NSString*)getpasswordValue
-{
-    return _password;
 }
 
 

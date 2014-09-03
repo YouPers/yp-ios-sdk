@@ -5,12 +5,14 @@
 
 -(id)_id: (NSString*) _id
     endby: (YPEndby*) endby
+    byday: (NSArray*) byday
     every: (NSNumber*) every
     exceptions: (NSArray*) exceptions
 
 {
     __id = _id;
     _endby = endby;
+    _byday = byday;
     _every = every;
     _exceptions = exceptions;
     return self;
@@ -33,7 +35,8 @@
                 _endby = [[YPEndby alloc]initWithValues:endby_dict];
             }
         }
-        _every = dict[@"every"];
+        _byday = dict[@"byday"];
+    _every = dict[@"every"];
     id exceptions_dict = dict[@"exceptions"];
         if([exceptions_dict isKindOfClass:[NSArray class]])
         {
@@ -41,17 +44,17 @@
 
             if([(NSArray*)exceptions_dict count] > 0)
             {
-            	YPException* d;
+            	YPDate* d;
             	
                 for (NSDictionary* dict in (NSArray*)exceptions_dict)
                 {
                     if([dict isKindOfClass:[NSString class]])
                     {
-                    	d = [[YPException alloc] initWithObjectId:(NSString*)dict];
+                    	d = [[YPDate alloc] initWithObjectId:(NSString*)dict];
                     }
                     else
                     {
-                    	d = [[YPException alloc] initWithValues:dict];
+                    	d = [[YPDate alloc] initWithValues:dict];
                     }
                     
                     [objs addObject:d];
@@ -104,13 +107,14 @@
         if(_endby != nil) dict[@"endby"] = [(YPObject*)_endby asDictionary];
         }
     }
-    if(_every != nil) dict[@"every"] = _every ;
+    if(_byday != nil) dict[@"byday"] = _byday ;
+        if(_every != nil) dict[@"every"] = _every ;
         if(_exceptions != nil)
     {
         if([_exceptions isKindOfClass:[NSArray class]])
         {
             NSMutableArray * array = [[NSMutableArray alloc] init];
-            for( YPException *exceptions in (NSArray*)_exceptions)
+            for( YPDate *exceptions in (NSArray*)_exceptions)
             {
                 [array addObject:[(YPObject*)exceptions asDictionary]];
             }
@@ -152,6 +156,12 @@
         *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
     }
     return _endby;
+}
+
+
+- (NSArray*)getbydayValue
+{
+    return _byday;
 }
 
 

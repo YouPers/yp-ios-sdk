@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "YPNotification.h"
 
+#import "YPError.h"
 
 @interface YPNotificationsApi: NSObject
 
@@ -19,7 +20,7 @@ Use with caution, it may impact performance!
  */
 -(NSNumber*) getNotificationByIdWithCompletionBlock:(NSString*) _id 
         populate:(NSString*) populate 
-        completionHandler: (void (^)(YPNotification* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPNotification* output, YPError* error))completionBlock;
 
 /**
 
@@ -35,7 +36,7 @@ Use with caution, it may impact performance!
         limit:(NSNumber*) limit 
         filter:(NSString*) filter 
         populate:(NSString*) populate 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -44,7 +45,7 @@ Use with caution, it may impact performance!
  @param body new Notification object
  */
 -(NSNumber*) postNotificationsWithCompletionBlock:(YPNotification*) body 
-        completionHandler: (void (^)(YPNotification* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPNotification* output, YPError* error))completionBlock;
 
 /**
 
@@ -53,13 +54,13 @@ Use with caution, it may impact performance!
  @param _id ID of the notification to be fetched
  */
 -(NSNumber*) deleteNotificationWithCompletionBlock:(NSString*) _id 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
  Deletes notifications, AccessLevel: al_admin
  delete all notifications
  */
--(NSNumber*) deleteNotificationsWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) deleteNotificationsWithCompletionBlock:(void (^)(YPError* error))completionBlock;
 
 @end

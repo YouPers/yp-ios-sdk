@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "AFHTTPClient.h"
+#import "YPError.h"
 
 @interface YPApiClient : AFHTTPClient
 
@@ -50,7 +51,7 @@
             headerParams:(NSDictionary*) headerParams
       requestContentType:(NSString*) requestContentType
      responseContentType:(NSString*) responseContentType
-         completionBlock:(void (^)(NSDictionary*, NSError *))completionBlock;
+         completionBlock:(void (^)(NSDictionary*, YPError *))completionBlock;
 
 -(NSNumber*)  stringWithCompletionBlock:(NSString*) path
                                  method:(NSString*) method
@@ -59,6 +60,6 @@
                            headerParams:(NSDictionary*) headerParams
                      requestContentType:(NSString*) requestContentType
                     responseContentType:(NSString*) responseContentType
-                        completionBlock:(void (^)(NSString*, NSError *))completionBlock;
+                        completionBlock:(void (^)(NSString*, YPError *))completionBlock;
 @end
 

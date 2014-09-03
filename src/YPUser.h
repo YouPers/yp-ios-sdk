@@ -19,15 +19,25 @@
 
 @property(nonatomic) NSString* fullname;  
 
+@property(nonatomic) NSString* accessToken;  
+
+@property(nonatomic) NSString* refreshToken;  
+
+@property(nonatomic) NSString* provider;  
+
+@property(nonatomic) NSString* providerId;  
+
+@property(nonatomic) NSArray* emails;  
+
+@property(nonatomic) NSArray* photos;  
+
 @property(nonatomic) NSString* email;  
 
 @property(nonatomic) NSString* avatar;  
 
 @property(nonatomic) NSNumber* emailValidatedFlag;  
 
-@property(nonatomic) NSString* username;
-
-@property(nonatomic) NSString* password;
+@property(nonatomic) NSString* username;  
 
 @property(nonatomic) NSArray* roles;  
 
@@ -47,11 +57,16 @@
      firstname: (NSString*) firstname
      lastname: (NSString*) lastname
      fullname: (NSString*) fullname
+     accessToken: (NSString*) accessToken
+     refreshToken: (NSString*) refreshToken
+     provider: (NSString*) provider
+     providerId: (NSString*) providerId
+     emails: (NSArray*) emails
+     photos: (NSArray*) photos
      email: (NSString*) email
      avatar: (NSString*) avatar
      emailValidatedFlag: (NSNumber*) emailValidatedFlag
      username: (NSString*) username
-     password: (NSString*) password
      roles: (NSArray*) roles
      hashed_password: (NSString*) hashed_password
      tempPasswordFlag: (NSNumber*) tempPasswordFlag
@@ -73,6 +88,18 @@
 
 - (NSString*)getfullnameValue;
 
+- (NSString*)getaccessTokenValue;
+
+- (NSString*)getrefreshTokenValue;
+
+- (NSString*)getproviderValue;
+
+- (NSString*)getproviderIdValue;
+
+- (NSArray*)getemailsValue;
+
+- (NSArray*)getphotosValue;
+
 - (NSString*)getemailValue;
 
 - (NSString*)getavatarValue;
@@ -80,8 +107,6 @@
 - (NSNumber*)getemailValidatedFlagValue;
 
 - (NSString*)getusernameValue;
-
-- (NSString*)getpasswordValue;
 
 - (NSArray*)getrolesValue;
 

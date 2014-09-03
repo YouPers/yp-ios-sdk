@@ -6,6 +6,7 @@
 -(id)_id: (NSString*) _id
     owner: (YPUser*) owner
     campaign: (YPCampaign*) campaign
+    topic: (YPTopic*) topic
     assessment: (YPAssessment*) assessment
     dirty: (NSNumber*) dirty
     answers: (NSArray*) answers
@@ -17,6 +18,7 @@
     __id = _id;
     _owner = owner;
     _campaign = campaign;
+    _topic = topic;
     _assessment = assessment;
     _dirty = dirty;
     _answers = answers;
@@ -53,6 +55,18 @@
             else
             {
                 _campaign = [[YPCampaign alloc]initWithValues:campaign_dict];
+            }
+        }
+        id topic_dict = dict[@"topic"];
+        if(topic_dict != nil)
+        {
+            if([topic_dict isKindOfClass:[NSString class]])
+            {
+                _topic = [[YPTopic alloc]initWithObjectId:topic_dict];
+            }
+            else
+            {
+                _topic = [[YPTopic alloc]initWithValues:topic_dict];
             }
         }
         id assessment_dict = dict[@"assessment"];
@@ -186,6 +200,31 @@
         else
         {
         if(_campaign != nil) dict[@"campaign"] = [(YPObject*)_campaign asDictionary];
+        }
+    }
+    if(_topic != nil)
+    {
+        if([_topic isKindOfClass:[NSArray class]])
+        {
+            NSMutableArray * array = [[NSMutableArray alloc] init];
+            for( YPTopic *topic in (NSArray*)_topic)
+            {
+                [array addObject:[(YPObject*)topic asDictionary]];
+            }
+
+            dict[@"topic"] = array;
+        }
+        else if(_topic && [_topic isKindOfClass:[YPDate class]])
+        {
+            NSString * dateString = [(YPDate*)_topic toString];
+            if(dateString)
+            {
+                dict[@"topic"] = dateString;
+            }
+        }
+        else
+        {
+        if(_topic != nil) dict[@"topic"] = [(YPObject*)_topic asDictionary];
         }
     }
     if(_assessment != nil)
@@ -323,6 +362,17 @@
         *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
     }
     return _campaign;
+}
+
+
+- (YPTopic*)gettopicValue:(NSError**)err
+{
+    if(!_topic.isLoaded)
+    {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: @"The object is not loaded"};
+        *err = [NSError errorWithDomain:@"com.youpers" code:101 userInfo:userInfo];
+    }
+    return _topic;
 }
 
 

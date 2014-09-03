@@ -2,7 +2,9 @@
 #import "YPAssessment.h"
 #import "YPAssessmentResultAnswer.h"
 #import "YPAssessmentResult.h"
+#import "YPAssessmentQuestion.h"
 
+#import "YPError.h"
 
 @interface YPAssessmentsApi: NSObject
 
@@ -20,18 +22,16 @@
  */
 -(NSNumber*) putAssessmentWithCompletionBlock:(NSString*) _id 
         body:(YPAssessmentResult*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
- stores a new result for the assessment with id assessmentId, AccessLevel: al_individual
- stores a new result
- @param assessmentId ID of the assessment for which to store a result
- @param body The assessment result to store
+ stores a new assessment, AccessLevel: al_admin
+ post a new assessment
+ @param body The assessment to store, or only some keys of it
  */
--(NSNumber*) postAssessmentResultWithCompletionBlock:(NSString*) assessmentId 
-        body:(YPAssessmentResult*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+-(NSNumber*) postAssessmentWithCompletionBlock:(YPAssessmentResult*) body 
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -39,10 +39,12 @@
  Put an answer of an assessment result
  @param assessmentId ID of the assessment for which to save and result answer
  @param body The assessment answer to store
+ @param questionId ID of the question for which to save and result answer
  */
 -(NSNumber*) assessmentResultAnswerPutWithCompletionBlock:(NSString*) assessmentId 
         body:(YPAssessmentResultAnswer*) body 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        questionId:(NSString*) questionId 
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -57,7 +59,7 @@ Use with caution, it may impact performance!
 -(NSNumber*) getNewestAssessmentResultWithCompletionBlock:(NSString*) assessmentId 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -72,7 +74,7 @@ Use with caution, it may impact performance!
 -(NSNumber*) getAssessmentResultsWithCompletionBlock:(NSString*) assessmentId 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -81,7 +83,7 @@ Use with caution, it may impact performance!
  @param assessmentId ID of the assessment for which to store a result
  */
 -(NSNumber*) deleteAssessmentResultsWithCompletionBlock:(NSString*) assessmentId 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -92,7 +94,7 @@ Use with caution, it may impact performance!
  */
 -(NSNumber*) deleteAssessmentResultWithCompletionBlock:(NSString*) assessmentId 
         _id:(NSString*) _id 
-        completionHandler: (void (^)(NSError* error))completionBlock;
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 /**
 
@@ -111,7 +113,7 @@ Use with caution, it may impact performance!
         filter:(NSString*) filter 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(NSArray* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(NSArray* output, YPError* error))completionBlock;
 
 /**
 
@@ -126,13 +128,31 @@ Use with caution, it may impact performance!
 -(NSNumber*) getAssessmentWithCompletionBlock:(NSString*) _id 
         populate:(NSString*) populate 
         populatedeep:(NSString*) populatedeep 
-        completionHandler: (void (^)(YPAssessment* output, NSError* error))completionBlock;
+        completionHandler: (void (^)(YPAssessment* output, YPError* error))completionBlock;
 
 /**
 
  deletes all assessments in the system, AccessLevel: al_admin
  Admin only! do not use if you don't know exactly what this does!
  */
--(NSNumber*) deleteAssessmentsWithCompletionBlock:(void (^)(NSError* error))completionBlock;
+-(NSNumber*) deleteAssessmentsWithCompletionBlock:(void (^)(YPError* error))completionBlock;
+
+/**
+
+ stores a new question for an assessment, AccessLevel: al_productadmin
+ post a new assessment question
+ @param body The question to store
+ */
+-(NSNumber*) postAssessmentQuestionWithCompletionBlock:(YPAssessmentQuestion*) body 
+        completionHandler: (void (^)(YPError* error))completionBlock;
+
+/**
+
+ delete all questions for the specified assessment, AccessLevel: al_admin
+ delete all questions for the specified assessment
+ @param assessmentId ID of the assessment for which to store a result
+ */
+-(NSNumber*) deleteAssessmentQuestionsWithCompletionBlock:(NSString*) assessmentId 
+        completionHandler: (void (^)(YPError* error))completionBlock;
 
 @end
